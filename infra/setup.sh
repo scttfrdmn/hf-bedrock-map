@@ -16,8 +16,6 @@ set -euo pipefail
 GITHUB_ORG="scttfrdmn"
 GITHUB_REPO="hf-bedrock-map"
 ROLE_NAME="hf-bedrock-map-refresh"
-# Branch allowed to assume the role. The refresh workflow commits to main.
-GITHUB_BRANCH="main"
 # ---------------------------------------------------------------------------
 
 OIDC_HOST="token.actions.githubusercontent.com"
@@ -41,7 +39,10 @@ else
   echo "Created ${OIDC_PROVIDER_ARN}"
 fi
 
-# 2. Trust policy: only this repo's chosen branch, via OIDC, may assume the role.
+# 2. Trust policy: only this repo (any ref/event), via OIDC, may assume the
+# role. The subject is scoped to the repo with a wildcard so both scheduled
+# (refs/heads/main) and workflow_dispatch runs are covered; the audience is
+# pinned to sts.amazonaws.com.
 TRUST_POLICY="$(cat <<JSON
 {
   "Version": "2012-10-17",
@@ -55,7 +56,7 @@ TRUST_POLICY="$(cat <<JSON
           "${OIDC_HOST}:aud": "sts.amazonaws.com"
         },
         "StringLike": {
-          "${OIDC_HOST}:sub": "repo:${GITHUB_ORG}/${GITHUB_REPO}:ref:refs/heads/${GITHUB_BRANCH}"
+          "${OIDC_HOST}:sub": "repo:${GITHUB_ORG}/${GITHUB_REPO}:*"
         }
       }
     }
