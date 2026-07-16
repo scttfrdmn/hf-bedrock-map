@@ -1,5 +1,11 @@
 # hf-bedrock-map
 
+<p align="center">
+  <a href="https://scttfrdmn.github.io/hf-bedrock-map/">
+    <img src="docs/assets/hero.png" alt="hf-bedrock-map — Map Hugging Face to Bedrock" width="820">
+  </a>
+</p>
+
 A daily-refreshed, publicly browsable mapping between Hugging Face model repos
 and the models **Amazon Bedrock can serve right now**.
 
