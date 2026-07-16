@@ -36,6 +36,7 @@
     background: var(--panel); border: 1px solid var(--border); border-radius: 8px; color: var(--fg);
   }
   #q:focus { outline: none; border-color: var(--accent); }
+  .filter-label { color: var(--muted); font-size: 13px; }
   .filters { display: flex; flex-wrap: wrap; gap: 6px; }
   .chip {
     cursor: pointer; user-select: none; padding: 5px 10px; border-radius: 999px;
@@ -90,6 +91,7 @@
 <main>
   <div class="controls">
     <input id="q" type="search" placeholder="Search hf id, bedrock modelId, provider…" autofocus>
+    <span class="filter-label">Match status:</span>
     <div class="filters" id="filters"></div>
   </div>
   <div class="meta" id="meta">Loading…</div>
@@ -99,7 +101,7 @@
         <th data-sort="hfId">Hugging Face repo</th>
         <th data-sort="bedrockModelId">Bedrock modelId</th>
         <th data-sort="provider">Provider</th>
-        <th data-sort="confidence">Confidence</th>
+        <th data-sort="confidence" title="Whether an HF match was found, and how it was established">Match status</th>
         <th data-sort="regions">US regions</th>
         <th data-sort="evidence">Evidence</th>
       </tr>
