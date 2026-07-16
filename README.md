@@ -3,6 +3,21 @@
 A daily-refreshed, publicly browsable mapping between Hugging Face model repos
 and the models **Amazon Bedrock can serve right now**.
 
+[![refresh](https://github.com/scttfrdmn/hf-bedrock-map/actions/workflows/refresh.yml/badge.svg)](https://github.com/scttfrdmn/hf-bedrock-map/actions/workflows/refresh.yml)
+[![pages](https://img.shields.io/badge/GitHub%20Pages-live-2ea043)](https://scttfrdmn.github.io/hf-bedrock-map/)
+[![Go](https://img.shields.io/badge/Go-1.26-00ADD8?logo=go&logoColor=white)](go.mod)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue)](LICENSE)
+![Regions](https://img.shields.io/badge/regions-US%20(us--east--1%2F2%2C%20us--west--1%2F2)-232F3E?logo=amazon-aws&logoColor=white)
+
+**Links**
+
+- 🔎 **Search UI** — <https://scttfrdmn.github.io/hf-bedrock-map/>
+- 🔌 **Reverse-lookup API** — [`docs/API.md`](docs/API.md)
+  · [`/api/v1/index.json`](https://scttfrdmn.github.io/hf-bedrock-map/api/v1/index.json)
+- 📇 **Data** — [`mapping.json`](https://scttfrdmn.github.io/hf-bedrock-map/mapping.json)
+  ([schema](#data-schema-mappingjson))
+- 🛠 **Handoff notes** — [`CLAUDE.md`](CLAUDE.md)
+
 ## Why
 
 Neither AWS nor Hugging Face publishes a mapping between the two. If a team is
@@ -100,6 +115,38 @@ Not all rows carry the same evidentiary weight:
 
 Every row records an `evidence` string so any classification can be audited
 without re-running the tool.
+
+## Data schema (`mapping.json`)
+
+The full forward table. Top-level:
+
+```jsonc
+{
+  "generatedAt": "2026-07-16T00:25:52Z",   // RFC3339 UTC
+  "regions": ["us-east-1","us-east-2","us-west-1","us-west-2"],
+  "counts": { "total": 291, "confirmed": 130, "validated": 17,
+              "ambiguous": 8, "proprietary": 133, "unresolved": 3 },
+  "entries": [ /* Entry objects, sorted by catalog then bedrockModelId */ ]
+}
+```
+
+Each `Entry`:
+
+| Field | Type | Notes |
+|---|---|---|
+| `bedrockModelId` | string | Bedrock modelId (native FM) or hub content name (marketplace). |
+| `catalog` | string | `foundation-model` or `marketplace`. |
+| `provider` | string | Provider name, when known. |
+| `modelName` | string | Human-readable name, when known. |
+| `hfId` | string | Hugging Face `org/repo`; omitted for proprietary/unresolved. |
+| `hfUrl` | string | `https://huggingface.co/{hfId}`; omitted when no `hfId`. |
+| `confidence` | string | One of the five levels above. |
+| `regions` | string[] | US regions (of those queried) that serve this model. |
+| `evidence` | string | Where `hfId`/`confidence` came from — for auditing. |
+
+The **reverse** (HF-id-keyed) view for integrations is the API in
+[`docs/API.md`](docs/API.md); it omits proprietary/unresolved rows since they
+carry no HF id.
 
 ## Setup (one-time)
 
