@@ -1,0 +1,12 @@
+{
+  "_comment": "Curated Bedrock native-FM -> Hugging Face repo overrides. Used only when an AWS model card's EULA link does not itself point to a huggingface.co repo (e.g. Meta, whose cards link to llama.com). Each entry was verified by hand against huggingface.co; the expert-count tokens (16E/128E) are not derivable from the modelId. Override wins over all automated resolution. Keep keys as the bedrock-runtime modelId without trailing context-window segments.",
+  "overrides": {
+    "meta.llama3-8b-instruct-v1:0":    { "hfId": "meta-llama/Meta-Llama-3-8B-Instruct" },
+    "meta.llama3-70b-instruct-v1:0":   { "hfId": "meta-llama/Meta-Llama-3-70B-Instruct" },
+    "meta.llama3-1-8b-instruct-v1:0":  { "hfId": "meta-llama/Llama-3.1-8B-Instruct" },
+    "meta.llama3-1-70b-instruct-v1:0": { "hfId": "meta-llama/Llama-3.1-70B-Instruct" },
+    "meta.llama3-3-70b-instruct-v1:0": { "hfId": "meta-llama/Llama-3.3-70B-Instruct" },
+    "meta.llama4-scout-17b-instruct-v1:0":    { "hfId": "meta-llama/Llama-4-Scout-17B-16E-Instruct" },
+    "meta.llama4-maverick-17b-instruct-v1:0": { "hfId": "meta-llama/Llama-4-Maverick-17B-128E-Instruct" }
+  }
+}

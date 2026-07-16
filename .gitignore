@@ -1,0 +1,16 @@
+# Local refresh output — written to repo root during `go run ./cmd/refresh`.
+# The committed copy lives at docs/mapping.json (written by CI), not here.
+/mapping.json
+
+# Go build artifacts
+/refresh
+/cmd/refresh/refresh
+
+# Editor / OS cruft
+.DS_Store
+
+# Local secrets (HF_TOKEN etc.) — never commit
+.env
+
+# Original spec archive (contents now live in README.md / CLAUDE.md)
+hf-bedrock-map.zip

@@ -1,0 +1,65 @@
+name: refresh
+
+on:
+  schedule:
+    # Daily at 06:00 UTC.
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+    inputs:
+      region:
+        description: "AWS region to query"
+        required: false
+        default: "us-west-2"
+
+# The job assumes a read-only AWS role via OIDC and commits the regenerated
+# docs/mapping.json back to the branch.
+permissions:
+  id-token: write   # mint the OIDC token used to assume the AWS role
+  contents: write   # commit the refreshed mapping.json
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    env:
+      AWS_REGION: ${{ github.event.inputs.region || 'us-west-2' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.26"
+          cache: true
+
+      - name: Configure AWS credentials (OIDC, read-only)
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ vars.HF_BEDROCK_MAP_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+          role-session-name: hf-bedrock-map-refresh
+
+      - name: Run refresh
+        env:
+          # Optional: lets gated-org provider repos (meta-llama, mistralai, …)
+          # resolve during native-FM validation. Absent -> tool degrades
+          # gracefully to the search endpoint.
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          go run ./cmd/refresh
+          # The binary writes mapping.json to the repo root; publish it to docs/.
+          mv mapping.json docs/mapping.json
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- docs/mapping.json; then
+            echo "No change in docs/mapping.json; nothing to commit."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/mapping.json
+          git commit -m "chore: refresh bedrock<->hf mapping ($(date -u +%Y-%m-%d))"
+          git push

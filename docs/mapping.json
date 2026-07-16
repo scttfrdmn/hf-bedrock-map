@@ -1,0 +1,2426 @@
+{
+  "generatedAt": "2026-07-16T04:56:30Z",
+  "region": "us-west-2",
+  "counts": {
+    "ambiguous": 8,
+    "confirmed": 125,
+    "proprietary": 114,
+    "total": 266,
+    "unresolved": 2,
+    "validated": 17
+  },
+  "entries": [
+    {
+      "bedrockModelId": "amazon.nova-2-lite-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Amazon",
+      "modelName": "Nova 2 Lite",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "amazon.nova-2-sonic-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Amazon",
+      "modelName": "Nova 2 Sonic",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "amazon.nova-lite-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Amazon",
+      "modelName": "Nova Lite",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "amazon.nova-micro-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Amazon",
+      "modelName": "Nova Micro",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "amazon.nova-premier-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Amazon",
+      "modelName": "Nova Premier",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "amazon.nova-premier-v1:0:1000k",
+      "catalog": "foundation-model",
+      "provider": "Amazon",
+      "modelName": "Nova Premier",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "amazon.nova-premier-v1:0:20k",
+      "catalog": "foundation-model",
+      "provider": "Amazon",
+      "modelName": "Nova Premier",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "amazon.nova-premier-v1:0:8k",
+      "catalog": "foundation-model",
+      "provider": "Amazon",
+      "modelName": "Nova Premier",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "amazon.nova-premier-v1:0:mm",
+      "catalog": "foundation-model",
+      "provider": "Amazon",
+      "modelName": "Nova Premier",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "amazon.nova-pro-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Amazon",
+      "modelName": "Nova Pro",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "amazon.rerank-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Amazon",
+      "modelName": "Rerank 1.0",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider"
+    },
+    {
+      "bedrockModelId": "amazon.titan-embed-g1-text-02",
+      "catalog": "foundation-model",
+      "provider": "Amazon",
+      "modelName": "Titan Text Embeddings v2",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-titan-text-embeddings-v2-2.html)"
+    },
+    {
+      "bedrockModelId": "amazon.titan-embed-image-v1",
+      "catalog": "foundation-model",
+      "provider": "Amazon",
+      "modelName": "Titan Multimodal Embeddings G1",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "amazon.titan-embed-image-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Amazon",
+      "modelName": "Titan Multimodal Embeddings G1",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "amazon.titan-embed-text-v1",
+      "catalog": "foundation-model",
+      "provider": "Amazon",
+      "modelName": "Titan Embeddings G1 - Text",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "amazon.titan-embed-text-v1:2:8k",
+      "catalog": "foundation-model",
+      "provider": "Amazon",
+      "modelName": "Titan Embeddings G1 - Text",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "amazon.titan-embed-text-v2:0",
+      "catalog": "foundation-model",
+      "provider": "Amazon",
+      "modelName": "Titan Text Embeddings V2",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "anthropic.claude-3-haiku-20240307-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Anthropic",
+      "modelName": "Claude 3 Haiku",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "anthropic.claude-3-haiku-20240307-v1:0:200k",
+      "catalog": "foundation-model",
+      "provider": "Anthropic",
+      "modelName": "Claude 3 Haiku",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "anthropic.claude-3-haiku-20240307-v1:0:48k",
+      "catalog": "foundation-model",
+      "provider": "Anthropic",
+      "modelName": "Claude 3 Haiku",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "anthropic.claude-3-sonnet-20240229-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Anthropic",
+      "modelName": "Claude 3 Sonnet",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider"
+    },
+    {
+      "bedrockModelId": "anthropic.claude-3-sonnet-20240229-v1:0:200k",
+      "catalog": "foundation-model",
+      "provider": "Anthropic",
+      "modelName": "Claude 3 Sonnet",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider"
+    },
+    {
+      "bedrockModelId": "anthropic.claude-3-sonnet-20240229-v1:0:28k",
+      "catalog": "foundation-model",
+      "provider": "Anthropic",
+      "modelName": "Claude 3 Sonnet",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider"
+    },
+    {
+      "bedrockModelId": "anthropic.claude-fable-5",
+      "catalog": "foundation-model",
+      "provider": "Anthropic",
+      "modelName": "Claude Fable 5",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "anthropic.claude-haiku-4-5-20251001-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Anthropic",
+      "modelName": "Claude Haiku 4.5",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "anthropic.claude-opus-4-1-20250805-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Anthropic",
+      "modelName": "Claude Opus 4.1",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "anthropic.claude-opus-4-5-20251101-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Anthropic",
+      "modelName": "Claude Opus 4.5",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "anthropic.claude-opus-4-6-v1",
+      "catalog": "foundation-model",
+      "provider": "Anthropic",
+      "modelName": "Claude Opus 4.6",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "anthropic.claude-opus-4-7",
+      "catalog": "foundation-model",
+      "provider": "Anthropic",
+      "modelName": "Claude Opus 4.7",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "anthropic.claude-opus-4-8",
+      "catalog": "foundation-model",
+      "provider": "Anthropic",
+      "modelName": "Claude Opus 4.8",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "anthropic.claude-sonnet-4-20250514-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Anthropic",
+      "modelName": "Claude Sonnet 4",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "anthropic.claude-sonnet-4-5-20250929-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Anthropic",
+      "modelName": "Claude Sonnet 4.5",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "anthropic.claude-sonnet-4-6",
+      "catalog": "foundation-model",
+      "provider": "Anthropic",
+      "modelName": "Claude Sonnet 4.6",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "anthropic.claude-sonnet-5",
+      "catalog": "foundation-model",
+      "provider": "Anthropic",
+      "modelName": "Claude Sonnet 5",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "cohere.command-r-plus-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Cohere",
+      "modelName": "Command R+",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "cohere.command-r-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Cohere",
+      "modelName": "Command R",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "cohere.embed-english-v3",
+      "catalog": "foundation-model",
+      "provider": "Cohere",
+      "modelName": "Embed English",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "cohere.embed-english-v3:0:512",
+      "catalog": "foundation-model",
+      "provider": "Cohere",
+      "modelName": "Embed English",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "cohere.embed-multilingual-v3",
+      "catalog": "foundation-model",
+      "provider": "Cohere",
+      "modelName": "Embed Multilingual",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "cohere.embed-multilingual-v3:0:512",
+      "catalog": "foundation-model",
+      "provider": "Cohere",
+      "modelName": "Embed Multilingual",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "cohere.embed-v4:0",
+      "catalog": "foundation-model",
+      "provider": "Cohere",
+      "modelName": "Embed v4",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "cohere.rerank-v3-5:0",
+      "catalog": "foundation-model",
+      "provider": "Cohere",
+      "modelName": "Rerank 3.5",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "deepseek.r1-v1:0",
+      "catalog": "foundation-model",
+      "provider": "DeepSeek",
+      "modelName": "DeepSeek-R1",
+      "hfId": "deepseek-ai/DeepSeek-R1",
+      "hfUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
+      "confidence": "confirmed",
+      "evidence": "model card EULA link: https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/main/LICENSE"
+    },
+    {
+      "bedrockModelId": "deepseek.v3-v1:0",
+      "catalog": "foundation-model",
+      "provider": "DeepSeek",
+      "modelName": "DeepSeek-V3.1",
+      "hfId": "deepseek-ai/DeepSeek-V3.1",
+      "hfUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1",
+      "confidence": "confirmed",
+      "evidence": "model card EULA link: https://huggingface.co/deepseek-ai/DeepSeek-V3.1/blob/main/LICENSE"
+    },
+    {
+      "bedrockModelId": "deepseek.v3.2",
+      "catalog": "foundation-model",
+      "provider": "DeepSeek",
+      "modelName": "DeepSeek V3.2",
+      "hfId": "deepseek-ai/DeepSeek-V3.2",
+      "hfUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2",
+      "confidence": "confirmed",
+      "evidence": "model card EULA link: https://huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/main/LICENSE"
+    },
+    {
+      "bedrockModelId": "google.gemma-3-12b-it",
+      "catalog": "foundation-model",
+      "provider": "Google",
+      "modelName": "Gemma 3 12B IT",
+      "hfId": "google/gemma-3-12b-it",
+      "hfUrl": "https://huggingface.co/google/gemma-3-12b-it",
+      "confidence": "validated",
+      "evidence": "hf-validated: base repo google/gemma-3-12b-it exists under google"
+    },
+    {
+      "bedrockModelId": "google.gemma-3-27b-it",
+      "catalog": "foundation-model",
+      "provider": "Google",
+      "modelName": "Gemma 3 27B PT",
+      "hfId": "google/gemma-3-27b-it",
+      "hfUrl": "https://huggingface.co/google/gemma-3-27b-it",
+      "confidence": "validated",
+      "evidence": "hf-validated: base repo google/gemma-3-27b-it exists under google"
+    },
+    {
+      "bedrockModelId": "google.gemma-3-4b-it",
+      "catalog": "foundation-model",
+      "provider": "Google",
+      "modelName": "Gemma 3 4B IT",
+      "hfId": "google/gemma-3-4b-it",
+      "hfUrl": "https://huggingface.co/google/gemma-3-4b-it",
+      "confidence": "validated",
+      "evidence": "hf-validated: base repo google/gemma-3-4b-it exists under google"
+    },
+    {
+      "bedrockModelId": "luma.ray-v2:0",
+      "catalog": "foundation-model",
+      "provider": "Luma AI",
+      "modelName": "Ray v2",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider"
+    },
+    {
+      "bedrockModelId": "meta.llama3-1-70b-instruct-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Meta",
+      "modelName": "Llama 3.1 70B Instruct",
+      "hfId": "meta-llama/Llama-3.1-70B-Instruct",
+      "hfUrl": "https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct",
+      "confidence": "confirmed",
+      "evidence": "curated override (verified against huggingface.co)"
+    },
+    {
+      "bedrockModelId": "meta.llama3-1-70b-instruct-v1:0:128k",
+      "catalog": "foundation-model",
+      "provider": "Meta",
+      "modelName": "Llama 3.1 70B Instruct",
+      "hfId": "meta-llama/Llama-3.1-70B-Instruct",
+      "hfUrl": "https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct",
+      "confidence": "confirmed",
+      "evidence": "curated override (verified against huggingface.co)"
+    },
+    {
+      "bedrockModelId": "meta.llama3-1-8b-instruct-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Meta",
+      "modelName": "Llama 3.1 8B Instruct",
+      "hfId": "meta-llama/Llama-3.1-8B-Instruct",
+      "hfUrl": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
+      "confidence": "confirmed",
+      "evidence": "curated override (verified against huggingface.co)"
+    },
+    {
+      "bedrockModelId": "meta.llama3-1-8b-instruct-v1:0:128k",
+      "catalog": "foundation-model",
+      "provider": "Meta",
+      "modelName": "Llama 3.1 8B Instruct",
+      "hfId": "meta-llama/Llama-3.1-8B-Instruct",
+      "hfUrl": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
+      "confidence": "confirmed",
+      "evidence": "curated override (verified against huggingface.co)"
+    },
+    {
+      "bedrockModelId": "meta.llama3-3-70b-instruct-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Meta",
+      "modelName": "Llama 3.3 70B Instruct",
+      "hfId": "meta-llama/Llama-3.3-70B-Instruct",
+      "hfUrl": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+      "confidence": "confirmed",
+      "evidence": "curated override (verified against huggingface.co)"
+    },
+    {
+      "bedrockModelId": "meta.llama3-3-70b-instruct-v1:0:128k",
+      "catalog": "foundation-model",
+      "provider": "Meta",
+      "modelName": "Llama 3.3 70B Instruct",
+      "hfId": "meta-llama/Llama-3.3-70B-Instruct",
+      "hfUrl": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+      "confidence": "confirmed",
+      "evidence": "curated override (verified against huggingface.co)"
+    },
+    {
+      "bedrockModelId": "meta.llama3-70b-instruct-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Meta",
+      "modelName": "Llama 3 70B Instruct",
+      "hfId": "meta-llama/Meta-Llama-3-70B-Instruct",
+      "hfUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct",
+      "confidence": "confirmed",
+      "evidence": "curated override (verified against huggingface.co)"
+    },
+    {
+      "bedrockModelId": "meta.llama3-8b-instruct-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Meta",
+      "modelName": "Llama 3 8B Instruct",
+      "hfId": "meta-llama/Meta-Llama-3-8B-Instruct",
+      "hfUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
+      "confidence": "confirmed",
+      "evidence": "curated override (verified against huggingface.co)"
+    },
+    {
+      "bedrockModelId": "meta.llama4-maverick-17b-instruct-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Meta",
+      "modelName": "Llama 4 Maverick 17B Instruct",
+      "hfId": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+      "hfUrl": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+      "confidence": "confirmed",
+      "evidence": "curated override (verified against huggingface.co)"
+    },
+    {
+      "bedrockModelId": "meta.llama4-scout-17b-instruct-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Meta",
+      "modelName": "Llama 4 Scout 17B Instruct",
+      "hfId": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "hfUrl": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "confidence": "confirmed",
+      "evidence": "curated override (verified against huggingface.co)"
+    },
+    {
+      "bedrockModelId": "minimax.minimax-m2",
+      "catalog": "foundation-model",
+      "provider": "MiniMax",
+      "modelName": "MiniMax M2",
+      "hfId": "MiniMaxAI/MiniMax-M2",
+      "hfUrl": "https://huggingface.co/MiniMaxAI/MiniMax-M2",
+      "confidence": "validated",
+      "evidence": "hf-validated: base repo MiniMaxAI/MiniMax-M2 exists under MiniMaxAI"
+    },
+    {
+      "bedrockModelId": "minimax.minimax-m2.1",
+      "catalog": "foundation-model",
+      "provider": "MiniMax",
+      "modelName": "MiniMax M2.1",
+      "hfId": "MiniMaxAI/MiniMax-M2.1",
+      "hfUrl": "https://huggingface.co/MiniMaxAI/MiniMax-M2.1",
+      "confidence": "validated",
+      "evidence": "hf-validated: base repo MiniMaxAI/MiniMax-M2.1 exists under MiniMaxAI"
+    },
+    {
+      "bedrockModelId": "minimax.minimax-m2.5",
+      "catalog": "foundation-model",
+      "provider": "MiniMax",
+      "modelName": "MiniMax M2.5",
+      "hfId": "MiniMaxAI/MiniMax-M2.5",
+      "hfUrl": "https://huggingface.co/MiniMaxAI/MiniMax-M2.5",
+      "confidence": "validated",
+      "evidence": "hf-validated: base repo MiniMaxAI/MiniMax-M2.5 exists under MiniMaxAI"
+    },
+    {
+      "bedrockModelId": "mistral.devstral-2-123b",
+      "catalog": "foundation-model",
+      "provider": "Mistral AI",
+      "modelName": "Devstral 2 123B",
+      "hfId": "mistralai/Devstral-2-123B-Instruct-2512",
+      "hfUrl": "https://huggingface.co/mistralai/Devstral-2-123B-Instruct-2512",
+      "confidence": "validated",
+      "evidence": "hf-validated: unique match mistralai/Devstral-2-123B-Instruct-2512 under mistralai"
+    },
+    {
+      "bedrockModelId": "mistral.magistral-small-2509",
+      "catalog": "foundation-model",
+      "provider": "Mistral AI",
+      "modelName": "Magistral Small 2509",
+      "hfId": "mistralai/Magistral-Small-2509",
+      "hfUrl": "https://huggingface.co/mistralai/Magistral-Small-2509",
+      "confidence": "validated",
+      "evidence": "hf-validated: base repo mistralai/Magistral-Small-2509 exists under mistralai"
+    },
+    {
+      "bedrockModelId": "mistral.ministral-3-14b-instruct",
+      "catalog": "foundation-model",
+      "provider": "Mistral AI",
+      "modelName": "Ministral 14B 3.0",
+      "hfId": "mistralai/Ministral-3-14B-Instruct-2512",
+      "hfUrl": "https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512",
+      "confidence": "validated",
+      "evidence": "hf-validated: unique match mistralai/Ministral-3-14B-Instruct-2512 under mistralai"
+    },
+    {
+      "bedrockModelId": "mistral.ministral-3-3b-instruct",
+      "catalog": "foundation-model",
+      "provider": "Mistral AI",
+      "modelName": "Ministral 3B",
+      "confidence": "ambiguous",
+      "evidence": "multiple HF variants, modelId can't disambiguate: mistralai/Ministral-3-3B-Instruct-2512, mistralai/Ministral-3-3B-Instruct-2512-ONNX"
+    },
+    {
+      "bedrockModelId": "mistral.ministral-3-8b-instruct",
+      "catalog": "foundation-model",
+      "provider": "Mistral AI",
+      "modelName": "Ministral 3 8B",
+      "hfId": "mistralai/Ministral-3-8B-Instruct-2512",
+      "hfUrl": "https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512",
+      "confidence": "validated",
+      "evidence": "hf-validated: unique match mistralai/Ministral-3-8B-Instruct-2512 under mistralai"
+    },
+    {
+      "bedrockModelId": "mistral.mistral-7b-instruct-v0:2",
+      "catalog": "foundation-model",
+      "provider": "Mistral AI",
+      "modelName": "Mistral 7B Instruct",
+      "confidence": "ambiguous",
+      "evidence": "multiple HF variants, modelId can't disambiguate: mistralai/Mistral-7B-Instruct-v0.1, mistralai/Mistral-7B-Instruct-v0.2, mistralai/Mistral-7B-Instruct-v0.3"
+    },
+    {
+      "bedrockModelId": "mistral.mistral-large-2402-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Mistral AI",
+      "modelName": "Mistral Large (24.02)",
+      "confidence": "unresolved",
+      "evidence": "no HF repo found under mistralai matching modelId"
+    },
+    {
+      "bedrockModelId": "mistral.mistral-large-2407-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Mistral AI",
+      "modelName": "Mistral Large (24.07)",
+      "hfId": "mistralai/Mistral-Large-Instruct-2407",
+      "hfUrl": "https://huggingface.co/mistralai/Mistral-Large-Instruct-2407",
+      "confidence": "validated",
+      "evidence": "hf-validated: unique match mistralai/Mistral-Large-Instruct-2407 under mistralai"
+    },
+    {
+      "bedrockModelId": "mistral.mistral-large-3-675b-instruct",
+      "catalog": "foundation-model",
+      "provider": "Mistral AI",
+      "modelName": "Mistral Large 3",
+      "confidence": "ambiguous",
+      "evidence": "multiple HF variants, modelId can't disambiguate: mistralai/Mistral-Large-3-675B-Instruct-2512, mistralai/Mistral-Large-3-675B-Instruct-2512-Eagle"
+    },
+    {
+      "bedrockModelId": "mistral.mixtral-8x7b-instruct-v0:1",
+      "catalog": "foundation-model",
+      "provider": "Mistral AI",
+      "modelName": "Mixtral 8x7B Instruct",
+      "hfId": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+      "hfUrl": "https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1",
+      "confidence": "validated",
+      "evidence": "hf-validated: unique match mistralai/Mixtral-8x7B-Instruct-v0.1 under mistralai"
+    },
+    {
+      "bedrockModelId": "mistral.pixtral-large-2502-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Mistral AI",
+      "modelName": "Pixtral Large (25.02)",
+      "confidence": "unresolved",
+      "evidence": "no HF repo found under mistralai matching modelId"
+    },
+    {
+      "bedrockModelId": "mistral.voxtral-mini-3b-2507",
+      "catalog": "foundation-model",
+      "provider": "Mistral AI",
+      "modelName": "Voxtral Mini 3B 2507",
+      "hfId": "mistralai/Voxtral-Mini-3B-2507",
+      "hfUrl": "https://huggingface.co/mistralai/Voxtral-Mini-3B-2507",
+      "confidence": "validated",
+      "evidence": "hf-validated: base repo mistralai/Voxtral-Mini-3B-2507 exists under mistralai"
+    },
+    {
+      "bedrockModelId": "mistral.voxtral-small-24b-2507",
+      "catalog": "foundation-model",
+      "provider": "Mistral AI",
+      "modelName": "Voxtral Small 24B 2507",
+      "hfId": "mistralai/Voxtral-Small-24B-2507",
+      "hfUrl": "https://huggingface.co/mistralai/Voxtral-Small-24B-2507",
+      "confidence": "validated",
+      "evidence": "hf-validated: base repo mistralai/Voxtral-Small-24B-2507 exists under mistralai"
+    },
+    {
+      "bedrockModelId": "moonshot.kimi-k2-thinking",
+      "catalog": "foundation-model",
+      "provider": "Moonshot AI",
+      "modelName": "Kimi K2 Thinking",
+      "hfId": "moonshotai/Kimi-K2-Thinking",
+      "hfUrl": "https://huggingface.co/moonshotai/Kimi-K2-Thinking",
+      "confidence": "confirmed",
+      "evidence": "model card EULA link: https://huggingface.co/moonshotai/Kimi-K2-Thinking/blob/main/LICENSE"
+    },
+    {
+      "bedrockModelId": "moonshotai.kimi-k2.5",
+      "catalog": "foundation-model",
+      "provider": "Moonshot AI",
+      "modelName": "Kimi K2.5",
+      "hfId": "moonshotai/Kimi-K2.5",
+      "hfUrl": "https://huggingface.co/moonshotai/Kimi-K2.5",
+      "confidence": "confirmed",
+      "evidence": "model card EULA link: https://huggingface.co/moonshotai/Kimi-K2.5/blob/main/LICENSE"
+    },
+    {
+      "bedrockModelId": "nvidia.nemotron-nano-12b-v2",
+      "catalog": "foundation-model",
+      "provider": "NVIDIA",
+      "modelName": "NVIDIA Nemotron Nano 12B v2 VL BF16",
+      "confidence": "ambiguous",
+      "evidence": "multiple HF variants, modelId can't disambiguate: nvidia/NVIDIA-Nemotron-Nano-12B-v2, nvidia/NVIDIA-Nemotron-Nano-12B-v2-Base, nvidia/NVIDIA-Nemotron-Nano-12B-v2-VL-FP8, nvidia/NVIDIA-Nemotron-Nano-12B-v2-VL-NVFP4-QAD"
+    },
+    {
+      "bedrockModelId": "nvidia.nemotron-nano-3-30b",
+      "catalog": "foundation-model",
+      "provider": "NVIDIA",
+      "modelName": "Nemotron Nano 3 30B",
+      "confidence": "ambiguous",
+      "evidence": "multiple HF variants, modelId can't disambiguate: nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16, nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-FP8, nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-FP8"
+    },
+    {
+      "bedrockModelId": "nvidia.nemotron-nano-9b-v2",
+      "catalog": "foundation-model",
+      "provider": "NVIDIA",
+      "modelName": "NVIDIA Nemotron Nano 9B v2",
+      "confidence": "ambiguous",
+      "evidence": "multiple HF variants, modelId can't disambiguate: nvidia/NVIDIA-Nemotron-Nano-9B-v2, nvidia/NVIDIA-Nemotron-Nano-9B-v2-Base, nvidia/NVIDIA-Nemotron-Nano-9B-v2-Japanese"
+    },
+    {
+      "bedrockModelId": "nvidia.nemotron-super-3-120b",
+      "catalog": "foundation-model",
+      "provider": "NVIDIA",
+      "modelName": "NVIDIA Nemotron 3 Super 120B A12B",
+      "confidence": "ambiguous",
+      "evidence": "multiple HF variants, modelId can't disambiguate: nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-Base-BF16, nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8"
+    },
+    {
+      "bedrockModelId": "openai.gpt-oss-120b-1:0",
+      "catalog": "foundation-model",
+      "provider": "OpenAI",
+      "modelName": "gpt-oss-120b",
+      "hfId": "openai/gpt-oss-120b",
+      "hfUrl": "https://huggingface.co/openai/gpt-oss-120b",
+      "confidence": "confirmed",
+      "evidence": "model card EULA link: https://huggingface.co/openai/gpt-oss-120b/blob/main/LICENSE"
+    },
+    {
+      "bedrockModelId": "openai.gpt-oss-20b-1:0",
+      "catalog": "foundation-model",
+      "provider": "OpenAI",
+      "modelName": "gpt-oss-20b",
+      "hfId": "openai/gpt-oss-20b",
+      "hfUrl": "https://huggingface.co/openai/gpt-oss-20b",
+      "confidence": "confirmed",
+      "evidence": "model card EULA link: https://huggingface.co/openai/gpt-oss-20b/blob/main/LICENSE"
+    },
+    {
+      "bedrockModelId": "openai.gpt-oss-safeguard-120b",
+      "catalog": "foundation-model",
+      "provider": "OpenAI",
+      "modelName": "GPT OSS Safeguard 120B",
+      "hfId": "openai/gpt-oss-safeguard-120b",
+      "hfUrl": "https://huggingface.co/openai/gpt-oss-safeguard-120b",
+      "confidence": "confirmed",
+      "evidence": "model card EULA link: https://huggingface.co/openai/gpt-oss-safeguard-120b/blob/main/LICENSE"
+    },
+    {
+      "bedrockModelId": "openai.gpt-oss-safeguard-20b",
+      "catalog": "foundation-model",
+      "provider": "OpenAI",
+      "modelName": "GPT OSS Safeguard 20B",
+      "hfId": "openai/gpt-oss-safeguard-20b",
+      "hfUrl": "https://huggingface.co/openai/gpt-oss-safeguard-20b",
+      "confidence": "confirmed",
+      "evidence": "model card EULA link: https://huggingface.co/openai/gpt-oss-safeguard-20b/blob/main/LICENSE"
+    },
+    {
+      "bedrockModelId": "qwen.qwen3-235b-a22b-2507-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Qwen",
+      "modelName": "Qwen3 235B A22B 2507",
+      "hfId": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+      "hfUrl": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507",
+      "confidence": "confirmed",
+      "evidence": "model card EULA link: https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507/blob/main/LICENSE"
+    },
+    {
+      "bedrockModelId": "qwen.qwen3-32b-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Qwen",
+      "modelName": "Qwen3 32B (dense)",
+      "hfId": "Qwen/Qwen3-32B",
+      "hfUrl": "https://huggingface.co/Qwen/Qwen3-32B",
+      "confidence": "confirmed",
+      "evidence": "model card EULA link: https://huggingface.co/Qwen/Qwen3-32B/blob/main/LICENSE"
+    },
+    {
+      "bedrockModelId": "qwen.qwen3-coder-30b-a3b-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Qwen",
+      "modelName": "Qwen3-Coder-30B-A3B-Instruct",
+      "hfId": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+      "hfUrl": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct",
+      "confidence": "confirmed",
+      "evidence": "model card EULA link: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/main/LICENSE"
+    },
+    {
+      "bedrockModelId": "qwen.qwen3-coder-480b-a35b-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Qwen",
+      "modelName": "Qwen3 Coder 480B A35B Instruct",
+      "hfId": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
+      "hfUrl": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct",
+      "confidence": "confirmed",
+      "evidence": "model card EULA link: https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct/blob/main/LICENSE"
+    },
+    {
+      "bedrockModelId": "qwen.qwen3-next-80b-a3b",
+      "catalog": "foundation-model",
+      "provider": "Qwen",
+      "modelName": "Qwen3 Next 80B A3B",
+      "hfId": "Qwen/Qwen3-Next-80B-A3B-Instruct",
+      "hfUrl": "https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct",
+      "confidence": "confirmed",
+      "evidence": "model card EULA link: https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/main/LICENSE"
+    },
+    {
+      "bedrockModelId": "qwen.qwen3-vl-235b-a22b",
+      "catalog": "foundation-model",
+      "provider": "Qwen",
+      "modelName": "Qwen3 VL 235B A22B",
+      "confidence": "ambiguous",
+      "evidence": "multiple HF variants, modelId can't disambiguate: Qwen/Qwen3-VL-235B-A22B-Instruct, Qwen/Qwen3-VL-235B-A22B-Thinking"
+    },
+    {
+      "bedrockModelId": "stability.sd3-5-large-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Stability AI",
+      "modelName": "Stable Diffusion 3.5 Large",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider"
+    },
+    {
+      "bedrockModelId": "stability.stable-conservative-upscale-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Stability AI",
+      "modelName": "Stable Image Conservative Upscale",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "stability.stable-creative-upscale-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Stability AI",
+      "modelName": "Stable Image Creative Upscale",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "stability.stable-fast-upscale-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Stability AI",
+      "modelName": "Stable Image Fast Upscale",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "stability.stable-image-control-sketch-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Stability AI",
+      "modelName": "Stable Image Control Sketch",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "stability.stable-image-control-structure-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Stability AI",
+      "modelName": "Stable Image Control Structure",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "stability.stable-image-core-v1:1",
+      "catalog": "foundation-model",
+      "provider": "Stability AI",
+      "modelName": "Stable Image Core 1.0",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider"
+    },
+    {
+      "bedrockModelId": "stability.stable-image-erase-object-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Stability AI",
+      "modelName": "Stable Image Erase Object",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "stability.stable-image-inpaint-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Stability AI",
+      "modelName": "Stable Image Inpaint",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "stability.stable-image-remove-background-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Stability AI",
+      "modelName": "Stable Image Remove Background",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "stability.stable-image-search-recolor-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Stability AI",
+      "modelName": "Stable Image Search and Recolor",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "stability.stable-image-search-replace-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Stability AI",
+      "modelName": "Stable Image Search and Replace",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "stability.stable-image-style-guide-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Stability AI",
+      "modelName": "Stable Image Style Guide",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "stability.stable-image-ultra-v1:1",
+      "catalog": "foundation-model",
+      "provider": "Stability AI",
+      "modelName": "Stable Image Ultra 1.0",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider"
+    },
+    {
+      "bedrockModelId": "stability.stable-outpaint-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Stability AI",
+      "modelName": "Stable Image Outpaint",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "stability.stable-style-transfer-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Stability AI",
+      "modelName": "Stable Image Style Transfer",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "twelvelabs.pegasus-1-2-v1:0",
+      "catalog": "foundation-model",
+      "provider": "TwelveLabs",
+      "modelName": "Pegasus v1.2",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "writer.palmyra-vision-7b",
+      "catalog": "foundation-model",
+      "provider": "Writer",
+      "modelName": "Writer Palmyra Vision 7B",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "writer.palmyra-x4-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Writer",
+      "modelName": "Palmyra X4",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "writer.palmyra-x5-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Writer",
+      "modelName": "Palmyra X5",
+      "confidence": "proprietary",
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "zai.glm-4.7",
+      "catalog": "foundation-model",
+      "provider": "Z.AI",
+      "modelName": "GLM 4.7",
+      "hfId": "zai-org/GLM-4.7",
+      "hfUrl": "https://huggingface.co/zai-org/GLM-4.7",
+      "confidence": "validated",
+      "evidence": "hf-validated: base repo zai-org/GLM-4.7 exists under zai-org"
+    },
+    {
+      "bedrockModelId": "zai.glm-4.7-flash",
+      "catalog": "foundation-model",
+      "provider": "Z.AI",
+      "modelName": "GLM 4.7 Flash",
+      "hfId": "zai-org/GLM-4.7-Flash",
+      "hfUrl": "https://huggingface.co/zai-org/GLM-4.7-Flash",
+      "confidence": "validated",
+      "evidence": "hf-validated: base repo zai-org/GLM-4.7-Flash exists under zai-org"
+    },
+    {
+      "bedrockModelId": "zai.glm-5",
+      "catalog": "foundation-model",
+      "provider": "Z.AI",
+      "modelName": "GLM 5",
+      "hfId": "zai-org/GLM-5",
+      "hfUrl": "https://huggingface.co/zai-org/GLM-5",
+      "confidence": "validated",
+      "evidence": "hf-validated: base repo zai-org/GLM-5 exists under zai-org"
+    },
+    {
+      "bedrockModelId": "arcee-lite",
+      "catalog": "marketplace",
+      "provider": "arcee ai",
+      "modelName": "Arcee Lite",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "arcee-llama-3-1-supernova-lite",
+      "catalog": "marketplace",
+      "provider": "arcee ai",
+      "modelName": "Llama 3.1 SuperNova Lite",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "arcee-llama-spark",
+      "catalog": "marketplace",
+      "provider": "arcee ai",
+      "modelName": "Llama Spark",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "arcee-supernova",
+      "catalog": "marketplace",
+      "provider": "arcee ai",
+      "modelName": "Arcee SuperNova",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "arcee-virtuoso-small",
+      "catalog": "marketplace",
+      "provider": "arcee ai",
+      "modelName": "Arcee Virtuoso Small",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "autogluon-forecasting-chronos-bolt-base",
+      "catalog": "marketplace",
+      "provider": "autogluon",
+      "modelName": "Chronos-Bolt (Base)",
+      "hfId": "amazon/chronos-bolt-base",
+      "hfUrl": "https://huggingface.co/amazon/chronos-bolt-base",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "bria-ai-2-2-hd-commercial",
+      "catalog": "marketplace",
+      "provider": "bria ai",
+      "modelName": "Bria 2.2HD Commercial Text-to-image",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "bria-ai-2-3-commercial",
+      "catalog": "marketplace",
+      "provider": "bria ai",
+      "modelName": "Bria 2.3 Commercial Text-to-image",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "bria-ai-2-3-fast-commercial",
+      "catalog": "marketplace",
+      "provider": "bria ai",
+      "modelName": "Bria 2.3Fast Commercial Text-to-image",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "cambai-mars6",
+      "catalog": "marketplace",
+      "provider": "camb.ai",
+      "modelName": "MARS6",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "deepseek-llm-r1",
+      "catalog": "marketplace",
+      "provider": "deepseek-ai",
+      "modelName": "DeepSeek-R1",
+      "hfId": "deepseek-ai/DeepSeek-R1",
+      "hfUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "deepseek-llm-r1-0528",
+      "catalog": "marketplace",
+      "provider": "deepseek-ai",
+      "modelName": "DeepSeek-R1-0528",
+      "hfId": "deepseek-ai/DeepSeek-R1-0528",
+      "hfUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "deepseek-llm-r1-distill-llama-70b",
+      "catalog": "marketplace",
+      "provider": "deepseek-ai",
+      "modelName": "DeepSeek-R1-Distill-Llama-70B",
+      "hfId": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+      "hfUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "deepseek-llm-r1-distill-llama-8b",
+      "catalog": "marketplace",
+      "provider": "deepseek-ai",
+      "modelName": "DeepSeek-R1-Distill-Llama-8B",
+      "hfId": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+      "hfUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "deepseek-llm-r1-distill-qwen-1-5b",
+      "catalog": "marketplace",
+      "provider": "deepseek-ai",
+      "modelName": "DeepSeek-R1-Distill-Qwen-1.5B",
+      "hfId": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+      "hfUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "deepseek-llm-r1-distill-qwen-14b",
+      "catalog": "marketplace",
+      "provider": "deepseek-ai",
+      "modelName": "DeepSeek-R1-Distill-Qwen-14B",
+      "hfId": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+      "hfUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "deepseek-llm-r1-distill-qwen-32b",
+      "catalog": "marketplace",
+      "provider": "deepseek-ai",
+      "modelName": "DeepSeek-R1-Distill-Qwen-32B",
+      "hfId": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+      "hfUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "deepseek-llm-r1-distill-qwen-7b",
+      "catalog": "marketplace",
+      "provider": "deepseek-ai",
+      "modelName": "DeepSeek-R1-Distill-Qwen-7B",
+      "hfId": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+      "hfUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "evolutionary-scale-esm3",
+      "catalog": "marketplace",
+      "provider": "evolutionaryscale, pbc",
+      "modelName": "ESM3-open",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "granite-3-0-2b-instruct",
+      "catalog": "marketplace",
+      "provider": "ibm data and ai",
+      "modelName": "IBM Granite 3.0 2B Instruct",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "granite-3-0-8b-instruct",
+      "catalog": "marketplace",
+      "provider": "ibm data and ai",
+      "modelName": "IBM Granite 3.0 8B Instruct",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "gretel-navigator-tabular",
+      "catalog": "marketplace",
+      "provider": "gretel",
+      "modelName": "Gretel Navigator Tabular",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "huggingface-asr-whisper-large-v3-turbo",
+      "catalog": "marketplace",
+      "provider": "openai",
+      "modelName": "Whisper Large V3 Turbo",
+      "hfId": "openai/whisper-large-v3-turbo",
+      "hfUrl": "https://huggingface.co/openai/whisper-large-v3-turbo",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-ai-forever-mgpt",
+      "catalog": "marketplace",
+      "provider": "ai-forever",
+      "modelName": "Multilingual GPT",
+      "hfId": "ai-forever/mGPT",
+      "hfUrl": "https://huggingface.co/ai-forever/mGPT",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-amazon-falconlite",
+      "catalog": "marketplace",
+      "provider": "amazon",
+      "modelName": "Falcon Lite",
+      "hfId": "amazon/FalconLite",
+      "hfUrl": "https://huggingface.co/amazon/FalconLite",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-amazon-falconlite2",
+      "catalog": "marketplace",
+      "provider": "amazon",
+      "modelName": "Falcon Lite 2",
+      "hfId": "amazon/FalconLite2",
+      "hfUrl": "https://huggingface.co/amazon/FalconLite2",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-amazon-mistrallite",
+      "catalog": "marketplace",
+      "provider": "amazon",
+      "modelName": "Mistral Lite",
+      "hfId": "amazon/MistralLite",
+      "hfUrl": "https://huggingface.co/amazon/MistralLite",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-apertus-70b-instruct-2509",
+      "catalog": "marketplace",
+      "provider": "swiss-ai",
+      "modelName": "Apertus 70B Instruct 2509",
+      "hfId": "swiss-ai/Apertus-70B-Instruct-2509",
+      "hfUrl": "https://huggingface.co/swiss-ai/Apertus-70B-Instruct-2509",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-apertus-8b-instruct-2509",
+      "catalog": "marketplace",
+      "provider": "swiss-ai",
+      "modelName": "Apertus 8B Instruct 2509",
+      "hfId": "swiss-ai/Apertus-8B-Instruct-2509",
+      "hfUrl": "https://huggingface.co/swiss-ai/Apertus-8B-Instruct-2509",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-aya-101",
+      "catalog": "marketplace",
+      "provider": "CohereForAI",
+      "modelName": "Aya 101",
+      "hfId": "CohereForAI/aya-101",
+      "hfUrl": "https://huggingface.co/CohereForAI/aya-101",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-dbrx-base",
+      "catalog": "marketplace",
+      "provider": "databricks",
+      "modelName": "DBRX Base",
+      "hfId": "databricks/dbrx-base",
+      "hfUrl": "https://huggingface.co/databricks/dbrx-base",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-dbrx-instruct",
+      "catalog": "marketplace",
+      "provider": "databricks",
+      "modelName": "DBRX Instruct",
+      "hfId": "databricks/dbrx-instruct",
+      "hfUrl": "https://huggingface.co/databricks/dbrx-instruct",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-dolphin-2-2-1-mistral-7b",
+      "catalog": "marketplace",
+      "provider": "cognitivecomputations",
+      "modelName": "Dolphin 2.2.1 Mistral 7B",
+      "hfId": "cognitivecomputations/dolphin-2.2.1-mistral-7b",
+      "hfUrl": "https://huggingface.co/cognitivecomputations/dolphin-2.2.1-mistral-7b",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-dolphin-2-5-mixtral-8x7b",
+      "catalog": "marketplace",
+      "provider": "cognitivecomputations",
+      "modelName": "Dolphin 2.5 Mixtral 8 7B",
+      "hfId": "cognitivecomputations/dolphin-2.5-mixtral-8x7b",
+      "hfUrl": "https://huggingface.co/cognitivecomputations/dolphin-2.5-mixtral-8x7b",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-falcon-180b-bf16",
+      "catalog": "marketplace",
+      "provider": "tiiuae",
+      "modelName": "Falcon 180B BF16",
+      "hfId": "tiiuae/falcon-180B",
+      "hfUrl": "https://huggingface.co/tiiuae/falcon-180B",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-falcon-3-10B-Instruct",
+      "catalog": "marketplace",
+      "provider": "tiiuae",
+      "modelName": "Falcon3-10B-Instruct",
+      "hfId": "tiiuae/Falcon3-10B-Instruct",
+      "hfUrl": "https://huggingface.co/tiiuae/Falcon3-10B-Instruct",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-falcon-3-10B-base",
+      "catalog": "marketplace",
+      "provider": "tiiuae",
+      "modelName": "Falcon3-10B-Base",
+      "hfId": "tiiuae/Falcon3-10B-Base",
+      "hfUrl": "https://huggingface.co/tiiuae/Falcon3-10B-Base",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-falcon-3-1B-Instruct",
+      "catalog": "marketplace",
+      "provider": "tiiuae",
+      "modelName": "Falcon3-1B-Instruct",
+      "hfId": "tiiuae/Falcon3-1B-Instruct",
+      "hfUrl": "https://huggingface.co/tiiuae/Falcon3-1B-Instruct",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-falcon-3-3B-Instruct",
+      "catalog": "marketplace",
+      "provider": "tiiuae",
+      "modelName": "Falcon3-3B-Instruct",
+      "hfId": "tiiuae/Falcon3-3B-Instruct",
+      "hfUrl": "https://huggingface.co/tiiuae/Falcon3-3B-Instruct",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-falcon-3-3B-base",
+      "catalog": "marketplace",
+      "provider": "tiiuae",
+      "modelName": "Falcon3-3B-Base",
+      "hfId": "tiiuae/Falcon3-3B-Base",
+      "hfUrl": "https://huggingface.co/tiiuae/Falcon3-3B-Base",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-falcon-3-7B-Instruct",
+      "catalog": "marketplace",
+      "provider": "tiiuae",
+      "modelName": "Falcon3-7B-Instruct",
+      "hfId": "tiiuae/Falcon3-7B-Instruct",
+      "hfUrl": "https://huggingface.co/tiiuae/Falcon3-7B-Instruct",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-falcon-3-7B-base",
+      "catalog": "marketplace",
+      "provider": "tiiuae",
+      "modelName": "Falcon3-7B-Base",
+      "hfId": "tiiuae/Falcon3-7B-Base",
+      "hfUrl": "https://huggingface.co/tiiuae/Falcon3-7B-Base",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-falcon-40b-bf16",
+      "catalog": "marketplace",
+      "provider": "tiiuae",
+      "modelName": "Falcon 40B BF16",
+      "hfId": "tiiuae/falcon-40b",
+      "hfUrl": "https://huggingface.co/tiiuae/falcon-40b",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-falcon-h1-0-5b-instruct",
+      "catalog": "marketplace",
+      "provider": "tiiuae",
+      "modelName": "Falcon-H1-0.5B-Instruct",
+      "hfId": "tiiuae/Falcon-H1-0.5B-Instruct",
+      "hfUrl": "https://huggingface.co/tiiuae/Falcon-H1-0.5B-Instruct",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-falcon-h1-1-5b-deep-instruct",
+      "catalog": "marketplace",
+      "provider": "tiiuae",
+      "modelName": "Falcon-H1-1.5B-Deep-Instruct",
+      "hfId": "tiiuae/Falcon-H1-1.5B-Deep-Instruct",
+      "hfUrl": "https://huggingface.co/tiiuae/Falcon-H1-1.5B-Deep-Instruct",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-falcon-h1-1-5b-instruct",
+      "catalog": "marketplace",
+      "provider": "tiiuae",
+      "modelName": "Falcon-H1-1.5B-Instruct",
+      "hfId": "tiiuae/Falcon-H1-1.5B-Instruct",
+      "hfUrl": "https://huggingface.co/tiiuae/Falcon-H1-1.5B-Instruct",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-falcon-h1-34b-instruct",
+      "catalog": "marketplace",
+      "provider": "tiiuae",
+      "modelName": "Falcon-H1-34B-Instruct",
+      "hfId": "tiiuae/Falcon-H1-34B-Instruct",
+      "hfUrl": "https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-falcon-h1-3b-instruct",
+      "catalog": "marketplace",
+      "provider": "tiiuae",
+      "modelName": "Falcon-H1-3B-Instruct",
+      "hfId": "tiiuae/Falcon-H1-3B-Instruct",
+      "hfUrl": "https://huggingface.co/tiiuae/Falcon-H1-3B-Instruct",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-falcon-h1-7b-instruct",
+      "catalog": "marketplace",
+      "provider": "tiiuae",
+      "modelName": "Falcon-H1-7B-Instruct",
+      "hfId": "tiiuae/Falcon-H1-7B-Instruct",
+      "hfUrl": "https://huggingface.co/tiiuae/Falcon-H1-7B-Instruct",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-gemma-2-27b",
+      "catalog": "marketplace",
+      "provider": "google",
+      "modelName": "Gemma 2 27B",
+      "hfId": "google/gemma-2-27b",
+      "hfUrl": "https://huggingface.co/google/gemma-2-27b",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-gemma-2-27b-instruct",
+      "catalog": "marketplace",
+      "provider": "google",
+      "modelName": "Gemma 2 27B Instruct",
+      "hfId": "google/gemma-2-27b",
+      "hfUrl": "https://huggingface.co/google/gemma-2-27b",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-gemma-2-2b",
+      "catalog": "marketplace",
+      "provider": "google",
+      "modelName": "Gemma 2 2B",
+      "hfId": "google/gemma-2-2b",
+      "hfUrl": "https://huggingface.co/google/gemma-2-2b",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-gemma-2-2b-instruct",
+      "catalog": "marketplace",
+      "provider": "google",
+      "modelName": "Gemma 2 2B Instruct",
+      "hfId": "google/gemma-2-2b",
+      "hfUrl": "https://huggingface.co/google/gemma-2-2b",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-gemma-2-9b",
+      "catalog": "marketplace",
+      "provider": "google",
+      "modelName": "Gemma 2 9B",
+      "hfId": "google/gemma-2-9b",
+      "hfUrl": "https://huggingface.co/google/gemma-2-9b",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-gemma-2-9b-instruct",
+      "catalog": "marketplace",
+      "provider": "google",
+      "modelName": "Gemma 2 9B Instruct",
+      "hfId": "google/gemma-2-9b",
+      "hfUrl": "https://huggingface.co/google/gemma-2-9b",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-gemma-2b",
+      "catalog": "marketplace",
+      "provider": "google",
+      "modelName": "gemma-2b",
+      "hfId": "google/gemma-2b",
+      "hfUrl": "https://huggingface.co/google/gemma-2b",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-gemma-2b-instruct",
+      "catalog": "marketplace",
+      "provider": "google",
+      "modelName": "gemma-2b-it",
+      "hfId": "google/gemma-2b-it",
+      "hfUrl": "https://huggingface.co/google/gemma-2b-it",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-gemma-3-1b-instruct",
+      "catalog": "marketplace",
+      "provider": "google",
+      "modelName": "Gemma 3 1B Instruct",
+      "hfId": "google/gemma-3-1b-it",
+      "hfUrl": "https://huggingface.co/google/gemma-3-1b-it",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-gemma-7b",
+      "catalog": "marketplace",
+      "provider": "google",
+      "modelName": "gemma-7b",
+      "hfId": "google/gemma-7b",
+      "hfUrl": "https://huggingface.co/google/gemma-7b",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-gemma-7b-instruct",
+      "catalog": "marketplace",
+      "provider": "google",
+      "modelName": "gemma-7b-it",
+      "hfId": "google/gemma-7b-it",
+      "hfUrl": "https://huggingface.co/google/gemma-7b-it",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-huggingfaceh4-zephyr-7b-beta",
+      "catalog": "marketplace",
+      "provider": "HuggingFaceH4",
+      "modelName": "Zephyr 7B Beta",
+      "hfId": "HuggingFaceH4/zephyr-7b-beta",
+      "hfUrl": "https://huggingface.co/HuggingFaceH4/zephyr-7b-beta",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-llama3-8b-sealionv21-instruct",
+      "catalog": "marketplace",
+      "provider": "aisingapore",
+      "modelName": "Llama3 8B SEA-Lion v2.1 Instruct",
+      "hfId": "aisingapore/llama3-8b-cpt-sea-lionv2.1-instruct",
+      "hfUrl": "https://huggingface.co/aisingapore/llama3-8b-cpt-sea-lionv2.1-instruct",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-mistral-7b-openorca-gptq",
+      "catalog": "marketplace",
+      "provider": "TheBloke",
+      "modelName": "Mistral 7B OpenOrca GPTQ",
+      "hfId": "TheBloke/Mistral-7B-OpenOrca-GPTQ",
+      "hfUrl": "https://huggingface.co/TheBloke/Mistral-7B-OpenOrca-GPTQ",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-mistral-nemo-base-2407",
+      "catalog": "marketplace",
+      "provider": "mistralai",
+      "modelName": "Mistral Nemo Base 2407",
+      "hfId": "mistralai/Mistral-Nemo-Base-2407",
+      "hfUrl": "https://huggingface.co/mistralai/Mistral-Nemo-Base-2407",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-mistral-nemo-instruct-2407",
+      "catalog": "marketplace",
+      "provider": "mistralai",
+      "modelName": "Mistral Nemo Instruct 2407",
+      "hfId": "mistralai/Mistral-Nemo-Instruct-2407",
+      "hfUrl": "https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-mistral-small-24B-Instruct-2501",
+      "catalog": "marketplace",
+      "provider": "mistralai",
+      "modelName": "Mistral-Small-24B-Instruct-2501",
+      "hfId": "mistralai/Mistral-Small-24B-Instruct-2501",
+      "hfUrl": "https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-phi-2",
+      "catalog": "marketplace",
+      "provider": "microsoft",
+      "modelName": "Phi-2",
+      "hfId": "microsoft/phi-2",
+      "hfUrl": "https://huggingface.co/microsoft/phi-2",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-phi-3-5-mini-instruct",
+      "catalog": "marketplace",
+      "provider": "microsoft",
+      "modelName": "Phi-3.5-mini-instruct",
+      "hfId": "microsoft/Phi-3.5-mini-instruct",
+      "hfUrl": "https://huggingface.co/microsoft/Phi-3.5-mini-instruct",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-phi-3-mini-128k-instruct",
+      "catalog": "marketplace",
+      "provider": "microsoft",
+      "modelName": "Phi-3-Mini-128K-Instruct",
+      "hfId": "microsoft/Phi-3-mini-128k-instruct",
+      "hfUrl": "https://huggingface.co/microsoft/Phi-3-mini-128k-instruct",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-phi-3-mini-4k-instruct",
+      "catalog": "marketplace",
+      "provider": "microsoft",
+      "modelName": "Phi-3-mini-4k-instruct",
+      "hfId": "microsoft/Phi-3-mini-4k-instruct",
+      "hfUrl": "https://huggingface.co/microsoft/Phi-3-mini-4k-instruct",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-qwen2-5-14b-instruct",
+      "catalog": "marketplace",
+      "provider": "Qwen",
+      "modelName": "Qwen2.5 14B Instruct",
+      "hfId": "Qwen/Qwen2.5-14B-Instruct",
+      "hfUrl": "https://huggingface.co/Qwen/Qwen2.5-14B-Instruct",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-qwen2-5-32b-instruct",
+      "catalog": "marketplace",
+      "provider": "Qwen",
+      "modelName": "Qwen2.5 32B Instruct",
+      "hfId": "Qwen/Qwen2.5-32B-Instruct",
+      "hfUrl": "https://huggingface.co/Qwen/Qwen2.5-32B-Instruct",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-qwen2-5-72b-instruct",
+      "catalog": "marketplace",
+      "provider": "Qwen",
+      "modelName": "Qwen2.5-72B-Instruct",
+      "hfId": "Qwen/Qwen2.5-72B-Instruct",
+      "hfUrl": "https://huggingface.co/Qwen/Qwen2.5-72B-Instruct",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-qwen2-5-7b-instruct",
+      "catalog": "marketplace",
+      "provider": "Qwen",
+      "modelName": "Qwen2.5-7B-Instruct",
+      "hfId": "Qwen/Qwen2.5-7B-Instruct",
+      "hfUrl": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-qwen2-5-coder-32b-instruct",
+      "catalog": "marketplace",
+      "provider": "Qwen",
+      "modelName": "Qwen2.5 Coder 32B Instruct",
+      "hfId": "Qwen/Qwen2.5-Coder-32B-Instruct",
+      "hfUrl": "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-qwen2-5-coder-7b-instruct",
+      "catalog": "marketplace",
+      "provider": "Qwen",
+      "modelName": "Qwen2.5 Coder 7B Instruct",
+      "hfId": "Qwen/Qwen2.5-Coder-7B-Instruct",
+      "hfUrl": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-snowflake-arctic-instruct-vllm",
+      "catalog": "marketplace",
+      "provider": "Snowflake",
+      "modelName": "Snowflake Arctic Instruct Vllm",
+      "hfId": "Snowflake/snowflake-arctic-instruct-vllm",
+      "hfUrl": "https://huggingface.co/Snowflake/snowflake-arctic-instruct-vllm",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-thebloke-mistral-7b-openorca-awq",
+      "catalog": "marketplace",
+      "provider": "TheBloke",
+      "modelName": "Mistral 7B OpenOrca AWQ",
+      "hfId": "TheBloke/Mistral-7B-OpenOrca-AWQ",
+      "hfUrl": "https://huggingface.co/TheBloke/Mistral-7B-OpenOrca-AWQ",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-tiiuae-falcon-rw-1b",
+      "catalog": "marketplace",
+      "provider": "tiiuae",
+      "modelName": "Falcon RW 1B",
+      "hfId": "tiiuae/falcon-rw-1b",
+      "hfUrl": "https://huggingface.co/tiiuae/falcon-rw-1b",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-writer-palmyra-small",
+      "catalog": "marketplace",
+      "provider": "Writer",
+      "modelName": "Writer Palmyra Small",
+      "hfId": "Writer/palmyra-small",
+      "hfUrl": "https://huggingface.co/Writer/palmyra-small",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-yi-1-5-34b",
+      "catalog": "marketplace",
+      "provider": "01-ai",
+      "modelName": "Yi-1.5-34B",
+      "hfId": "01-ai/Yi-1.5-34B",
+      "hfUrl": "https://huggingface.co/01-ai/Yi-1.5-34B",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-llm-yi-1-5-9b",
+      "catalog": "marketplace",
+      "provider": "01-ai",
+      "modelName": "Yi-1.5-9B",
+      "hfId": "01-ai/Yi-1.5-9B",
+      "hfUrl": "https://huggingface.co/01-ai/Yi-1.5-9B",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-reasoning-qwen3-06b",
+      "catalog": "marketplace",
+      "provider": "Qwen",
+      "modelName": "Qwen3-0.6B",
+      "hfId": "Qwen/Qwen3-0.6B",
+      "hfUrl": "https://huggingface.co/Qwen/Qwen3-0.6B",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-reasoning-qwen3-32b",
+      "catalog": "marketplace",
+      "provider": "Qwen",
+      "modelName": "Qwen3-32B",
+      "hfId": "Qwen/Qwen3-32B",
+      "hfUrl": "https://huggingface.co/Qwen/Qwen3-32B",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-reasoning-qwen3-4b",
+      "catalog": "marketplace",
+      "provider": "Qwen",
+      "modelName": "Qwen3-4B",
+      "hfId": "Qwen/Qwen3-4B",
+      "hfUrl": "https://huggingface.co/Qwen/Qwen3-4B",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-reasoning-qwen3-8b",
+      "catalog": "marketplace",
+      "provider": "Qwen",
+      "modelName": "Qwen3-8B",
+      "hfId": "Qwen/Qwen3-8B",
+      "hfUrl": "https://huggingface.co/Qwen/Qwen3-8B",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-summarization-bart-large-cnn-samsum",
+      "catalog": "marketplace",
+      "provider": "philschmid",
+      "modelName": "Bart Large CNN samsum",
+      "hfId": "philschmid/bart-large-cnn-samsum",
+      "hfUrl": "https://huggingface.co/philschmid/bart-large-cnn-samsum",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-summarization-distilbart-cnn-12-6",
+      "catalog": "marketplace",
+      "provider": "sshleifer",
+      "modelName": "Distilbart CNN 12-6",
+      "hfId": "sshleifer/distilbart-cnn-12-6",
+      "hfUrl": "https://huggingface.co/sshleifer/distilbart-cnn-12-6",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-summarization-distilbart-cnn-6-6",
+      "catalog": "marketplace",
+      "provider": "sshleifer",
+      "modelName": "Distilbart CNN 6-6",
+      "hfId": "sshleifer/distilbart-cnn-6-6",
+      "hfUrl": "https://huggingface.co/sshleifer/distilbart-cnn-6-6",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-summarization-distilbart-xsum-1-1",
+      "catalog": "marketplace",
+      "provider": "sshleifer",
+      "modelName": "Text Summarization",
+      "hfId": "sshleifer/distilbart-xsum-1-1",
+      "hfUrl": "https://huggingface.co/sshleifer/distilbart-xsum-1-1",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-text2text-flan-t5-base",
+      "catalog": "marketplace",
+      "provider": "google",
+      "modelName": "Flan-T5 Base",
+      "hfId": "google/flan-t5-base",
+      "hfUrl": "https://huggingface.co/google/flan-t5-base",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-text2text-flan-t5-base-samsum",
+      "catalog": "marketplace",
+      "provider": "philschmid",
+      "modelName": "Flan-T5 Base Model Fine-tuned on the Samsum Dataset",
+      "hfId": "philschmid/flan-t5-base-samsum",
+      "hfUrl": "https://huggingface.co/philschmid/flan-t5-base-samsum",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-text2text-flan-t5-large",
+      "catalog": "marketplace",
+      "provider": "google",
+      "modelName": "Flan-T5 Large",
+      "hfId": "google/flan-t5-large",
+      "hfUrl": "https://huggingface.co/google/flan-t5-large",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-text2text-flan-t5-small",
+      "catalog": "marketplace",
+      "provider": "google",
+      "modelName": "Flan-T5 Small",
+      "hfId": "google/flan-t5-small",
+      "hfUrl": "https://huggingface.co/google/flan-t5-small",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-textgeneration-bloom-1b1",
+      "catalog": "marketplace",
+      "provider": "bigscience",
+      "modelName": "Bloom 1b1",
+      "hfId": "bigscience/bloom-1b1",
+      "hfUrl": "https://huggingface.co/bigscience/bloom-1b1",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-textgeneration-bloomz-1b7",
+      "catalog": "marketplace",
+      "provider": "bigscience",
+      "modelName": "Bloomz 1b7",
+      "hfId": "bigscience/bloomz-1b7",
+      "hfUrl": "https://huggingface.co/bigscience/bloomz-1b7",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-textgeneration-distilgpt2",
+      "catalog": "marketplace",
+      "provider": "distilbert",
+      "modelName": "DistilGPT 2",
+      "hfId": "distilbert/distilgpt2",
+      "hfUrl": "https://huggingface.co/distilbert/distilgpt2",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-textgeneration-dolly-v2-12b-bf16",
+      "catalog": "marketplace",
+      "provider": "databricks",
+      "modelName": "Dolly V2 12b BF16",
+      "hfId": "databricks/dolly-v2-12b",
+      "hfUrl": "https://huggingface.co/databricks/dolly-v2-12b",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-textgeneration-dolly-v2-3b-bf16",
+      "catalog": "marketplace",
+      "provider": "databricks",
+      "modelName": "Dolly V2 3b BF16",
+      "hfId": "databricks/dolly-v2-3b",
+      "hfUrl": "https://huggingface.co/databricks/dolly-v2-3b",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-textgeneration-gpt2",
+      "catalog": "marketplace",
+      "provider": "openai-community",
+      "modelName": "GPT 2",
+      "hfId": "openai-community/gpt2",
+      "hfUrl": "https://huggingface.co/openai-community/gpt2",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-textgeneration1-bloom-3b",
+      "catalog": "marketplace",
+      "provider": "bigscience",
+      "modelName": "Bloom 3B",
+      "hfId": "bigscience/bloom-3b",
+      "hfUrl": "https://huggingface.co/bigscience/bloom-3b",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-textgeneration1-bloom-7b1",
+      "catalog": "marketplace",
+      "provider": "bigscience",
+      "modelName": "Bloom 7B1",
+      "hfId": "bigscience/bloom-7b1",
+      "hfUrl": "https://huggingface.co/bigscience/bloom-7b1",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-textgeneration1-bloomz-7b1-fp16",
+      "catalog": "marketplace",
+      "provider": "bigscience",
+      "modelName": "BloomZ 7B1 FP16",
+      "hfId": "bigscience/bloomz-7b1",
+      "hfUrl": "https://huggingface.co/bigscience/bloomz-7b1",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-textgeneration1-gpt-2-xl",
+      "catalog": "marketplace",
+      "provider": "openai-community",
+      "modelName": "GPT-2 XL",
+      "hfId": "openai-community/gpt2-xl",
+      "hfUrl": "https://huggingface.co/openai-community/gpt2-xl",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-textgeneration1-gpt-j-6b",
+      "catalog": "marketplace",
+      "provider": "EleutherAI",
+      "modelName": "GPT-J 6B",
+      "hfId": "EleutherAI/gpt-j-6B",
+      "hfUrl": "https://huggingface.co/EleutherAI/gpt-j-6B",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-textgeneration1-gpt-neo-125m",
+      "catalog": "marketplace",
+      "provider": "EleutherAI",
+      "modelName": "GPT-Neo 125M",
+      "hfId": "EleutherAI/gpt-neo-125M",
+      "hfUrl": "https://huggingface.co/EleutherAI/gpt-neo-125M",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-textgeneration1-mpt-7b-bf16",
+      "catalog": "marketplace",
+      "provider": "mosaicml",
+      "modelName": "MPT 7B BF16",
+      "hfId": "mosaicml/mpt-7b",
+      "hfUrl": "https://huggingface.co/mosaicml/mpt-7b",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-textgeneration1-mpt-7b-instruct-bf16",
+      "catalog": "marketplace",
+      "provider": "mosaicml",
+      "modelName": "MPT 7B Instruct BF16",
+      "hfId": "mosaicml/mpt-7b-instruct",
+      "hfUrl": "https://huggingface.co/mosaicml/mpt-7b-instruct",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-textgeneration2-gpt-neox-20b-fp16",
+      "catalog": "marketplace",
+      "provider": "EleutherAI",
+      "modelName": "gpt-neox-20b",
+      "hfId": "EleutherAI/gpt-neox-20b",
+      "hfUrl": "https://huggingface.co/EleutherAI/gpt-neox-20b",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-vlm-gemma-3-27b-instruct",
+      "catalog": "marketplace",
+      "provider": "google",
+      "modelName": "Gemma 3 27B Instruct",
+      "hfId": "google/gemma-3-27b-it",
+      "hfUrl": "https://huggingface.co/google/gemma-3-27b-it",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-vlm-gemma-3-4b-instruct",
+      "catalog": "marketplace",
+      "provider": "google",
+      "modelName": "Gemma 3 4B Instruct",
+      "hfId": "google/gemma-3-4b-it",
+      "hfUrl": "https://huggingface.co/google/gemma-3-4b-it",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-vlm-mistral-pixtral-12b-2409",
+      "catalog": "marketplace",
+      "provider": "mistralai",
+      "modelName": "Mistral Pixtral-12B-2409",
+      "hfId": "mistralai/Pixtral-12B-2409",
+      "hfUrl": "https://huggingface.co/mistralai/Pixtral-12B-2409",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-vlm-mistral-small-3-1-24b-base-2503",
+      "catalog": "marketplace",
+      "provider": "mistralai",
+      "modelName": "Mistral-Small-3.1-24B-Base-2503",
+      "hfId": "mistralai/Mistral-Small-3.1-24B-Base-2503",
+      "hfUrl": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Base-2503",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "huggingface-vlm-mistral-small-3-2-24b-instruct-2506",
+      "catalog": "marketplace",
+      "provider": "mistralai",
+      "modelName": "Mistral-Small-3.2-24B-Instruct-2506",
+      "hfId": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+      "hfUrl": "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+      "confidence": "confirmed",
+      "evidence": "HubContentDocument.Url"
+    },
+    {
+      "bedrockModelId": "ibm-granite-20b-code-instruct-8k",
+      "catalog": "marketplace",
+      "provider": "ibm data and ai",
+      "modelName": "IBM Granite 20B Code Instruct - 8K",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "ibm-granite-3-2-2b-instruct",
+      "catalog": "marketplace",
+      "provider": "ibm data and ai",
+      "modelName": "IBM Granite 3.2 Instruct 2B",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "ibm-granite-3-2-8b-instruct",
+      "catalog": "marketplace",
+      "provider": "ibm data and ai",
+      "modelName": "IBM Granite 3.2 Instruct 8B",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "ibm-granite-34b-code-instruct-8k",
+      "catalog": "marketplace",
+      "provider": "ibm data and ai",
+      "modelName": "IBM Granite 34B Code Instruct - 8K",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "ibm-granite-3b-code-instruct-128k",
+      "catalog": "marketplace",
+      "provider": "ibm data and ai",
+      "modelName": "IBM Granite 3B Code Instruct - 128K",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "ibm-granite-8b-code-instruct-128k",
+      "catalog": "marketplace",
+      "provider": "ibm data and ai",
+      "modelName": "IBM Granite 8B Code Instruct - 128K",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "inception-mercury",
+      "catalog": "marketplace",
+      "provider": "inception",
+      "modelName": "Mercury",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "inception-mercury-coder",
+      "catalog": "marketplace",
+      "provider": "inception",
+      "modelName": "Mercury Coder",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "jbai-mellum-all",
+      "catalog": "marketplace",
+      "provider": "jetbrains s.r.o.",
+      "modelName": "JetBrains AI Mellum All",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "jbai-mellum-kotlin",
+      "catalog": "marketplace",
+      "provider": "jetbrains s.r.o.",
+      "modelName": "JetBrains AI Mellum Kotlin",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "jbai-mellum-python",
+      "catalog": "marketplace",
+      "provider": "jetbrains s.r.o.",
+      "modelName": "JetBrains AI Mellum Python",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "john-snow-labs-medical-summarization-qa-8b",
+      "catalog": "marketplace",
+      "provider": "john snow labs",
+      "modelName": "Medical LLM - Medium",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "john-snow-labs-medical-translation-en-es",
+      "catalog": "marketplace",
+      "provider": "john snow labs",
+      "modelName": "Medical Text Translation (EN-ES)",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "john-snow-labs-summarization-qa",
+      "catalog": "marketplace",
+      "provider": "john snow labs",
+      "modelName": "Medical LLM - Small",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "karakuri-lm-8x7b-instruct",
+      "catalog": "marketplace",
+      "provider": "karakuri, inc.",
+      "modelName": "KARAKURI LM 8x7b instruct",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "lg-ixi-gen",
+      "catalog": "marketplace",
+      "provider": "lg u+",
+      "modelName": "ixi-GEN-Fin-7.8B",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "liquid-lfm-40b-a100",
+      "catalog": "marketplace",
+      "provider": "liquid ai",
+      "modelName": "Liquid LFM 40B (A100)",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "liquid-lfm-40b-h100",
+      "catalog": "marketplace",
+      "provider": "liquid ai",
+      "modelName": "Liquid LFM 40B (H100)",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "liquid-lfm-40b-l40s",
+      "catalog": "marketplace",
+      "provider": "liquid ai",
+      "modelName": "Liquid LFM 40B (L40S)",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "liquid-lfm-7b-l40s",
+      "catalog": "marketplace",
+      "provider": "liquid ai",
+      "modelName": "Liquid LFM 7B (L40S)",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "ncsoft-ko-13b-ist",
+      "catalog": "marketplace",
+      "provider": "ncsoft",
+      "modelName": "VARCO LLM KO/EN-13B-IST",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "ncsoft-llama-3-varco-offsetbias-8b",
+      "catalog": "marketplace",
+      "provider": "ncsoft",
+      "modelName": "Llama-3-Varco-Offsetbias-8B",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "nvidia-nemotron-4-15b-nim",
+      "catalog": "marketplace",
+      "provider": "nvidia",
+      "modelName": "NVIDIA Nemotron-4 15B NIM Microservice",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "nvidia-nemotron-nano-8b-nim",
+      "catalog": "marketplace",
+      "provider": "nvidia",
+      "modelName": "Llama 3.1 Nemotron Nano 8B V1",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "nvidia-nemotron-super-49b-nim",
+      "catalog": "marketplace",
+      "provider": "nvidia",
+      "modelName": "Llama 3.3 Nemotron Super 49B V1",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "preferred-networks-plamo-api",
+      "catalog": "marketplace",
+      "provider": "preferred networks, inc.",
+      "modelName": "PLaMo Private Deployment",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "protopia-llama-3-1-8b-instruct",
+      "catalog": "marketplace",
+      "provider": "protopia ai, inc.",
+      "modelName": "Llama-3.1-8B-Instruct with Stained Glass Transform Support",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "stabilityai-stable-diffusion-3-5-large",
+      "catalog": "marketplace",
+      "provider": "stability ai",
+      "modelName": "Stable Diffusion 3.5 Large",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "stockmark-llm-13b",
+      "catalog": "marketplace",
+      "provider": "stockmark inc.",
+      "modelName": "Stockmark-LLM-13b",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "upstage-solar-mini-chat-quant",
+      "catalog": "marketplace",
+      "provider": "upstage",
+      "modelName": "Solar Mini - Quant",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "upstage-solar-pro",
+      "catalog": "marketplace",
+      "provider": "upstage",
+      "modelName": "Solar Pro 2",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "upstage-solar-pro-quantized",
+      "catalog": "marketplace",
+      "provider": "upstage",
+      "modelName": "Solar Pro - Quant",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "voyage-3-embedding",
+      "catalog": "marketplace",
+      "provider": "voyage ai",
+      "modelName": "voyage-3 Embedding Model",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "widn-llama3-tower-vesuvius",
+      "catalog": "marketplace",
+      "provider": "widn.ai",
+      "modelName": "Widn Tower Vesuvius",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "widn-tower-anthill",
+      "catalog": "marketplace",
+      "provider": "widn.ai",
+      "modelName": "Widn Tower Anthill",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "widn-tower-sugarloaf",
+      "catalog": "marketplace",
+      "provider": "widn.ai",
+      "modelName": "Widn Tower Sugarloaf",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "writer-palmyra-fin-70b-32k",
+      "catalog": "marketplace",
+      "provider": "writer",
+      "modelName": "Writer Palmyra-Fin-70B-32K",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    },
+    {
+      "bedrockModelId": "writer-palmyra-med-70b-32k",
+      "catalog": "marketplace",
+      "provider": "writer",
+      "modelName": "Writer Palmyra-Med-70B-32K",
+      "confidence": "proprietary",
+      "evidence": "keyword @model-type:proprietary"
+    }
+  ]
+}
