@@ -3,7 +3,72 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>hf-bedrock-map · Hugging Face ↔ Amazon Bedrock</title>
+<title>hf-bedrock-map — Is a Hugging Face model available on Amazon Bedrock?</title>
+
+<!-- SEO -->
+<meta name="description" content="Look up whether a Hugging Face model is already served by Amazon Bedrock (US regions). Daily-refreshed mapping of Bedrock's native serverless FMs and Marketplace models to their Hugging Face repos, with a free static JSON API for integrations.">
+<meta name="keywords" content="Hugging Face, Amazon Bedrock, model mapping, Bedrock foundation models, HF to Bedrock, self-hosted LLM, GPU cost optimization, Bedrock Marketplace, JumpStart, Qwen, Llama, DeepSeek, Mistral, model availability API">
+<meta name="author" content="scttfrdmn">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://scttfrdmn.github.io/hf-bedrock-map/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="hf-bedrock-map">
+<meta property="og:title" content="hf-bedrock-map — Is a Hugging Face model available on Amazon Bedrock?">
+<meta property="og:description" content="Daily-refreshed mapping between Hugging Face model repos and the models Amazon Bedrock can serve (US regions). Searchable UI + free static JSON API for integrations.">
+<meta property="og:url" content="https://scttfrdmn.github.io/hf-bedrock-map/">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="hf-bedrock-map — Hugging Face ↔ Amazon Bedrock">
+<meta name="twitter:description" content="Is a model you're self-hosting already served by Bedrock? Search by HF repo or Bedrock modelId. Free static JSON API included.">
+
+<!-- Structured data: describe the app and the underlying dataset for search
+     engines and AI agents / crawlers. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "hf-bedrock-map",
+      "url": "https://scttfrdmn.github.io/hf-bedrock-map/",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Any (web)",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "description": "Look up whether a Hugging Face model is already served by Amazon Bedrock (US regions). Maps Bedrock's native serverless foundation models and Marketplace models to their Hugging Face repositories.",
+      "keywords": "Hugging Face, Amazon Bedrock, model mapping, model availability, self-hosted LLM, GPU cost optimization",
+      "author": { "@type": "Person", "name": "scttfrdmn" },
+      "license": "https://www.apache.org/licenses/LICENSE-2.0",
+      "codeRepository": "https://github.com/scttfrdmn/hf-bedrock-map"
+    },
+    {
+      "@type": "Dataset",
+      "name": "hf-bedrock-map mapping",
+      "description": "Daily-refreshed mapping between Hugging Face model repositories and the models Amazon Bedrock can serve across the US regions (us-east-1, us-east-2, us-west-1, us-west-2). Each entry records the Bedrock modelId, catalog, provider, resolved Hugging Face repo, a match-status level, and serving regions.",
+      "url": "https://scttfrdmn.github.io/hf-bedrock-map/",
+      "license": "https://www.apache.org/licenses/LICENSE-2.0",
+      "creator": { "@type": "Person", "name": "scttfrdmn" },
+      "keywords": ["Hugging Face", "Amazon Bedrock", "foundation models", "LLM", "model catalog"],
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "name": "Full forward mapping (JSON)",
+          "encodingFormat": "application/json",
+          "contentUrl": "https://scttfrdmn.github.io/hf-bedrock-map/mapping.json"
+        },
+        {
+          "@type": "DataDownload",
+          "name": "Reverse-lookup index (HF id -> Bedrock, JSON)",
+          "encodingFormat": "application/json",
+          "contentUrl": "https://scttfrdmn.github.io/hf-bedrock-map/api/v1/index.json"
+        }
+      ]
+    }
+  ]
+}
+</script>
 <style>
   :root {
     --bg: #0d1117; --panel: #161b22; --border: #30363d; --fg: #e6edf3;

@@ -1,0 +1,47 @@
+# hf-bedrock-map
+
+> A daily-refreshed mapping between Hugging Face model repositories and the
+> models Amazon Bedrock can serve across the US regions. Answers: "is the HF
+> model I'm about to self-host already available on Bedrock on demand?"
+
+## What this is
+
+- Enumerates Bedrock's native serverless foundation models
+  (bedrock:ListFoundationModels) plus the Bedrock Marketplace subset of the
+  SageMaker JumpStart hub (@capability:bedrock_console).
+- Unions the four US regions (us-east-1, us-east-2, us-west-1, us-west-2); the
+  catalog varies by region. Each entry records which of these regions serve it.
+- Resolves each entry to a Hugging Face repo where evidence supports it.
+- Regenerated daily and served as static files (no backend, permissive CORS).
+
+## Match-status levels (field name: "confidence")
+
+- confirmed   — HF repo linked by AWS itself (model-card EULA / JumpStart doc /
+                verified override). Authoritative.
+- validated   — AWS gives no HF link; repo inferred from the modelId and
+                confirmed to exist under the provider's HF org.
+- ambiguous   — on HF, but multiple variants exist and the modelId can't say
+                which is served (candidates listed in the entry's "evidence").
+- proprietary — closed-weight provider; no public HF equivalent by design.
+- unresolved  — on Bedrock, but no HF repo determinable.
+
+## Data and API (all static JSON, CORS: *)
+
+- Full forward mapping: https://scttfrdmn.github.io/hf-bedrock-map/mapping.json
+- Reverse index (HF id -> Bedrock): https://scttfrdmn.github.io/hf-bedrock-map/api/v1/index.json
+- Per-model reverse lookup (case-insensitive):
+  GET https://scttfrdmn.github.io/hf-bedrock-map/api/v1/hf/{org}/{repo}.json
+  -> 200 with details if served by Bedrock, 404 if not.
+  Example: /api/v1/hf/qwen/qwen3-32b.json
+
+## Programmatic use
+
+To check whether a Hugging Face repo is on Bedrock, lowercase the id and GET the
+per-model endpoint; treat 404 as "not served". For bulk/offline checks,
+download index.json once (keys are lowercased HF ids) and look up locally.
+
+## More
+
+- API reference and client snippets: https://github.com/scttfrdmn/hf-bedrock-map/blob/main/docs/API.md
+- Source and README: https://github.com/scttfrdmn/hf-bedrock-map
+- License: Apache-2.0
