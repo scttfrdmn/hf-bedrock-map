@@ -37,10 +37,11 @@ const (
 	publicHub = "SageMakerPublicHub"
 
 	// describeConcurrency bounds parallel DescribeHubContent calls. The
-	// SageMaker DescribeHubContent limit is low and throttles readily; a
-	// small pool plus the adaptive retryer configured in run() keeps us
-	// under it while still beating fully-sequential wall-clock.
-	describeConcurrency = 3
+	// SageMaker DescribeHubContent limit is low and throttles readily. This is
+	// a daily batch job with no wall-clock pressure, so we keep the pool small
+	// (gentle on the API) and lean on the adaptive retryer in run() to absorb
+	// any residual throttling.
+	describeConcurrency = 2
 
 	// listPageSize is the ListHubContents page size (100 is the API max).
 	listPageSize = 100
@@ -159,10 +160,16 @@ func run() error {
 	// throttle-prone DescribeHubContent calls at ~1x, not Nx.
 	byID := map[string]*Entry{}
 
+	// A single region blipping (throttle, transient outage) shouldn't sink the
+	// whole daily union. Log-and-continue per region, but track which succeeded
+	// so the output reports honest coverage — and fail loudly only if *every*
+	// region failed (so we never overwrite good data with an empty mapping).
+	var okRegions []string
 	for _, region := range regions {
 		cfg, err := loadRegionConfig(ctx, region)
 		if err != nil {
-			return fmt.Errorf("load AWS config for %s: %w", region, err)
+			log.Printf("[%s] WARN skipping region: load AWS config: %v", region, err)
+			continue
 		}
 		bedrockClient := bedrock.NewFromConfig(cfg)
 		smClient := sagemaker.NewFromConfig(cfg)
@@ -170,12 +177,14 @@ func run() error {
 		log.Printf("[%s] collecting native foundation models...", region)
 		fmEntries, err := collectFoundationModels(ctx, bedrockClient, res)
 		if err != nil {
-			return fmt.Errorf("collect foundation models in %s: %w", region, err)
+			log.Printf("[%s] WARN skipping region: collect foundation models: %v", region, err)
+			continue
 		}
 		log.Printf("[%s] collecting marketplace / JumpStart hub contents...", region)
 		mpEntries, err := collectMarketplace(ctx, smClient)
 		if err != nil {
-			return fmt.Errorf("collect marketplace in %s: %w", region, err)
+			log.Printf("[%s] WARN skipping region: collect marketplace: %v", region, err)
+			continue
 		}
 
 		added := 0
@@ -189,8 +198,17 @@ func run() error {
 			byID[e.BedrockModelID] = &ecopy
 			added++
 		}
+		okRegions = append(okRegions, region)
 		log.Printf("[%s] %d native + %d marketplace; %d new to union (total %d)",
 			region, len(fmEntries), len(mpEntries), added, len(byID))
+	}
+
+	if len(okRegions) == 0 {
+		return fmt.Errorf("all %d region(s) failed; refusing to write an empty mapping", len(regions))
+	}
+	if len(okRegions) < len(regions) {
+		log.Printf("WARN partial coverage: %d of %d regions succeeded (%s); mapping reflects only these",
+			len(okRegions), len(regions), strings.Join(okRegions, ", "))
 	}
 
 	entries := make([]Entry, 0, len(byID))
@@ -216,7 +234,7 @@ func run() error {
 
 	m := Mapping{
 		GeneratedAt: time.Now().UTC().Format(time.RFC3339),
-		Regions:     regions,
+		Regions:     okRegions, // honest coverage: only regions actually queried
 		Counts:      counts,
 		Entries:     entries,
 	}
