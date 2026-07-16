@@ -59,8 +59,9 @@ no per-region policy change is needed.
 
 - `bedrock:ListFoundationModels` is **not paginated**; returns the full catalog.
 - `sagemaker:ListHubContents` pages at 100/call via `NextToken`.
-- `DescribeHubContent` **throttles readily** — hence `describeConcurrency = 3`
-  plus an adaptive retryer in `run()`. Don't raise concurrency without retesting.
+- `DescribeHubContent` **throttles readily** — hence `describeConcurrency = 2`
+  plus an adaptive retryer in `run()`. This is a daily batch job; don't raise
+  concurrency for speed.
 - The Bedrock Marketplace subset is identified by the
   `@capability:bedrock_console` search keyword on hub summaries.
 - Authoritative native-FM HF ids live in each model card's "End User License
@@ -68,21 +69,24 @@ no per-region policy change is needed.
   lookups but the search endpoint is case-insensitive; the resolver reads the
   canonical id back rather than trusting guessed casing.
 
-## Known scope gaps / decisions to revisit
+## Backlog
 
-- `ambiguous` rows (multiple real HF variants, modelId can't disambiguate) are
-  flagged, not asserted — per an explicit "map to base family, else flag"
-  decision. They're the natural curation backlog: promote to `native_overrides`
-  once the served variant is confirmed. See any row's `evidence` for candidates.
-- Two Mistral natives (`mistral-large-2402`, `pixtral-large-2502`) are
-  `unresolved` — no matching public HF repo (date-stamped repos differ, or
-  API-only). Curate if the served checkpoint is confirmed.
-- Model-card scraping depends on the AWS doc HTML structure; `cards.go` fails
-  loudly if the index yields zero card links (structure changed).
-- No dedup when the same HF id resolves from both a native FM row and a
-  Marketplace row (intentional — both are valid Bedrock paths to that model).
-- Region union dedups by `bedrockModelId`: the first region to surface a model
-  resolves it; later regions only append to its `regions` list. So HF resolution
-  and DescribeHubContent run ~1x, not once per region. If AWS ever served the
-  same modelId with *different* metadata per region, this would take the first;
-  not observed in practice.
+Tracked as GitHub Issues + milestones, not here — see
+<https://github.com/scttfrdmn/hf-bedrock-map/issues>. Open new work as issues
+(labels: `data-quality`, `resilience`, `test-coverage`, `api`, `infra`); don't
+reintroduce a TODO list in this file.
+
+## Intentional design decisions (context, not bugs)
+
+- **Ambiguous, not guessed.** When multiple real HF variants exist and the
+  modelId can't disambiguate, the resolver emits `ambiguous` with candidates in
+  `evidence` rather than asserting one — a wrong assert is worse than "unknown"
+  for the detector use case. Curation promotes these to `native_overrides`.
+- **No dedup across catalogs.** The same HF id can appear as both a native FM
+  row and a Marketplace row; both are kept — they're distinct valid Bedrock
+  paths to that model.
+- **Region union dedups by `bedrockModelId`.** First region to surface a model
+  resolves it; later regions only append to its `regions` list, so HF
+  resolution and DescribeHubContent run ~1x, not once per region. If AWS ever
+  served the same modelId with *different* metadata per region this would take
+  the first; not observed in practice.
