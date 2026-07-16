@@ -1,6 +1,7 @@
 # Local refresh output — written to repo root during `go run ./cmd/refresh`.
-# The committed copy lives at docs/mapping.json (written by CI), not here.
+# The committed copies live under docs/ (written by CI with OUTPUT_DIR=docs).
 /mapping.json
+/api/
 
 # Go build artifacts
 /refresh

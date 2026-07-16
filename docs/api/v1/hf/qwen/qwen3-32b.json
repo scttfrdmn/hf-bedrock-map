@@ -1,0 +1,33 @@
+{
+  "hfId": "Qwen/Qwen3-32B",
+  "onBedrock": true,
+  "regions": [
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2"
+  ],
+  "bedrock": [
+    {
+      "modelId": "huggingface-reasoning-qwen3-32b",
+      "catalog": "marketplace",
+      "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ]
+    },
+    {
+      "modelId": "qwen.qwen3-32b-v1:0",
+      "catalog": "foundation-model",
+      "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ]
+    }
+  ]
+}

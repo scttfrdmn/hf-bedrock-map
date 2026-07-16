@@ -68,6 +68,7 @@
   .badge.proprietary { background: var(--proprietary); }
   .badge.unresolved { background: var(--unresolved); }
   .cat { font-size: 12px; color: var(--muted); }
+  td.regions { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; color: var(--muted); white-space: nowrap; }
   .evidence { color: var(--muted); font-size: 12px; max-width: 340px; }
   .empty { text-align: center; color: var(--muted); padding: 40px; }
   footer { max-width: 1100px; margin: 0 auto; padding: 20px; color: var(--muted); font-size: 12px; }
@@ -80,6 +81,10 @@
   <p class="tagline">
     Is a model you're self-hosting already served by Bedrock? Search by
     Hugging Face repo (e.g. <code>Qwen/Qwen3-32B</code>) or Bedrock modelId.
+    Covers the <strong>US regions only</strong> (us-east-1/2, us-west-1/2),
+    unioned — the catalog varies by region.
+    Building an integration? There's a <a href="API.md">reverse-lookup API</a>
+    (<code>GET api/v1/hf/{org}/{repo}.json</code>).
   </p>
 </header>
 <main>
@@ -95,6 +100,7 @@
         <th data-sort="bedrockModelId">Bedrock modelId</th>
         <th data-sort="provider">Provider</th>
         <th data-sort="confidence">Confidence</th>
+        <th data-sort="regions">US regions</th>
         <th data-sort="evidence">Evidence</th>
       </tr>
     </thead>
@@ -165,6 +171,7 @@ function render() {
       `<td class="model">${e.bedrockModelId}<div class="cat">${e.catalog}</div></td>` +
       `<td>${e.provider || "—"}</td>` +
       `<td><span class="badge ${e.confidence}" title="${CONFIDENCE_HELP[e.confidence]}">${e.confidence}</span></td>` +
+      `<td class="regions">${(e.regions || []).map((r) => r.replace(/^us-/, "")).join(", ")}</td>` +
       `<td class="evidence">${e.evidence || ""}</td>`;
     tb.appendChild(tr);
   }
@@ -194,9 +201,11 @@ async function load() {
     const data = await res.json();
     ENTRIES = data.entries || [];
     const gen = data.generatedAt ? new Date(data.generatedAt).toUTCString() : "unknown";
+    const regions = (data.regions || []).join(", ") || "?";
     $("footer").innerHTML =
-      `Data generated ${gen} from region <code>${data.region || "?"}</code> · ` +
+      `Data generated ${gen}, unioned across US regions <code>${regions}</code> · ` +
       `${data.counts?.total ?? ENTRIES.length} Bedrock-servable models · ` +
+      `For other regions, fork and set <code>BEDROCK_REGIONS</code> · ` +
       `<a href="https://github.com/scttfrdmn/hf-bedrock-map">source</a>`;
     render();
   } catch (err) {

@@ -1,0 +1,21 @@
+{
+  "hfId": "distilbert/distilgpt2",
+  "onBedrock": true,
+  "regions": [
+    "us-east-1",
+    "us-east-2",
+    "us-west-2"
+  ],
+  "bedrock": [
+    {
+      "modelId": "huggingface-textgeneration-distilgpt2",
+      "catalog": "marketplace",
+      "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ]
+    }
+  ]
+}

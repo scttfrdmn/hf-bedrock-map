@@ -15,6 +15,13 @@ Bedrock's catalog is bounded (a few hundred entries), so the tool enumerates it
 on a schedule and resolves each entry to the HF repo it corresponds to. The
 reverse lookup (HF id → Bedrock) falls out of the same table.
 
+**Region scope: US only.** The Bedrock catalog varies by region and no single
+region is a superset — e.g. `qwen.qwen3-coder-next` is us-east-1-only, and the
+four US regions together serve ~139 native models vs 114 in us-west-2 alone. So
+this deployment **unions the four US regions** (us-east-1, us-east-2, us-west-1,
+us-west-2) and records which of them serve each model. Non-US regions are out of
+scope here; to cover others, fork and set `BEDROCK_REGIONS`.
+
 ## Scope: what Bedrock can serve
 
 The mapping covers exactly the models invocable from Bedrock today:
@@ -32,8 +39,9 @@ The mapping covers exactly the models invocable from Bedrock today:
 GitHub Actions (cron, OIDC role, read-only AWS creds)
         │
         ▼
-cmd/refresh ── bedrock:ListFoundationModels
-   │        ── sagemaker:ListHubContents / DescribeHubContent
+cmd/refresh ── for each US region: bedrock:ListFoundationModels
+   │                                sagemaker:ListHubContents / DescribeHubContent
+   │        ── unions the catalogs, records serving regions per model
    │        ── scrapes AWS model-card doc pages   (authoritative EULA links)
    │        ── validates candidates via Hugging Face Hub API
    ▼
@@ -62,6 +70,21 @@ draws on two external, authoritative-where-possible sources:
 A small `cmd/refresh/native_overrides.json` handles the genuinely
 un-derivable cases (e.g. Llama 4's `16E`/`128E` expert counts), each verified
 by hand.
+
+## Reverse-lookup API (for integrations)
+
+A static, no-backend API is published alongside the search page for apps that
+need to ask programmatically "is HF repo X on Bedrock?" — e.g. a job that
+detects a model being loaded onto a GPU and checks whether Bedrock already
+serves it.
+
+- **Per-model:** `GET /api/v1/hf/{org}/{repo}.json` → `200` with details, `404`
+  if not served.
+- **Bulk:** `GET /api/v1/index.json` → the whole reverse map, for offline/batch
+  lookups.
+
+Both are regenerated on every refresh and served with permissive CORS. Full
+schema and copy-pasteable curl/Python/JS clients: [`docs/API.md`](docs/API.md).
 
 ## Confidence levels
 
@@ -96,7 +119,21 @@ without re-running the tool.
 ```
 go mod tidy
 export HF_TOKEN=<hf_read_token>          # optional; improves native resolution
-AWS_PROFILE=<profile-with-read-access> AWS_REGION=us-west-2 go run ./cmd/refresh
+AWS_PROFILE=<profile-with-read-access> go run ./cmd/refresh
+```
+
+Queries the four US regions by default. Override with `BEDROCK_REGIONS`
+(comma-separated) if you've forked for another geography:
+
+```
+BEDROCK_REGIONS="eu-west-1,eu-central-1" go run ./cmd/refresh
+```
+
+If your profile authenticates via a non-standard mechanism the Go SDK doesn't
+read directly (e.g. a custom SSO login), bridge the credentials first:
+
+```
+eval "$(aws configure export-credentials --profile <profile> --format env)"
 ```
 
 Writes `mapping.json` to the repo root (gitignored) so you can inspect output

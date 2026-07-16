@@ -1,0 +1,23 @@
+{
+  "hfId": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+  "onBedrock": true,
+  "regions": [
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2"
+  ],
+  "bedrock": [
+    {
+      "modelId": "deepseek-llm-r1-distill-llama-8b",
+      "catalog": "marketplace",
+      "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "hfId": "deepseek-ai/DeepSeek-R1",
+  "onBedrock": true,
+  "regions": [
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2"
+  ],
+  "bedrock": [
+    {
+      "modelId": "deepseek-llm-r1",
+      "catalog": "marketplace",
+      "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ]
+    },
+    {
+      "modelId": "deepseek.r1-v1:0",
+      "catalog": "foundation-model",
+      "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ]
+    }
+  ]
+}

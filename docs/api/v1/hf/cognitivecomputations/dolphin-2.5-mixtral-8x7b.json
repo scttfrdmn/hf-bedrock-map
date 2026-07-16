@@ -1,0 +1,21 @@
+{
+  "hfId": "cognitivecomputations/dolphin-2.5-mixtral-8x7b",
+  "onBedrock": true,
+  "regions": [
+    "us-east-1",
+    "us-east-2",
+    "us-west-2"
+  ],
+  "bedrock": [
+    {
+      "modelId": "huggingface-llm-dolphin-2-5-mixtral-8x7b",
+      "catalog": "marketplace",
+      "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ]
+    }
+  ]
+}

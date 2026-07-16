@@ -47,19 +47,19 @@ jobs:
           # resolve during native-FM validation. Absent -> tool degrades
           # gracefully to the search endpoint.
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: |
-          go run ./cmd/refresh
-          # The binary writes mapping.json to the repo root; publish it to docs/.
-          mv mapping.json docs/mapping.json
+          # Publish mapping.json + the static api/ tree straight into docs/
+          # (GitHub Pages root) so no file-moving is needed.
+          OUTPUT_DIR: docs
+        run: go run ./cmd/refresh
 
       - name: Commit if changed
         run: |
-          if git diff --quiet -- docs/mapping.json; then
-            echo "No change in docs/mapping.json; nothing to commit."
+          if git diff --quiet -- docs/mapping.json docs/api; then
+            echo "No change in docs/ output; nothing to commit."
             exit 0
           fi
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/mapping.json
+          git add docs/mapping.json docs/api
           git commit -m "chore: refresh bedrock<->hf mapping ($(date -u +%Y-%m-%d))"
           git push

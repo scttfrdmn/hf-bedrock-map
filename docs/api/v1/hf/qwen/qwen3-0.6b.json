@@ -1,0 +1,23 @@
+{
+  "hfId": "Qwen/Qwen3-0.6B",
+  "onBedrock": true,
+  "regions": [
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2"
+  ],
+  "bedrock": [
+    {
+      "modelId": "huggingface-reasoning-qwen3-06b",
+      "catalog": "marketplace",
+      "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ]
+    }
+  ]
+}

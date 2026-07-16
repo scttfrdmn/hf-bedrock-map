@@ -1,0 +1,17 @@
+{
+  "hfId": "mistralai/Mistral-Large-Instruct-2407",
+  "onBedrock": true,
+  "regions": [
+    "us-west-2"
+  ],
+  "bedrock": [
+    {
+      "modelId": "mistral.mistral-large-2407-v1:0",
+      "catalog": "foundation-model",
+      "confidence": "validated",
+      "regions": [
+        "us-west-2"
+      ]
+    }
+  ]
+}

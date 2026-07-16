@@ -1,0 +1,21 @@
+{
+  "hfId": "HuggingFaceH4/zephyr-7b-beta",
+  "onBedrock": true,
+  "regions": [
+    "us-east-1",
+    "us-east-2",
+    "us-west-2"
+  ],
+  "bedrock": [
+    {
+      "modelId": "huggingface-llm-huggingfaceh4-zephyr-7b-beta",
+      "catalog": "marketplace",
+      "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "hfId": "microsoft/Phi-3-mini-128k-instruct",
+  "onBedrock": true,
+  "regions": [
+    "us-east-1",
+    "us-east-2",
+    "us-west-2"
+  ],
+  "bedrock": [
+    {
+      "modelId": "huggingface-llm-phi-3-mini-128k-instruct",
+      "catalog": "marketplace",
+      "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ]
+    }
+  ]
+}

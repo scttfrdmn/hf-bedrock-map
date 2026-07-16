@@ -1,0 +1,19 @@
+{
+  "hfId": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "onBedrock": true,
+  "regions": [
+    "us-east-2",
+    "us-west-2"
+  ],
+  "bedrock": [
+    {
+      "modelId": "qwen.qwen3-235b-a22b-2507-v1:0",
+      "catalog": "foundation-model",
+      "confidence": "confirmed",
+      "regions": [
+        "us-east-2",
+        "us-west-2"
+      ]
+    }
+  ]
+}

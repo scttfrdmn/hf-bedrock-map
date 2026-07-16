@@ -12,6 +12,11 @@ JumpStart hub), resolves each to a Hugging Face repo id, commits the result to
 The purpose is a self-hosting/cost detector: given an HF repo someone is running
 on their own GPUs, is Bedrock already serving it? Full design in `README.md`.
 
+**Region scope: US only.** The catalog varies by region, so the tool unions the
+four US regions (us-east-1, us-east-2, us-west-1, us-west-2) and records which
+serve each model in the per-entry `regions` field. `BEDROCK_REGIONS` (comma/space
+separated) overrides the set for forks; empty = US default.
+
 ## Layout
 
 - `cmd/refresh/main.go` — entrypoint; enumerates both catalogs, writes mapping.
@@ -39,11 +44,16 @@ on their own GPUs, is Bedrock already serving it? Full design in `README.md`.
 ## Status
 
 Built, `go vet`-clean, unit-tested (`go test ./...`), and run end-to-end against
-a live account in `us-west-2`. A representative run: 266 Bedrock-servable
-entries — confirmed=125, validated=17, ambiguous=8, proprietary=114,
-unresolved=2. Confirmed/validated HF ids were spot-checked to return HTTP 200 on
-huggingface.co. `docs/mapping.json` is committed by CI; a local `go run` writes
-to the repo root (gitignored).
+a live account. A representative US-union run: 291 Bedrock-servable entries —
+confirmed=130, validated=17, ambiguous=8, proprietary=133, unresolved=3 (vs 266
+for us-west-2 alone; the union adds ~25 region-specific models). Confirmed/
+validated HF ids were spot-checked to return HTTP 200 on huggingface.co.
+`docs/mapping.json` is committed by CI; a local `go run` writes to the repo root
+(gitignored).
+
+Deployed in AWS account `752123829273` (OIDC role `hf-bedrock-map-refresh`).
+The IAM role's read-only permissions are region-agnostic (`Resource: "*"`), so
+no per-region policy change is needed.
 
 ## Data-shape notes (verified against live AWS)
 
@@ -71,5 +81,8 @@ to the repo root (gitignored).
   loudly if the index yields zero card links (structure changed).
 - No dedup when the same HF id resolves from both a native FM row and a
   Marketplace row (intentional — both are valid Bedrock paths to that model).
-- Region is a single value per run (`AWS_REGION`); the catalog is largely but
-  not entirely region-invariant. Multi-region union is unimplemented.
+- Region union dedups by `bedrockModelId`: the first region to surface a model
+  resolves it; later regions only append to its `regions` list. So HF resolution
+  and DescribeHubContent run ~1x, not once per region. If AWS ever served the
+  same modelId with *different* metadata per region, this would take the first;
+  not observed in practice.

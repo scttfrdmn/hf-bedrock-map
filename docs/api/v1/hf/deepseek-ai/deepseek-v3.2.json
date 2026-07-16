@@ -1,0 +1,21 @@
+{
+  "hfId": "deepseek-ai/DeepSeek-V3.2",
+  "onBedrock": true,
+  "regions": [
+    "us-east-1",
+    "us-east-2",
+    "us-west-2"
+  ],
+  "bedrock": [
+    {
+      "modelId": "deepseek.v3.2",
+      "catalog": "foundation-model",
+      "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "hfId": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+  "onBedrock": true,
+  "regions": [
+    "us-east-1",
+    "us-west-2"
+  ],
+  "bedrock": [
+    {
+      "modelId": "mistral.mixtral-8x7b-instruct-v0:1",
+      "catalog": "foundation-model",
+      "confidence": "validated",
+      "regions": [
+        "us-east-1",
+        "us-west-2"
+      ]
+    }
+  ]
+}

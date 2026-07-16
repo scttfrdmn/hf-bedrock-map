@@ -1,0 +1,29 @@
+{
+  "hfId": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+  "onBedrock": true,
+  "regions": [
+    "us-east-1",
+    "us-east-2",
+    "us-west-2"
+  ],
+  "bedrock": [
+    {
+      "modelId": "qwen.qwen3-coder-30b-a3b-v1:0",
+      "catalog": "foundation-model",
+      "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ]
+    },
+    {
+      "modelId": "qwen.qwen3-coder-next",
+      "catalog": "foundation-model",
+      "confidence": "confirmed",
+      "regions": [
+        "us-east-1"
+      ]
+    }
+  ]
+}

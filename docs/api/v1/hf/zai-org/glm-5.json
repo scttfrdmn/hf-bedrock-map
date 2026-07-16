@@ -1,0 +1,21 @@
+{
+  "hfId": "zai-org/GLM-5",
+  "onBedrock": true,
+  "regions": [
+    "us-east-1",
+    "us-east-2",
+    "us-west-2"
+  ],
+  "bedrock": [
+    {
+      "modelId": "zai.glm-5",
+      "catalog": "foundation-model",
+      "confidence": "validated",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ]
+    }
+  ]
+}

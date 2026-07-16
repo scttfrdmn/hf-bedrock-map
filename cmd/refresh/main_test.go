@@ -33,6 +33,26 @@ func TestHFIDFromURL(t *testing.T) {
 	}
 }
 
+func TestParseRegions(t *testing.T) {
+	tests := []struct {
+		in   string
+		want []string
+	}{
+		{"", defaultRegions},
+		{"   ", defaultRegions},
+		{"us-east-1", []string{"us-east-1"}},
+		{"us-east-1,us-west-2", []string{"us-east-1", "us-west-2"}},
+		{"us-east-1, us-west-2", []string{"us-east-1", "us-west-2"}},
+		{"us-east-1 us-west-2", []string{"us-east-1", "us-west-2"}},
+	}
+	for _, tt := range tests {
+		got := parseRegions(tt.in)
+		if !reflect.DeepEqual(got, tt.want) {
+			t.Errorf("parseRegions(%q) = %v, want %v", tt.in, got, tt.want)
+		}
+	}
+}
+
 func TestSearchQuery(t *testing.T) {
 	tests := []struct{ in, want string }{
 		{"qwen.qwen3-next-80b-a3b", "qwen3-next-80b-a3b"},

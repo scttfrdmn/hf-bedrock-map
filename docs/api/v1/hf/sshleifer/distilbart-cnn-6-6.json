@@ -1,0 +1,23 @@
+{
+  "hfId": "sshleifer/distilbart-cnn-6-6",
+  "onBedrock": true,
+  "regions": [
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2"
+  ],
+  "bedrock": [
+    {
+      "modelId": "huggingface-summarization-distilbart-cnn-6-6",
+      "catalog": "marketplace",
+      "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ]
+    }
+  ]
+}

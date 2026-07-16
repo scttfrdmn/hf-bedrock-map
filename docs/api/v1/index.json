@@ -1,0 +1,2982 @@
+{
+  "version": "v1",
+  "generatedAt": "2026-07-16T07:27:40Z",
+  "regions": [
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2"
+  ],
+  "note": "Reverse Bedrock\u003c-\u003eHugging Face lookup, US regions only. Keys are lowercased HF ids. Absence of a key means not served by Bedrock in these regions.",
+  "count": 132,
+  "models": {
+    "01-ai/yi-1.5-34b": {
+      "hfId": "01-ai/Yi-1.5-34B",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-yi-1-5-34b",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "01-ai/yi-1.5-9b": {
+      "hfId": "01-ai/Yi-1.5-9B",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-yi-1-5-9b",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "ai-forever/mgpt": {
+      "hfId": "ai-forever/mGPT",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-ai-forever-mgpt",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "aisingapore/llama3-8b-cpt-sea-lionv2.1-instruct": {
+      "hfId": "aisingapore/llama3-8b-cpt-sea-lionv2.1-instruct",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-llama3-8b-sealionv21-instruct",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "amazon/chronos-bolt-base": {
+      "hfId": "amazon/chronos-bolt-base",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "autogluon-forecasting-chronos-bolt-base",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "amazon/falconlite": {
+      "hfId": "amazon/FalconLite",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-amazon-falconlite",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "amazon/falconlite2": {
+      "hfId": "amazon/FalconLite2",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-amazon-falconlite2",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "amazon/mistrallite": {
+      "hfId": "amazon/MistralLite",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-amazon-mistrallite",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "bigscience/bloom-1b1": {
+      "hfId": "bigscience/bloom-1b1",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-textgeneration-bloom-1b1",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "bigscience/bloom-3b": {
+      "hfId": "bigscience/bloom-3b",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-textgeneration1-bloom-3b",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "bigscience/bloom-7b1": {
+      "hfId": "bigscience/bloom-7b1",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-textgeneration1-bloom-7b1",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "bigscience/bloomz-1b7": {
+      "hfId": "bigscience/bloomz-1b7",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-textgeneration-bloomz-1b7",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "bigscience/bloomz-7b1": {
+      "hfId": "bigscience/bloomz-7b1",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-textgeneration1-bloomz-7b1-fp16",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "cognitivecomputations/dolphin-2.2.1-mistral-7b": {
+      "hfId": "cognitivecomputations/dolphin-2.2.1-mistral-7b",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-dolphin-2-2-1-mistral-7b",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "cognitivecomputations/dolphin-2.5-mixtral-8x7b": {
+      "hfId": "cognitivecomputations/dolphin-2.5-mixtral-8x7b",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-dolphin-2-5-mixtral-8x7b",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "cohereforai/aya-101": {
+      "hfId": "CohereForAI/aya-101",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-aya-101",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "databricks/dbrx-base": {
+      "hfId": "databricks/dbrx-base",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-dbrx-base",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "databricks/dbrx-instruct": {
+      "hfId": "databricks/dbrx-instruct",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-dbrx-instruct",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "databricks/dolly-v2-12b": {
+      "hfId": "databricks/dolly-v2-12b",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-textgeneration-dolly-v2-12b-bf16",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "databricks/dolly-v2-3b": {
+      "hfId": "databricks/dolly-v2-3b",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-textgeneration-dolly-v2-3b-bf16",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "deepseek-ai/deepseek-r1": {
+      "hfId": "deepseek-ai/DeepSeek-R1",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "deepseek-llm-r1",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2"
+          ]
+        },
+        {
+          "modelId": "deepseek.r1-v1:0",
+          "catalog": "foundation-model",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "deepseek-ai/deepseek-r1-0528": {
+      "hfId": "deepseek-ai/DeepSeek-R1-0528",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "deepseek-llm-r1-0528",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "deepseek-ai/deepseek-r1-distill-llama-70b": {
+      "hfId": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "deepseek-llm-r1-distill-llama-70b",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "deepseek-ai/deepseek-r1-distill-llama-8b": {
+      "hfId": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "deepseek-llm-r1-distill-llama-8b",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "deepseek-ai/deepseek-r1-distill-qwen-1.5b": {
+      "hfId": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "deepseek-llm-r1-distill-qwen-1-5b",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "deepseek-ai/deepseek-r1-distill-qwen-14b": {
+      "hfId": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "deepseek-llm-r1-distill-qwen-14b",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "deepseek-ai/deepseek-r1-distill-qwen-32b": {
+      "hfId": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "deepseek-llm-r1-distill-qwen-32b",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "deepseek-ai/deepseek-r1-distill-qwen-7b": {
+      "hfId": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "deepseek-llm-r1-distill-qwen-7b",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "deepseek-ai/deepseek-v3.1": {
+      "hfId": "deepseek-ai/DeepSeek-V3.1",
+      "onBedrock": true,
+      "regions": [
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "deepseek.v3-v1:0",
+          "catalog": "foundation-model",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "deepseek-ai/deepseek-v3.2": {
+      "hfId": "deepseek-ai/DeepSeek-V3.2",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "deepseek.v3.2",
+          "catalog": "foundation-model",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "distilbert/distilgpt2": {
+      "hfId": "distilbert/distilgpt2",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-textgeneration-distilgpt2",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "eleutherai/gpt-j-6b": {
+      "hfId": "EleutherAI/gpt-j-6B",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-textgeneration1-gpt-j-6b",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "eleutherai/gpt-neo-125m": {
+      "hfId": "EleutherAI/gpt-neo-125M",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-textgeneration1-gpt-neo-125m",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "eleutherai/gpt-neox-20b": {
+      "hfId": "EleutherAI/gpt-neox-20b",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-textgeneration2-gpt-neox-20b-fp16",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "google/flan-t5-base": {
+      "hfId": "google/flan-t5-base",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-text2text-flan-t5-base",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "google/flan-t5-large": {
+      "hfId": "google/flan-t5-large",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-text2text-flan-t5-large",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "google/flan-t5-small": {
+      "hfId": "google/flan-t5-small",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-text2text-flan-t5-small",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "google/gemma-2-27b": {
+      "hfId": "google/gemma-2-27b",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-gemma-2-27b",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        },
+        {
+          "modelId": "huggingface-llm-gemma-2-27b-instruct",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "google/gemma-2-2b": {
+      "hfId": "google/gemma-2-2b",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-gemma-2-2b",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        },
+        {
+          "modelId": "huggingface-llm-gemma-2-2b-instruct",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "google/gemma-2-9b": {
+      "hfId": "google/gemma-2-9b",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-gemma-2-9b",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        },
+        {
+          "modelId": "huggingface-llm-gemma-2-9b-instruct",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "google/gemma-2b": {
+      "hfId": "google/gemma-2b",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-gemma-2b",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "google/gemma-2b-it": {
+      "hfId": "google/gemma-2b-it",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-gemma-2b-instruct",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "google/gemma-3-12b-it": {
+      "hfId": "google/gemma-3-12b-it",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "google.gemma-3-12b-it",
+          "catalog": "foundation-model",
+          "confidence": "validated",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "google/gemma-3-1b-it": {
+      "hfId": "google/gemma-3-1b-it",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-gemma-3-1b-instruct",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "google/gemma-3-27b-it": {
+      "hfId": "google/gemma-3-27b-it",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "google.gemma-3-27b-it",
+          "catalog": "foundation-model",
+          "confidence": "validated",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        },
+        {
+          "modelId": "huggingface-vlm-gemma-3-27b-instruct",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "google/gemma-3-4b-it": {
+      "hfId": "google/gemma-3-4b-it",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "google.gemma-3-4b-it",
+          "catalog": "foundation-model",
+          "confidence": "validated",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        },
+        {
+          "modelId": "huggingface-vlm-gemma-3-4b-instruct",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "google/gemma-7b": {
+      "hfId": "google/gemma-7b",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-gemma-7b",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "google/gemma-7b-it": {
+      "hfId": "google/gemma-7b-it",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-gemma-7b-instruct",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "huggingfaceh4/zephyr-7b-beta": {
+      "hfId": "HuggingFaceH4/zephyr-7b-beta",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-huggingfaceh4-zephyr-7b-beta",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "meta-llama/llama-3.1-70b-instruct": {
+      "hfId": "meta-llama/Llama-3.1-70B-Instruct",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "meta.llama3-1-70b-instruct-v1:0",
+          "catalog": "foundation-model",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        },
+        {
+          "modelId": "meta.llama3-1-70b-instruct-v1:0:128k",
+          "catalog": "foundation-model",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "meta-llama/llama-3.1-8b-instruct": {
+      "hfId": "meta-llama/Llama-3.1-8B-Instruct",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "meta.llama3-1-8b-instruct-v1:0",
+          "catalog": "foundation-model",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        },
+        {
+          "modelId": "meta.llama3-1-8b-instruct-v1:0:128k",
+          "catalog": "foundation-model",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "meta-llama/llama-3.3-70b-instruct": {
+      "hfId": "meta-llama/Llama-3.3-70B-Instruct",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "meta.llama3-3-70b-instruct-v1:0",
+          "catalog": "foundation-model",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        },
+        {
+          "modelId": "meta.llama3-3-70b-instruct-v1:0:128k",
+          "catalog": "foundation-model",
+          "confidence": "confirmed",
+          "regions": [
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "meta-llama/llama-4-maverick-17b-128e-instruct": {
+      "hfId": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "meta.llama4-maverick-17b-instruct-v1:0",
+          "catalog": "foundation-model",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2"
+          ]
+        },
+        {
+          "modelId": "meta.llama4-maverick-17b-instruct-v1:0:128k",
+          "catalog": "foundation-model",
+          "confidence": "confirmed",
+          "regions": [
+            "us-west-1"
+          ]
+        },
+        {
+          "modelId": "meta.llama4-maverick-17b-instruct-v1:0:1m",
+          "catalog": "foundation-model",
+          "confidence": "confirmed",
+          "regions": [
+            "us-west-1"
+          ]
+        }
+      ]
+    },
+    "meta-llama/llama-4-scout-17b-16e-instruct": {
+      "hfId": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "meta.llama4-scout-17b-instruct-v1:0",
+          "catalog": "foundation-model",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2"
+          ]
+        },
+        {
+          "modelId": "meta.llama4-scout-17b-instruct-v1:0:10m",
+          "catalog": "foundation-model",
+          "confidence": "confirmed",
+          "regions": [
+            "us-west-1"
+          ]
+        },
+        {
+          "modelId": "meta.llama4-scout-17b-instruct-v1:0:128k",
+          "catalog": "foundation-model",
+          "confidence": "confirmed",
+          "regions": [
+            "us-west-1"
+          ]
+        }
+      ]
+    },
+    "meta-llama/meta-llama-3-70b-instruct": {
+      "hfId": "meta-llama/Meta-Llama-3-70B-Instruct",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "meta.llama3-70b-instruct-v1:0",
+          "catalog": "foundation-model",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "meta-llama/meta-llama-3-8b-instruct": {
+      "hfId": "meta-llama/Meta-Llama-3-8B-Instruct",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "meta.llama3-8b-instruct-v1:0",
+          "catalog": "foundation-model",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "microsoft/phi-2": {
+      "hfId": "microsoft/phi-2",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-phi-2",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "microsoft/phi-3-mini-128k-instruct": {
+      "hfId": "microsoft/Phi-3-mini-128k-instruct",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-phi-3-mini-128k-instruct",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "microsoft/phi-3-mini-4k-instruct": {
+      "hfId": "microsoft/Phi-3-mini-4k-instruct",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-phi-3-mini-4k-instruct",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "microsoft/phi-3.5-mini-instruct": {
+      "hfId": "microsoft/Phi-3.5-mini-instruct",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-phi-3-5-mini-instruct",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "minimaxai/minimax-m2": {
+      "hfId": "MiniMaxAI/MiniMax-M2",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "minimax.minimax-m2",
+          "catalog": "foundation-model",
+          "confidence": "validated",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "minimaxai/minimax-m2.1": {
+      "hfId": "MiniMaxAI/MiniMax-M2.1",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "minimax.minimax-m2.1",
+          "catalog": "foundation-model",
+          "confidence": "validated",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "minimaxai/minimax-m2.5": {
+      "hfId": "MiniMaxAI/MiniMax-M2.5",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "minimax.minimax-m2.5",
+          "catalog": "foundation-model",
+          "confidence": "validated",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "mistralai/devstral-2-123b-instruct-2512": {
+      "hfId": "mistralai/Devstral-2-123B-Instruct-2512",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "mistral.devstral-2-123b",
+          "catalog": "foundation-model",
+          "confidence": "validated",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "mistralai/magistral-small-2509": {
+      "hfId": "mistralai/Magistral-Small-2509",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "mistral.magistral-small-2509",
+          "catalog": "foundation-model",
+          "confidence": "validated",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "mistralai/ministral-3-14b-instruct-2512": {
+      "hfId": "mistralai/Ministral-3-14B-Instruct-2512",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "mistral.ministral-3-14b-instruct",
+          "catalog": "foundation-model",
+          "confidence": "validated",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "mistralai/ministral-3-8b-instruct-2512": {
+      "hfId": "mistralai/Ministral-3-8B-Instruct-2512",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "mistral.ministral-3-8b-instruct",
+          "catalog": "foundation-model",
+          "confidence": "validated",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "mistralai/mistral-large-instruct-2407": {
+      "hfId": "mistralai/Mistral-Large-Instruct-2407",
+      "onBedrock": true,
+      "regions": [
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "mistral.mistral-large-2407-v1:0",
+          "catalog": "foundation-model",
+          "confidence": "validated",
+          "regions": [
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "mistralai/mistral-nemo-base-2407": {
+      "hfId": "mistralai/Mistral-Nemo-Base-2407",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-mistral-nemo-base-2407",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "mistralai/mistral-nemo-instruct-2407": {
+      "hfId": "mistralai/Mistral-Nemo-Instruct-2407",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-mistral-nemo-instruct-2407",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "mistralai/mistral-small-24b-instruct-2501": {
+      "hfId": "mistralai/Mistral-Small-24B-Instruct-2501",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-mistral-small-24B-Instruct-2501",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "mistralai/mistral-small-3.1-24b-base-2503": {
+      "hfId": "mistralai/Mistral-Small-3.1-24B-Base-2503",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-vlm-mistral-small-3-1-24b-base-2503",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "mistralai/mistral-small-3.2-24b-instruct-2506": {
+      "hfId": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-vlm-mistral-small-3-2-24b-instruct-2506",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "mistralai/mixtral-8x7b-instruct-v0.1": {
+      "hfId": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "mistral.mixtral-8x7b-instruct-v0:1",
+          "catalog": "foundation-model",
+          "confidence": "validated",
+          "regions": [
+            "us-east-1",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "mistralai/pixtral-12b-2409": {
+      "hfId": "mistralai/Pixtral-12B-2409",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-vlm-mistral-pixtral-12b-2409",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "mistralai/voxtral-mini-3b-2507": {
+      "hfId": "mistralai/Voxtral-Mini-3B-2507",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "mistral.voxtral-mini-3b-2507",
+          "catalog": "foundation-model",
+          "confidence": "validated",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "mistralai/voxtral-small-24b-2507": {
+      "hfId": "mistralai/Voxtral-Small-24B-2507",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "mistral.voxtral-small-24b-2507",
+          "catalog": "foundation-model",
+          "confidence": "validated",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "moonshotai/kimi-k2-thinking": {
+      "hfId": "moonshotai/Kimi-K2-Thinking",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "moonshot.kimi-k2-thinking",
+          "catalog": "foundation-model",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "moonshotai/kimi-k2.5": {
+      "hfId": "moonshotai/Kimi-K2.5",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "moonshotai.kimi-k2.5",
+          "catalog": "foundation-model",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "mosaicml/mpt-7b": {
+      "hfId": "mosaicml/mpt-7b",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-textgeneration1-mpt-7b-bf16",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "mosaicml/mpt-7b-instruct": {
+      "hfId": "mosaicml/mpt-7b-instruct",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-textgeneration1-mpt-7b-instruct-bf16",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "openai-community/gpt2": {
+      "hfId": "openai-community/gpt2",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-textgeneration-gpt2",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "openai-community/gpt2-xl": {
+      "hfId": "openai-community/gpt2-xl",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-textgeneration1-gpt-2-xl",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "openai/gpt-oss-120b": {
+      "hfId": "openai/gpt-oss-120b",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "openai.gpt-oss-120b-1:0",
+          "catalog": "foundation-model",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "openai/gpt-oss-20b": {
+      "hfId": "openai/gpt-oss-20b",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "openai.gpt-oss-20b-1:0",
+          "catalog": "foundation-model",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "openai/gpt-oss-safeguard-120b": {
+      "hfId": "openai/gpt-oss-safeguard-120b",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "openai.gpt-oss-safeguard-120b",
+          "catalog": "foundation-model",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "openai/gpt-oss-safeguard-20b": {
+      "hfId": "openai/gpt-oss-safeguard-20b",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "openai.gpt-oss-safeguard-20b",
+          "catalog": "foundation-model",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "openai/whisper-large-v3-turbo": {
+      "hfId": "openai/whisper-large-v3-turbo",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-asr-whisper-large-v3-turbo",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "philschmid/bart-large-cnn-samsum": {
+      "hfId": "philschmid/bart-large-cnn-samsum",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-summarization-bart-large-cnn-samsum",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "philschmid/flan-t5-base-samsum": {
+      "hfId": "philschmid/flan-t5-base-samsum",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-text2text-flan-t5-base-samsum",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "qwen/qwen2.5-14b-instruct": {
+      "hfId": "Qwen/Qwen2.5-14B-Instruct",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-qwen2-5-14b-instruct",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "qwen/qwen2.5-32b-instruct": {
+      "hfId": "Qwen/Qwen2.5-32B-Instruct",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-qwen2-5-32b-instruct",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "qwen/qwen2.5-72b-instruct": {
+      "hfId": "Qwen/Qwen2.5-72B-Instruct",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-qwen2-5-72b-instruct",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "qwen/qwen2.5-7b-instruct": {
+      "hfId": "Qwen/Qwen2.5-7B-Instruct",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-qwen2-5-7b-instruct",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "qwen/qwen2.5-coder-32b-instruct": {
+      "hfId": "Qwen/Qwen2.5-Coder-32B-Instruct",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-qwen2-5-coder-32b-instruct",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "qwen/qwen2.5-coder-7b-instruct": {
+      "hfId": "Qwen/Qwen2.5-Coder-7B-Instruct",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-qwen2-5-coder-7b-instruct",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "qwen/qwen3-0.6b": {
+      "hfId": "Qwen/Qwen3-0.6B",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-reasoning-qwen3-06b",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "qwen/qwen3-235b-a22b-instruct-2507": {
+      "hfId": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+      "onBedrock": true,
+      "regions": [
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "qwen.qwen3-235b-a22b-2507-v1:0",
+          "catalog": "foundation-model",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "qwen/qwen3-32b": {
+      "hfId": "Qwen/Qwen3-32B",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-reasoning-qwen3-32b",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2"
+          ]
+        },
+        {
+          "modelId": "qwen.qwen3-32b-v1:0",
+          "catalog": "foundation-model",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "qwen/qwen3-4b": {
+      "hfId": "Qwen/Qwen3-4B",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-reasoning-qwen3-4b",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "qwen/qwen3-8b": {
+      "hfId": "Qwen/Qwen3-8B",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-reasoning-qwen3-8b",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "qwen/qwen3-coder-30b-a3b-instruct": {
+      "hfId": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "qwen.qwen3-coder-30b-a3b-v1:0",
+          "catalog": "foundation-model",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        },
+        {
+          "modelId": "qwen.qwen3-coder-next",
+          "catalog": "foundation-model",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1"
+          ]
+        }
+      ]
+    },
+    "qwen/qwen3-coder-480b-a35b-instruct": {
+      "hfId": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
+      "onBedrock": true,
+      "regions": [
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "qwen.qwen3-coder-480b-a35b-v1:0",
+          "catalog": "foundation-model",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "qwen/qwen3-next-80b-a3b-instruct": {
+      "hfId": "Qwen/Qwen3-Next-80B-A3B-Instruct",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "qwen.qwen3-next-80b-a3b",
+          "catalog": "foundation-model",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "snowflake/snowflake-arctic-instruct-vllm": {
+      "hfId": "Snowflake/snowflake-arctic-instruct-vllm",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-snowflake-arctic-instruct-vllm",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "sshleifer/distilbart-cnn-12-6": {
+      "hfId": "sshleifer/distilbart-cnn-12-6",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-summarization-distilbart-cnn-12-6",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "sshleifer/distilbart-cnn-6-6": {
+      "hfId": "sshleifer/distilbart-cnn-6-6",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-summarization-distilbart-cnn-6-6",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "sshleifer/distilbart-xsum-1-1": {
+      "hfId": "sshleifer/distilbart-xsum-1-1",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-summarization-distilbart-xsum-1-1",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "swiss-ai/apertus-70b-instruct-2509": {
+      "hfId": "swiss-ai/Apertus-70B-Instruct-2509",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-apertus-70b-instruct-2509",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "swiss-ai/apertus-8b-instruct-2509": {
+      "hfId": "swiss-ai/Apertus-8B-Instruct-2509",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-apertus-8b-instruct-2509",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "thebloke/mistral-7b-openorca-awq": {
+      "hfId": "TheBloke/Mistral-7B-OpenOrca-AWQ",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-thebloke-mistral-7b-openorca-awq",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "thebloke/mistral-7b-openorca-gptq": {
+      "hfId": "TheBloke/Mistral-7B-OpenOrca-GPTQ",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-mistral-7b-openorca-gptq",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "tiiuae/falcon-180b": {
+      "hfId": "tiiuae/falcon-180B",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-falcon-180b-bf16",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "tiiuae/falcon-40b": {
+      "hfId": "tiiuae/falcon-40b",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-falcon-40b-bf16",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "tiiuae/falcon-h1-0.5b-instruct": {
+      "hfId": "tiiuae/Falcon-H1-0.5B-Instruct",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-falcon-h1-0-5b-instruct",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "tiiuae/falcon-h1-1.5b-deep-instruct": {
+      "hfId": "tiiuae/Falcon-H1-1.5B-Deep-Instruct",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-falcon-h1-1-5b-deep-instruct",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "tiiuae/falcon-h1-1.5b-instruct": {
+      "hfId": "tiiuae/Falcon-H1-1.5B-Instruct",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-falcon-h1-1-5b-instruct",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "tiiuae/falcon-h1-34b-instruct": {
+      "hfId": "tiiuae/Falcon-H1-34B-Instruct",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-falcon-h1-34b-instruct",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "tiiuae/falcon-h1-3b-instruct": {
+      "hfId": "tiiuae/Falcon-H1-3B-Instruct",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-falcon-h1-3b-instruct",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "tiiuae/falcon-h1-7b-instruct": {
+      "hfId": "tiiuae/Falcon-H1-7B-Instruct",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-falcon-h1-7b-instruct",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "tiiuae/falcon-rw-1b": {
+      "hfId": "tiiuae/falcon-rw-1b",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-tiiuae-falcon-rw-1b",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "tiiuae/falcon3-10b-base": {
+      "hfId": "tiiuae/Falcon3-10B-Base",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-falcon-3-10B-base",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "tiiuae/falcon3-10b-instruct": {
+      "hfId": "tiiuae/Falcon3-10B-Instruct",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-falcon-3-10B-Instruct",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "tiiuae/falcon3-1b-instruct": {
+      "hfId": "tiiuae/Falcon3-1B-Instruct",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-falcon-3-1B-Instruct",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "tiiuae/falcon3-3b-base": {
+      "hfId": "tiiuae/Falcon3-3B-Base",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-falcon-3-3B-base",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "tiiuae/falcon3-3b-instruct": {
+      "hfId": "tiiuae/Falcon3-3B-Instruct",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-falcon-3-3B-Instruct",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "tiiuae/falcon3-7b-base": {
+      "hfId": "tiiuae/Falcon3-7B-Base",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-falcon-3-7B-base",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "tiiuae/falcon3-7b-instruct": {
+      "hfId": "tiiuae/Falcon3-7B-Instruct",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-falcon-3-7B-Instruct",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "writer/palmyra-small": {
+      "hfId": "Writer/palmyra-small",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "huggingface-llm-writer-palmyra-small",
+          "catalog": "marketplace",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "zai-org/glm-4.7": {
+      "hfId": "zai-org/GLM-4.7",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "zai.glm-4.7",
+          "catalog": "foundation-model",
+          "confidence": "validated",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "zai-org/glm-4.7-flash": {
+      "hfId": "zai-org/GLM-4.7-Flash",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "zai.glm-4.7-flash",
+          "catalog": "foundation-model",
+          "confidence": "validated",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "zai-org/glm-5": {
+      "hfId": "zai-org/GLM-5",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "zai.glm-5",
+          "catalog": "foundation-model",
+          "confidence": "validated",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    }
+  }
+}

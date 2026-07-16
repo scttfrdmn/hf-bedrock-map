@@ -1,0 +1,21 @@
+{
+  "hfId": "google/gemma-3-12b-it",
+  "onBedrock": true,
+  "regions": [
+    "us-east-1",
+    "us-east-2",
+    "us-west-2"
+  ],
+  "bedrock": [
+    {
+      "modelId": "google.gemma-3-12b-it",
+      "catalog": "foundation-model",
+      "confidence": "validated",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ]
+    }
+  ]
+}

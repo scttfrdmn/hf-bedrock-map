@@ -1,0 +1,19 @@
+{
+  "hfId": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "onBedrock": true,
+  "regions": [
+    "us-east-1",
+    "us-west-2"
+  ],
+  "bedrock": [
+    {
+      "modelId": "meta.llama3-8b-instruct-v1:0",
+      "catalog": "foundation-model",
+      "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-west-2"
+      ]
+    }
+  ]
+}

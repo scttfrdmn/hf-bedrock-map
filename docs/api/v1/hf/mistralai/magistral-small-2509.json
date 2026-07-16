@@ -1,0 +1,21 @@
+{
+  "hfId": "mistralai/Magistral-Small-2509",
+  "onBedrock": true,
+  "regions": [
+    "us-east-1",
+    "us-east-2",
+    "us-west-2"
+  ],
+  "bedrock": [
+    {
+      "modelId": "mistral.magistral-small-2509",
+      "catalog": "foundation-model",
+      "confidence": "validated",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ]
+    }
+  ]
+}

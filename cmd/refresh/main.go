@@ -17,6 +17,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"path/filepath"
 	"sort"
 	"strings"
 	"sync"
@@ -74,6 +75,10 @@ type Entry struct {
 	HFID           string `json:"hfId,omitempty"`
 	HFURL          string `json:"hfUrl,omitempty"`
 	Confidence     string `json:"confidence"`
+	// Regions lists the queried regions that serve this model, sorted. A model
+	// counts as "on Bedrock" if any region serves it; the catalog varies by
+	// region (e.g. us-east-1 carries models absent from us-west-2).
+	Regions []string `json:"regions"`
 	// Evidence records where HFID/Confidence came from, so a human can audit
 	// any row without re-running the tool.
 	Evidence string `json:"evidence,omitempty"`
@@ -82,9 +87,33 @@ type Entry struct {
 // Mapping is the top-level shape of mapping.json.
 type Mapping struct {
 	GeneratedAt string         `json:"generatedAt"`
-	Region      string         `json:"region"`
+	Regions     []string       `json:"regions"`
 	Counts      map[string]int `json:"counts"`
 	Entries     []Entry        `json:"entries"`
+}
+
+// defaultRegions is the US Bedrock region set unioned when BEDROCK_REGIONS is
+// unset. See the region-variance note in README.md: no single region carries
+// the full catalog.
+var defaultRegions = []string{"us-east-1", "us-east-2", "us-west-1", "us-west-2"}
+
+// parseRegions reads a comma/space-separated region list from BEDROCK_REGIONS,
+// falling back to defaultRegions. A single-element list reproduces the old
+// single-region behavior.
+func parseRegions(env string) []string {
+	if strings.TrimSpace(env) == "" {
+		return defaultRegions
+	}
+	var out []string
+	for _, r := range strings.FieldsFunc(env, func(c rune) bool { return c == ',' || c == ' ' }) {
+		if r = strings.TrimSpace(r); r != "" {
+			out = append(out, r)
+		}
+	}
+	if len(out) == 0 {
+		return defaultRegions
+	}
+	return out
 }
 
 func main() {
@@ -96,33 +125,17 @@ func main() {
 func run() error {
 	ctx := context.Background()
 
-	cfg, err := config.LoadDefaultConfig(ctx,
-		// DescribeHubContent throttles readily. Use the adaptive retryer
-		// (which rate-limits client-side on throttle responses) with a
-		// generous attempt budget so transient 400/ThrottlingException
-		// responses are absorbed rather than aborting the whole run.
-		config.WithRetryer(func() aws.Retryer {
-			return retry.NewAdaptiveMode(func(o *retry.AdaptiveModeOptions) {
-				o.StandardOptions = append(o.StandardOptions, func(so *retry.StandardOptions) {
-					so.MaxAttempts = 10
-				})
-			})
-		}),
-	)
-	if err != nil {
-		return fmt.Errorf("load AWS config: %w", err)
-	}
-	region := cfg.Region
-	if region == "" {
-		return fmt.Errorf("no AWS region resolved; set AWS_REGION or a profile region")
-	}
-
-	bedrockClient := bedrock.NewFromConfig(cfg)
-	smClient := sagemaker.NewFromConfig(cfg)
+	// This deployment unions the US Bedrock regions only. The catalog varies
+	// by region and no single region is a superset, so a US-focused
+	// self-hosting detector must union across them. Override with
+	// BEDROCK_REGIONS if you need a different set.
+	regions := parseRegions(os.Getenv("BEDROCK_REGIONS"))
+	log.Printf("unioning Bedrock catalog across US regions: %s", strings.Join(regions, ", "))
 
 	// Native FMs carry no HF link in the AWS API, so resolution leans on two
 	// external sources: the AWS model-card doc pages (authoritative EULA links)
 	// and the Hugging Face Hub API (existence validation within a provider org).
+	// Both are region-independent, so resolve once and reuse across regions.
 	hf := newHFClient()
 	if hf.hasToken() {
 		log.Printf("HF_TOKEN present: gated-org repos will validate")
@@ -140,21 +153,51 @@ func run() error {
 		return err
 	}
 
-	log.Printf("region=%s: collecting native foundation models...", region)
-	fmEntries, err := collectFoundationModels(ctx, bedrockClient, res)
-	if err != nil {
-		return fmt.Errorf("collect foundation models: %w", err)
-	}
-	log.Printf("  %d native foundation models", len(fmEntries))
+	// byID accumulates the union across regions, keyed by bedrockModelId. The
+	// first region to surface a model resolves + records it; later regions just
+	// append themselves to its Regions list. This keeps HF resolution and the
+	// throttle-prone DescribeHubContent calls at ~1x, not Nx.
+	byID := map[string]*Entry{}
 
-	log.Printf("collecting marketplace / JumpStart hub contents...")
-	mpEntries, err := collectMarketplace(ctx, smClient)
-	if err != nil {
-		return fmt.Errorf("collect marketplace: %w", err)
-	}
-	log.Printf("  %d marketplace entries", len(mpEntries))
+	for _, region := range regions {
+		cfg, err := loadRegionConfig(ctx, region)
+		if err != nil {
+			return fmt.Errorf("load AWS config for %s: %w", region, err)
+		}
+		bedrockClient := bedrock.NewFromConfig(cfg)
+		smClient := sagemaker.NewFromConfig(cfg)
 
-	entries := append(fmEntries, mpEntries...)
+		log.Printf("[%s] collecting native foundation models...", region)
+		fmEntries, err := collectFoundationModels(ctx, bedrockClient, res)
+		if err != nil {
+			return fmt.Errorf("collect foundation models in %s: %w", region, err)
+		}
+		log.Printf("[%s] collecting marketplace / JumpStart hub contents...", region)
+		mpEntries, err := collectMarketplace(ctx, smClient)
+		if err != nil {
+			return fmt.Errorf("collect marketplace in %s: %w", region, err)
+		}
+
+		added := 0
+		for _, e := range append(fmEntries, mpEntries...) {
+			if existing, ok := byID[e.BedrockModelID]; ok {
+				existing.Regions = append(existing.Regions, region)
+				continue
+			}
+			e.Regions = []string{region}
+			ecopy := e
+			byID[e.BedrockModelID] = &ecopy
+			added++
+		}
+		log.Printf("[%s] %d native + %d marketplace; %d new to union (total %d)",
+			region, len(fmEntries), len(mpEntries), added, len(byID))
+	}
+
+	entries := make([]Entry, 0, len(byID))
+	for _, e := range byID {
+		sort.Strings(e.Regions)
+		entries = append(entries, *e)
+	}
 	sort.Slice(entries, func(i, j int) bool {
 		if entries[i].Catalog != entries[j].Catalog {
 			return entries[i].Catalog < entries[j].Catalog
@@ -173,9 +216,17 @@ func run() error {
 
 	m := Mapping{
 		GeneratedAt: time.Now().UTC().Format(time.RFC3339),
-		Region:      region,
+		Regions:     regions,
 		Counts:      counts,
 		Entries:     entries,
+	}
+
+	// OUTPUT_DIR controls where mapping.json and the api/ tree are written.
+	// Local dev defaults to the repo root (gitignored); CI sets OUTPUT_DIR=docs
+	// to publish directly under GitHub Pages without moving files.
+	outDir := os.Getenv("OUTPUT_DIR")
+	if outDir == "" {
+		outDir = "."
 	}
 
 	out, err := json.MarshalIndent(m, "", "  ")
@@ -183,14 +234,34 @@ func run() error {
 		return fmt.Errorf("marshal mapping: %w", err)
 	}
 	out = append(out, '\n')
-	if err := os.WriteFile("mapping.json", out, 0o644); err != nil {
+	if err := os.WriteFile(filepath.Join(outDir, "mapping.json"), out, 0o644); err != nil {
 		return fmt.Errorf("write mapping.json: %w", err)
 	}
 
-	log.Printf("wrote mapping.json: %d entries (confirmed=%d validated=%d ambiguous=%d proprietary=%d unresolved=%d)",
-		counts["total"], counts[confConfirmed], counts[confValidated], counts[confAmbiguous],
-		counts[confProprietary], counts[confUnresolved])
+	if err := writeAPI(m, outDir); err != nil {
+		return fmt.Errorf("write api: %w", err)
+	}
+
+	log.Printf("wrote %s: %d entries (confirmed=%d validated=%d ambiguous=%d proprietary=%d unresolved=%d) + api/%s",
+		filepath.Join(outDir, "mapping.json"), counts["total"], counts[confConfirmed], counts[confValidated],
+		counts[confAmbiguous], counts[confProprietary], counts[confUnresolved], apiVersion)
 	return nil
+}
+
+// loadRegionConfig builds an AWS config pinned to a specific region, with the
+// adaptive retryer DescribeHubContent needs (it throttles readily; the retryer
+// rate-limits client-side on throttle responses).
+func loadRegionConfig(ctx context.Context, region string) (aws.Config, error) {
+	return config.LoadDefaultConfig(ctx,
+		config.WithRegion(region),
+		config.WithRetryer(func() aws.Retryer {
+			return retry.NewAdaptiveMode(func(o *retry.AdaptiveModeOptions) {
+				o.StandardOptions = append(o.StandardOptions, func(so *retry.StandardOptions) {
+					so.MaxAttempts = 10
+				})
+			})
+		}),
+	)
 }
 
 // collectFoundationModels enumerates native serverless FMs. ListFoundationModels

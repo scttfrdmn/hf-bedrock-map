@@ -1,0 +1,21 @@
+{
+  "hfId": "MiniMaxAI/MiniMax-M2",
+  "onBedrock": true,
+  "regions": [
+    "us-east-1",
+    "us-east-2",
+    "us-west-2"
+  ],
+  "bedrock": [
+    {
+      "modelId": "minimax.minimax-m2",
+      "catalog": "foundation-model",
+      "confidence": "validated",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ]
+    }
+  ]
+}

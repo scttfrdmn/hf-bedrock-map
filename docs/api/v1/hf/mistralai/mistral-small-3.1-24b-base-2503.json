@@ -1,0 +1,21 @@
+{
+  "hfId": "mistralai/Mistral-Small-3.1-24B-Base-2503",
+  "onBedrock": true,
+  "regions": [
+    "us-east-1",
+    "us-east-2",
+    "us-west-2"
+  ],
+  "bedrock": [
+    {
+      "modelId": "huggingface-vlm-mistral-small-3-1-24b-base-2503",
+      "catalog": "marketplace",
+      "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ]
+    }
+  ]
+}

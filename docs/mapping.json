@@ -1,21 +1,76 @@
 {
-  "generatedAt": "2026-07-16T06:59:25Z",
-  "region": "us-west-2",
+  "generatedAt": "2026-07-16T07:27:40Z",
+  "regions": [
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2"
+  ],
   "counts": {
     "ambiguous": 8,
-    "confirmed": 125,
-    "proprietary": 114,
-    "total": 266,
-    "unresolved": 2,
+    "confirmed": 130,
+    "proprietary": 133,
+    "total": 291,
+    "unresolved": 3,
     "validated": 17
   },
   "entries": [
+    {
+      "bedrockModelId": "ai21.jamba-1-5-large-v1:0",
+      "catalog": "foundation-model",
+      "provider": "AI21 Labs",
+      "modelName": "Jamba 1.5 Large",
+      "confidence": "proprietary",
+      "regions": [
+        "us-east-1"
+      ],
+      "evidence": "closed-weight provider (EULA https://www.ai21.com/jamba-open-model-license/)"
+    },
+    {
+      "bedrockModelId": "ai21.jamba-1-5-mini-v1:0",
+      "catalog": "foundation-model",
+      "provider": "AI21 Labs",
+      "modelName": "Jamba 1.5 Mini",
+      "confidence": "proprietary",
+      "regions": [
+        "us-east-1"
+      ],
+      "evidence": "closed-weight provider (EULA https://www.ai21.com/jamba-open-model-license/)"
+    },
     {
       "bedrockModelId": "amazon.nova-2-lite-v1:0",
       "catalog": "foundation-model",
       "provider": "Amazon",
       "modelName": "Nova 2 Lite",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "amazon.nova-2-lite-v1:0:256k",
+      "catalog": "foundation-model",
+      "provider": "Amazon",
+      "modelName": "Nova 2 Lite",
+      "confidence": "proprietary",
+      "regions": [
+        "us-east-1"
+      ],
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "amazon.nova-2-multimodal-embeddings-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Amazon",
+      "modelName": "Amazon Nova Multimodal Embeddings",
+      "confidence": "proprietary",
+      "regions": [
+        "us-east-1"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -24,6 +79,21 @@
       "provider": "Amazon",
       "modelName": "Nova 2 Sonic",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-west-2"
+      ],
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "amazon.nova-canvas-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Amazon",
+      "modelName": "Nova Canvas",
+      "confidence": "proprietary",
+      "regions": [
+        "us-east-1"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -32,6 +102,34 @@
       "provider": "Amazon",
       "modelName": "Nova Lite",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "amazon.nova-lite-v1:0:24k",
+      "catalog": "foundation-model",
+      "provider": "Amazon",
+      "modelName": "Nova Lite",
+      "confidence": "proprietary",
+      "regions": [
+        "us-east-1"
+      ],
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "amazon.nova-lite-v1:0:300k",
+      "catalog": "foundation-model",
+      "provider": "Amazon",
+      "modelName": "Nova Lite",
+      "confidence": "proprietary",
+      "regions": [
+        "us-east-1"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -40,6 +138,33 @@
       "provider": "Amazon",
       "modelName": "Nova Micro",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "amazon.nova-micro-v1:0:128k",
+      "catalog": "foundation-model",
+      "provider": "Amazon",
+      "modelName": "Nova Micro",
+      "confidence": "proprietary",
+      "regions": [
+        "us-east-1"
+      ],
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "amazon.nova-micro-v1:0:24k",
+      "catalog": "foundation-model",
+      "provider": "Amazon",
+      "modelName": "Nova Micro",
+      "confidence": "proprietary",
+      "regions": [
+        "us-east-1"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -48,6 +173,11 @@
       "provider": "Amazon",
       "modelName": "Nova Premier",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -56,6 +186,11 @@
       "provider": "Amazon",
       "modelName": "Nova Premier",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -64,6 +199,11 @@
       "provider": "Amazon",
       "modelName": "Nova Premier",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -72,6 +212,11 @@
       "provider": "Amazon",
       "modelName": "Nova Premier",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -80,6 +225,11 @@
       "provider": "Amazon",
       "modelName": "Nova Premier",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -88,6 +238,67 @@
       "provider": "Amazon",
       "modelName": "Nova Pro",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "amazon.nova-pro-v1:0:24k",
+      "catalog": "foundation-model",
+      "provider": "Amazon",
+      "modelName": "Nova Pro",
+      "confidence": "proprietary",
+      "regions": [
+        "us-east-1"
+      ],
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "amazon.nova-pro-v1:0:300k",
+      "catalog": "foundation-model",
+      "provider": "Amazon",
+      "modelName": "Nova Pro",
+      "confidence": "proprietary",
+      "regions": [
+        "us-east-1"
+      ],
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "amazon.nova-reel-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Amazon",
+      "modelName": "Nova Reel",
+      "confidence": "proprietary",
+      "regions": [
+        "us-east-1"
+      ],
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "amazon.nova-reel-v1:1",
+      "catalog": "foundation-model",
+      "provider": "Amazon",
+      "modelName": "Nova Reel",
+      "confidence": "proprietary",
+      "regions": [
+        "us-east-1"
+      ],
+      "evidence": "closed-weight provider"
+    },
+    {
+      "bedrockModelId": "amazon.nova-sonic-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Amazon",
+      "modelName": "Nova Sonic",
+      "confidence": "proprietary",
+      "regions": [
+        "us-east-1"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -96,6 +307,9 @@
       "provider": "Amazon",
       "modelName": "Rerank 1.0",
       "confidence": "proprietary",
+      "regions": [
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider"
     },
     {
@@ -104,6 +318,10 @@
       "provider": "Amazon",
       "modelName": "Titan Text Embeddings v2",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-titan-text-embeddings-v2-2.html)"
     },
     {
@@ -112,6 +330,10 @@
       "provider": "Amazon",
       "modelName": "Titan Multimodal Embeddings G1",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -120,6 +342,10 @@
       "provider": "Amazon",
       "modelName": "Titan Multimodal Embeddings G1",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -128,6 +354,10 @@
       "provider": "Amazon",
       "modelName": "Titan Embeddings G1 - Text",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -136,6 +366,10 @@
       "provider": "Amazon",
       "modelName": "Titan Embeddings G1 - Text",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -144,6 +378,22 @@
       "provider": "Amazon",
       "modelName": "Titan Text Embeddings V2",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "amazon.titan-embed-text-v2:0:8k",
+      "catalog": "foundation-model",
+      "provider": "Amazon",
+      "modelName": "Titan Text Embeddings V2",
+      "confidence": "proprietary",
+      "regions": [
+        "us-east-1"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -152,6 +402,11 @@
       "provider": "Anthropic",
       "modelName": "Claude 3 Haiku",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -160,6 +415,11 @@
       "provider": "Anthropic",
       "modelName": "Claude 3 Haiku",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -168,6 +428,10 @@
       "provider": "Anthropic",
       "modelName": "Claude 3 Haiku",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -176,6 +440,10 @@
       "provider": "Anthropic",
       "modelName": "Claude 3 Sonnet",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider"
     },
     {
@@ -184,6 +452,10 @@
       "provider": "Anthropic",
       "modelName": "Claude 3 Sonnet",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider"
     },
     {
@@ -192,6 +464,10 @@
       "provider": "Anthropic",
       "modelName": "Claude 3 Sonnet",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider"
     },
     {
@@ -200,6 +476,12 @@
       "provider": "Anthropic",
       "modelName": "Claude Fable 5",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -208,6 +490,12 @@
       "provider": "Anthropic",
       "modelName": "Claude Haiku 4.5",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -216,6 +504,11 @@
       "provider": "Anthropic",
       "modelName": "Claude Opus 4.1",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -224,6 +517,12 @@
       "provider": "Anthropic",
       "modelName": "Claude Opus 4.5",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -232,6 +531,12 @@
       "provider": "Anthropic",
       "modelName": "Claude Opus 4.6",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -240,6 +545,12 @@
       "provider": "Anthropic",
       "modelName": "Claude Opus 4.7",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -248,6 +559,12 @@
       "provider": "Anthropic",
       "modelName": "Claude Opus 4.8",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -256,6 +573,34 @@
       "provider": "Anthropic",
       "modelName": "Claude Sonnet 4",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "anthropic.claude-sonnet-4-20250514-v1:0:200k",
+      "catalog": "foundation-model",
+      "provider": "Anthropic",
+      "modelName": "Claude Sonnet 4",
+      "confidence": "proprietary",
+      "regions": [
+        "us-west-1"
+      ],
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "anthropic.claude-sonnet-4-20250514-v1:0:32k",
+      "catalog": "foundation-model",
+      "provider": "Anthropic",
+      "modelName": "Claude Sonnet 4",
+      "confidence": "proprietary",
+      "regions": [
+        "us-west-1"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -264,6 +609,12 @@
       "provider": "Anthropic",
       "modelName": "Claude Sonnet 4.5",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -272,6 +623,12 @@
       "provider": "Anthropic",
       "modelName": "Claude Sonnet 4.6",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -280,6 +637,12 @@
       "provider": "Anthropic",
       "modelName": "Claude Sonnet 5",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -288,6 +651,10 @@
       "provider": "Cohere",
       "modelName": "Command R+",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -296,6 +663,10 @@
       "provider": "Cohere",
       "modelName": "Command R",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -304,6 +675,10 @@
       "provider": "Cohere",
       "modelName": "Embed English",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -312,6 +687,10 @@
       "provider": "Cohere",
       "modelName": "Embed English",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -320,6 +699,10 @@
       "provider": "Cohere",
       "modelName": "Embed Multilingual",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -328,6 +711,10 @@
       "provider": "Cohere",
       "modelName": "Embed Multilingual",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -336,6 +723,12 @@
       "provider": "Cohere",
       "modelName": "Embed v4",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -344,6 +737,10 @@
       "provider": "Cohere",
       "modelName": "Rerank 3.5",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -354,6 +751,11 @@
       "hfId": "deepseek-ai/DeepSeek-R1",
       "hfUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "model card EULA link: https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/main/LICENSE"
     },
     {
@@ -364,6 +766,10 @@
       "hfId": "deepseek-ai/DeepSeek-V3.1",
       "hfUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "model card EULA link: https://huggingface.co/deepseek-ai/DeepSeek-V3.1/blob/main/LICENSE"
     },
     {
@@ -374,6 +780,11 @@
       "hfId": "deepseek-ai/DeepSeek-V3.2",
       "hfUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "model card EULA link: https://huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/main/LICENSE"
     },
     {
@@ -384,6 +795,11 @@
       "hfId": "google/gemma-3-12b-it",
       "hfUrl": "https://huggingface.co/google/gemma-3-12b-it",
       "confidence": "validated",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "hf-validated: base repo google/gemma-3-12b-it exists under google"
     },
     {
@@ -394,6 +810,11 @@
       "hfId": "google/gemma-3-27b-it",
       "hfUrl": "https://huggingface.co/google/gemma-3-27b-it",
       "confidence": "validated",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "hf-validated: base repo google/gemma-3-27b-it exists under google"
     },
     {
@@ -404,6 +825,11 @@
       "hfId": "google/gemma-3-4b-it",
       "hfUrl": "https://huggingface.co/google/gemma-3-4b-it",
       "confidence": "validated",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "hf-validated: base repo google/gemma-3-4b-it exists under google"
     },
     {
@@ -412,6 +838,9 @@
       "provider": "Luma AI",
       "modelName": "Ray v2",
       "confidence": "proprietary",
+      "regions": [
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider"
     },
     {
@@ -422,6 +851,11 @@
       "hfId": "meta-llama/Llama-3.1-70B-Instruct",
       "hfUrl": "https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "curated override (verified against huggingface.co)"
     },
     {
@@ -432,6 +866,10 @@
       "hfId": "meta-llama/Llama-3.1-70B-Instruct",
       "hfUrl": "https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "curated override (verified against huggingface.co)"
     },
     {
@@ -442,6 +880,11 @@
       "hfId": "meta-llama/Llama-3.1-8B-Instruct",
       "hfUrl": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "curated override (verified against huggingface.co)"
     },
     {
@@ -452,6 +895,10 @@
       "hfId": "meta-llama/Llama-3.1-8B-Instruct",
       "hfUrl": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "curated override (verified against huggingface.co)"
     },
     {
@@ -462,6 +909,11 @@
       "hfId": "meta-llama/Llama-3.3-70B-Instruct",
       "hfUrl": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "curated override (verified against huggingface.co)"
     },
     {
@@ -472,6 +924,9 @@
       "hfId": "meta-llama/Llama-3.3-70B-Instruct",
       "hfUrl": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
       "confidence": "confirmed",
+      "regions": [
+        "us-west-2"
+      ],
       "evidence": "curated override (verified against huggingface.co)"
     },
     {
@@ -482,6 +937,10 @@
       "hfId": "meta-llama/Meta-Llama-3-70B-Instruct",
       "hfUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-west-2"
+      ],
       "evidence": "curated override (verified against huggingface.co)"
     },
     {
@@ -492,6 +951,10 @@
       "hfId": "meta-llama/Meta-Llama-3-8B-Instruct",
       "hfUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-west-2"
+      ],
       "evidence": "curated override (verified against huggingface.co)"
     },
     {
@@ -502,6 +965,38 @@
       "hfId": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
       "hfUrl": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "evidence": "curated override (verified against huggingface.co)"
+    },
+    {
+      "bedrockModelId": "meta.llama4-maverick-17b-instruct-v1:0:128k",
+      "catalog": "foundation-model",
+      "provider": "Meta",
+      "modelName": "Llama 4 Maverick 17B Instruct",
+      "hfId": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+      "hfUrl": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+      "confidence": "confirmed",
+      "regions": [
+        "us-west-1"
+      ],
+      "evidence": "curated override (verified against huggingface.co)"
+    },
+    {
+      "bedrockModelId": "meta.llama4-maverick-17b-instruct-v1:0:1m",
+      "catalog": "foundation-model",
+      "provider": "Meta",
+      "modelName": "Llama 4 Maverick 17B Instruct",
+      "hfId": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+      "hfUrl": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+      "confidence": "confirmed",
+      "regions": [
+        "us-west-1"
+      ],
       "evidence": "curated override (verified against huggingface.co)"
     },
     {
@@ -512,6 +1007,38 @@
       "hfId": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
       "hfUrl": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "evidence": "curated override (verified against huggingface.co)"
+    },
+    {
+      "bedrockModelId": "meta.llama4-scout-17b-instruct-v1:0:10m",
+      "catalog": "foundation-model",
+      "provider": "Meta",
+      "modelName": "Llama 4 Scout 17B Instruct",
+      "hfId": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "hfUrl": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "confidence": "confirmed",
+      "regions": [
+        "us-west-1"
+      ],
+      "evidence": "curated override (verified against huggingface.co)"
+    },
+    {
+      "bedrockModelId": "meta.llama4-scout-17b-instruct-v1:0:128k",
+      "catalog": "foundation-model",
+      "provider": "Meta",
+      "modelName": "Llama 4 Scout 17B Instruct",
+      "hfId": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "hfUrl": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "confidence": "confirmed",
+      "regions": [
+        "us-west-1"
+      ],
       "evidence": "curated override (verified against huggingface.co)"
     },
     {
@@ -522,6 +1049,11 @@
       "hfId": "MiniMaxAI/MiniMax-M2",
       "hfUrl": "https://huggingface.co/MiniMaxAI/MiniMax-M2",
       "confidence": "validated",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "hf-validated: base repo MiniMaxAI/MiniMax-M2 exists under MiniMaxAI"
     },
     {
@@ -532,6 +1064,11 @@
       "hfId": "MiniMaxAI/MiniMax-M2.1",
       "hfUrl": "https://huggingface.co/MiniMaxAI/MiniMax-M2.1",
       "confidence": "validated",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "hf-validated: base repo MiniMaxAI/MiniMax-M2.1 exists under MiniMaxAI"
     },
     {
@@ -542,6 +1079,11 @@
       "hfId": "MiniMaxAI/MiniMax-M2.5",
       "hfUrl": "https://huggingface.co/MiniMaxAI/MiniMax-M2.5",
       "confidence": "validated",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "hf-validated: base repo MiniMaxAI/MiniMax-M2.5 exists under MiniMaxAI"
     },
     {
@@ -552,6 +1094,11 @@
       "hfId": "mistralai/Devstral-2-123B-Instruct-2512",
       "hfUrl": "https://huggingface.co/mistralai/Devstral-2-123B-Instruct-2512",
       "confidence": "validated",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "hf-validated: unique match mistralai/Devstral-2-123B-Instruct-2512 under mistralai"
     },
     {
@@ -562,6 +1109,11 @@
       "hfId": "mistralai/Magistral-Small-2509",
       "hfUrl": "https://huggingface.co/mistralai/Magistral-Small-2509",
       "confidence": "validated",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "hf-validated: base repo mistralai/Magistral-Small-2509 exists under mistralai"
     },
     {
@@ -572,6 +1124,11 @@
       "hfId": "mistralai/Ministral-3-14B-Instruct-2512",
       "hfUrl": "https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512",
       "confidence": "validated",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "hf-validated: unique match mistralai/Ministral-3-14B-Instruct-2512 under mistralai"
     },
     {
@@ -580,6 +1137,11 @@
       "provider": "Mistral AI",
       "modelName": "Ministral 3B",
       "confidence": "ambiguous",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "multiple HF variants, modelId can't disambiguate: mistralai/Ministral-3-3B-Instruct-2512, mistralai/Ministral-3-3B-Instruct-2512-ONNX"
     },
     {
@@ -590,6 +1152,11 @@
       "hfId": "mistralai/Ministral-3-8B-Instruct-2512",
       "hfUrl": "https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512",
       "confidence": "validated",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "hf-validated: unique match mistralai/Ministral-3-8B-Instruct-2512 under mistralai"
     },
     {
@@ -598,6 +1165,10 @@
       "provider": "Mistral AI",
       "modelName": "Mistral 7B Instruct",
       "confidence": "ambiguous",
+      "regions": [
+        "us-east-1",
+        "us-west-2"
+      ],
       "evidence": "multiple HF variants, modelId can't disambiguate: mistralai/Mistral-7B-Instruct-v0.1, mistralai/Mistral-7B-Instruct-v0.2, mistralai/Mistral-7B-Instruct-v0.3"
     },
     {
@@ -606,6 +1177,10 @@
       "provider": "Mistral AI",
       "modelName": "Mistral Large (24.02)",
       "confidence": "unresolved",
+      "regions": [
+        "us-east-1",
+        "us-west-2"
+      ],
       "evidence": "no HF repo found under mistralai matching modelId"
     },
     {
@@ -616,6 +1191,9 @@
       "hfId": "mistralai/Mistral-Large-Instruct-2407",
       "hfUrl": "https://huggingface.co/mistralai/Mistral-Large-Instruct-2407",
       "confidence": "validated",
+      "regions": [
+        "us-west-2"
+      ],
       "evidence": "hf-validated: unique match mistralai/Mistral-Large-Instruct-2407 under mistralai"
     },
     {
@@ -624,7 +1202,23 @@
       "provider": "Mistral AI",
       "modelName": "Mistral Large 3",
       "confidence": "ambiguous",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "multiple HF variants, modelId can't disambiguate: mistralai/Mistral-Large-3-675B-Instruct-2512, mistralai/Mistral-Large-3-675B-Instruct-2512-Eagle"
+    },
+    {
+      "bedrockModelId": "mistral.mistral-small-2402-v1:0",
+      "catalog": "foundation-model",
+      "provider": "Mistral AI",
+      "modelName": "Mistral Small (24.02)",
+      "confidence": "unresolved",
+      "regions": [
+        "us-east-1"
+      ],
+      "evidence": "no HF repo found under mistralai matching modelId"
     },
     {
       "bedrockModelId": "mistral.mixtral-8x7b-instruct-v0:1",
@@ -634,6 +1228,10 @@
       "hfId": "mistralai/Mixtral-8x7B-Instruct-v0.1",
       "hfUrl": "https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1",
       "confidence": "validated",
+      "regions": [
+        "us-east-1",
+        "us-west-2"
+      ],
       "evidence": "hf-validated: unique match mistralai/Mixtral-8x7B-Instruct-v0.1 under mistralai"
     },
     {
@@ -642,6 +1240,11 @@
       "provider": "Mistral AI",
       "modelName": "Pixtral Large (25.02)",
       "confidence": "unresolved",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "no HF repo found under mistralai matching modelId"
     },
     {
@@ -652,6 +1255,11 @@
       "hfId": "mistralai/Voxtral-Mini-3B-2507",
       "hfUrl": "https://huggingface.co/mistralai/Voxtral-Mini-3B-2507",
       "confidence": "validated",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "hf-validated: base repo mistralai/Voxtral-Mini-3B-2507 exists under mistralai"
     },
     {
@@ -662,6 +1270,11 @@
       "hfId": "mistralai/Voxtral-Small-24B-2507",
       "hfUrl": "https://huggingface.co/mistralai/Voxtral-Small-24B-2507",
       "confidence": "validated",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "hf-validated: base repo mistralai/Voxtral-Small-24B-2507 exists under mistralai"
     },
     {
@@ -672,6 +1285,11 @@
       "hfId": "moonshotai/Kimi-K2-Thinking",
       "hfUrl": "https://huggingface.co/moonshotai/Kimi-K2-Thinking",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "model card EULA link: https://huggingface.co/moonshotai/Kimi-K2-Thinking/blob/main/LICENSE"
     },
     {
@@ -682,6 +1300,11 @@
       "hfId": "moonshotai/Kimi-K2.5",
       "hfUrl": "https://huggingface.co/moonshotai/Kimi-K2.5",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "model card EULA link: https://huggingface.co/moonshotai/Kimi-K2.5/blob/main/LICENSE"
     },
     {
@@ -690,6 +1313,11 @@
       "provider": "NVIDIA",
       "modelName": "NVIDIA Nemotron Nano 12B v2 VL BF16",
       "confidence": "ambiguous",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "multiple HF variants, modelId can't disambiguate: nvidia/NVIDIA-Nemotron-Nano-12B-v2, nvidia/NVIDIA-Nemotron-Nano-12B-v2-Base, nvidia/NVIDIA-Nemotron-Nano-12B-v2-VL-FP8, nvidia/NVIDIA-Nemotron-Nano-12B-v2-VL-NVFP4-QAD"
     },
     {
@@ -698,6 +1326,11 @@
       "provider": "NVIDIA",
       "modelName": "Nemotron Nano 3 30B",
       "confidence": "ambiguous",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "multiple HF variants, modelId can't disambiguate: nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16, nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-FP8, nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-FP8"
     },
     {
@@ -706,6 +1339,11 @@
       "provider": "NVIDIA",
       "modelName": "NVIDIA Nemotron Nano 9B v2",
       "confidence": "ambiguous",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "multiple HF variants, modelId can't disambiguate: nvidia/NVIDIA-Nemotron-Nano-9B-v2, nvidia/NVIDIA-Nemotron-Nano-9B-v2-Base, nvidia/NVIDIA-Nemotron-Nano-9B-v2-Japanese"
     },
     {
@@ -714,6 +1352,11 @@
       "provider": "NVIDIA",
       "modelName": "NVIDIA Nemotron 3 Super 120B A12B",
       "confidence": "ambiguous",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "multiple HF variants, modelId can't disambiguate: nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-Base-BF16, nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8"
     },
     {
@@ -724,6 +1367,11 @@
       "hfId": "openai/gpt-oss-120b",
       "hfUrl": "https://huggingface.co/openai/gpt-oss-120b",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "model card EULA link: https://huggingface.co/openai/gpt-oss-120b/blob/main/LICENSE"
     },
     {
@@ -734,6 +1382,11 @@
       "hfId": "openai/gpt-oss-20b",
       "hfUrl": "https://huggingface.co/openai/gpt-oss-20b",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "model card EULA link: https://huggingface.co/openai/gpt-oss-20b/blob/main/LICENSE"
     },
     {
@@ -744,6 +1397,11 @@
       "hfId": "openai/gpt-oss-safeguard-120b",
       "hfUrl": "https://huggingface.co/openai/gpt-oss-safeguard-120b",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "model card EULA link: https://huggingface.co/openai/gpt-oss-safeguard-120b/blob/main/LICENSE"
     },
     {
@@ -754,6 +1412,11 @@
       "hfId": "openai/gpt-oss-safeguard-20b",
       "hfUrl": "https://huggingface.co/openai/gpt-oss-safeguard-20b",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "model card EULA link: https://huggingface.co/openai/gpt-oss-safeguard-20b/blob/main/LICENSE"
     },
     {
@@ -764,6 +1427,10 @@
       "hfId": "Qwen/Qwen3-235B-A22B-Instruct-2507",
       "hfUrl": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "model card EULA link: https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507/blob/main/LICENSE"
     },
     {
@@ -774,6 +1441,11 @@
       "hfId": "Qwen/Qwen3-32B",
       "hfUrl": "https://huggingface.co/Qwen/Qwen3-32B",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "model card EULA link: https://huggingface.co/Qwen/Qwen3-32B/blob/main/LICENSE"
     },
     {
@@ -784,6 +1456,11 @@
       "hfId": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
       "hfUrl": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "model card EULA link: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/main/LICENSE"
     },
     {
@@ -794,7 +1471,24 @@
       "hfId": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
       "hfUrl": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "model card EULA link: https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct/blob/main/LICENSE"
+    },
+    {
+      "bedrockModelId": "qwen.qwen3-coder-next",
+      "catalog": "foundation-model",
+      "provider": "Qwen",
+      "modelName": "Qwen3 Coder Next",
+      "hfId": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+      "hfUrl": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct",
+      "confidence": "confirmed",
+      "regions": [
+        "us-east-1"
+      ],
+      "evidence": "model card EULA link: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/main/LICENSE"
     },
     {
       "bedrockModelId": "qwen.qwen3-next-80b-a3b",
@@ -804,6 +1498,11 @@
       "hfId": "Qwen/Qwen3-Next-80B-A3B-Instruct",
       "hfUrl": "https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "model card EULA link: https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/main/LICENSE"
     },
     {
@@ -812,6 +1511,11 @@
       "provider": "Qwen",
       "modelName": "Qwen3 VL 235B A22B",
       "confidence": "ambiguous",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "multiple HF variants, modelId can't disambiguate: Qwen/Qwen3-VL-235B-A22B-Instruct, Qwen/Qwen3-VL-235B-A22B-Thinking"
     },
     {
@@ -820,6 +1524,9 @@
       "provider": "Stability AI",
       "modelName": "Stable Diffusion 3.5 Large",
       "confidence": "proprietary",
+      "regions": [
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider"
     },
     {
@@ -828,6 +1535,11 @@
       "provider": "Stability AI",
       "modelName": "Stable Image Conservative Upscale",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -836,6 +1548,11 @@
       "provider": "Stability AI",
       "modelName": "Stable Image Creative Upscale",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -844,6 +1561,11 @@
       "provider": "Stability AI",
       "modelName": "Stable Image Fast Upscale",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -852,6 +1574,11 @@
       "provider": "Stability AI",
       "modelName": "Stable Image Control Sketch",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -860,6 +1587,11 @@
       "provider": "Stability AI",
       "modelName": "Stable Image Control Structure",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -868,6 +1600,9 @@
       "provider": "Stability AI",
       "modelName": "Stable Image Core 1.0",
       "confidence": "proprietary",
+      "regions": [
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider"
     },
     {
@@ -876,6 +1611,11 @@
       "provider": "Stability AI",
       "modelName": "Stable Image Erase Object",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -884,6 +1624,11 @@
       "provider": "Stability AI",
       "modelName": "Stable Image Inpaint",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -892,6 +1637,11 @@
       "provider": "Stability AI",
       "modelName": "Stable Image Remove Background",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -900,6 +1650,11 @@
       "provider": "Stability AI",
       "modelName": "Stable Image Search and Recolor",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -908,6 +1663,11 @@
       "provider": "Stability AI",
       "modelName": "Stable Image Search and Replace",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -916,6 +1676,11 @@
       "provider": "Stability AI",
       "modelName": "Stable Image Style Guide",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -924,6 +1689,9 @@
       "provider": "Stability AI",
       "modelName": "Stable Image Ultra 1.0",
       "confidence": "proprietary",
+      "regions": [
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider"
     },
     {
@@ -932,6 +1700,11 @@
       "provider": "Stability AI",
       "modelName": "Stable Image Outpaint",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -940,6 +1713,33 @@
       "provider": "Stability AI",
       "modelName": "Stable Image Style Transfer",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "twelvelabs.marengo-embed-2-7-v1:0",
+      "catalog": "foundation-model",
+      "provider": "TwelveLabs",
+      "modelName": "Marengo Embed v2.7",
+      "confidence": "proprietary",
+      "regions": [
+        "us-east-1"
+      ],
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "twelvelabs.marengo-embed-3-0-v1:0",
+      "catalog": "foundation-model",
+      "provider": "TwelveLabs",
+      "modelName": "Marengo Embed 3.0",
+      "confidence": "proprietary",
+      "regions": [
+        "us-east-1"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -948,6 +1748,12 @@
       "provider": "TwelveLabs",
       "modelName": "Pegasus v1.2",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -956,6 +1762,11 @@
       "provider": "Writer",
       "modelName": "Writer Palmyra Vision 7B",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -964,6 +1775,12 @@
       "provider": "Writer",
       "modelName": "Palmyra X4",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -972,6 +1789,12 @@
       "provider": "Writer",
       "modelName": "Palmyra X5",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
@@ -982,6 +1805,11 @@
       "hfId": "zai-org/GLM-4.7",
       "hfUrl": "https://huggingface.co/zai-org/GLM-4.7",
       "confidence": "validated",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "hf-validated: base repo zai-org/GLM-4.7 exists under zai-org"
     },
     {
@@ -992,6 +1820,11 @@
       "hfId": "zai-org/GLM-4.7-Flash",
       "hfUrl": "https://huggingface.co/zai-org/GLM-4.7-Flash",
       "confidence": "validated",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "hf-validated: base repo zai-org/GLM-4.7-Flash exists under zai-org"
     },
     {
@@ -1002,6 +1835,11 @@
       "hfId": "zai-org/GLM-5",
       "hfUrl": "https://huggingface.co/zai-org/GLM-5",
       "confidence": "validated",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "hf-validated: base repo zai-org/GLM-5 exists under zai-org"
     },
     {
@@ -1010,6 +1848,11 @@
       "provider": "arcee ai",
       "modelName": "Arcee Lite",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -1018,6 +1861,11 @@
       "provider": "arcee ai",
       "modelName": "Llama 3.1 SuperNova Lite",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -1026,6 +1874,11 @@
       "provider": "arcee ai",
       "modelName": "Llama Spark",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -1034,6 +1887,11 @@
       "provider": "arcee ai",
       "modelName": "Arcee SuperNova",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -1042,6 +1900,11 @@
       "provider": "arcee ai",
       "modelName": "Arcee Virtuoso Small",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -1052,6 +1915,12 @@
       "hfId": "amazon/chronos-bolt-base",
       "hfUrl": "https://huggingface.co/amazon/chronos-bolt-base",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1060,6 +1929,11 @@
       "provider": "bria ai",
       "modelName": "Bria 2.2HD Commercial Text-to-image",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -1068,6 +1942,11 @@
       "provider": "bria ai",
       "modelName": "Bria 2.3 Commercial Text-to-image",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -1076,6 +1955,11 @@
       "provider": "bria ai",
       "modelName": "Bria 2.3Fast Commercial Text-to-image",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -1084,6 +1968,12 @@
       "provider": "camb.ai",
       "modelName": "MARS6",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -1094,6 +1984,12 @@
       "hfId": "deepseek-ai/DeepSeek-R1",
       "hfUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1104,6 +2000,12 @@
       "hfId": "deepseek-ai/DeepSeek-R1-0528",
       "hfUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1114,6 +2016,12 @@
       "hfId": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
       "hfUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1124,6 +2032,12 @@
       "hfId": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
       "hfUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1134,6 +2048,12 @@
       "hfId": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
       "hfUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1144,6 +2064,12 @@
       "hfId": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
       "hfUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1154,6 +2080,12 @@
       "hfId": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
       "hfUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1164,6 +2096,12 @@
       "hfId": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
       "hfUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1172,6 +2110,11 @@
       "provider": "evolutionaryscale, pbc",
       "modelName": "ESM3-open",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -1180,6 +2123,11 @@
       "provider": "ibm data and ai",
       "modelName": "IBM Granite 3.0 2B Instruct",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -1188,6 +2136,11 @@
       "provider": "ibm data and ai",
       "modelName": "IBM Granite 3.0 8B Instruct",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -1196,6 +2149,11 @@
       "provider": "gretel",
       "modelName": "Gretel Navigator Tabular",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -1206,6 +2164,12 @@
       "hfId": "openai/whisper-large-v3-turbo",
       "hfUrl": "https://huggingface.co/openai/whisper-large-v3-turbo",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1216,6 +2180,11 @@
       "hfId": "ai-forever/mGPT",
       "hfUrl": "https://huggingface.co/ai-forever/mGPT",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1226,6 +2195,11 @@
       "hfId": "amazon/FalconLite",
       "hfUrl": "https://huggingface.co/amazon/FalconLite",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1236,6 +2210,11 @@
       "hfId": "amazon/FalconLite2",
       "hfUrl": "https://huggingface.co/amazon/FalconLite2",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1246,6 +2225,11 @@
       "hfId": "amazon/MistralLite",
       "hfUrl": "https://huggingface.co/amazon/MistralLite",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1256,6 +2240,12 @@
       "hfId": "swiss-ai/Apertus-70B-Instruct-2509",
       "hfUrl": "https://huggingface.co/swiss-ai/Apertus-70B-Instruct-2509",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1266,6 +2256,12 @@
       "hfId": "swiss-ai/Apertus-8B-Instruct-2509",
       "hfUrl": "https://huggingface.co/swiss-ai/Apertus-8B-Instruct-2509",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1276,6 +2272,11 @@
       "hfId": "CohereForAI/aya-101",
       "hfUrl": "https://huggingface.co/CohereForAI/aya-101",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1286,6 +2287,11 @@
       "hfId": "databricks/dbrx-base",
       "hfUrl": "https://huggingface.co/databricks/dbrx-base",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1296,6 +2302,11 @@
       "hfId": "databricks/dbrx-instruct",
       "hfUrl": "https://huggingface.co/databricks/dbrx-instruct",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1306,6 +2317,11 @@
       "hfId": "cognitivecomputations/dolphin-2.2.1-mistral-7b",
       "hfUrl": "https://huggingface.co/cognitivecomputations/dolphin-2.2.1-mistral-7b",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1316,6 +2332,11 @@
       "hfId": "cognitivecomputations/dolphin-2.5-mixtral-8x7b",
       "hfUrl": "https://huggingface.co/cognitivecomputations/dolphin-2.5-mixtral-8x7b",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1326,6 +2347,11 @@
       "hfId": "tiiuae/falcon-180B",
       "hfUrl": "https://huggingface.co/tiiuae/falcon-180B",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1336,6 +2362,12 @@
       "hfId": "tiiuae/Falcon3-10B-Instruct",
       "hfUrl": "https://huggingface.co/tiiuae/Falcon3-10B-Instruct",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1346,6 +2378,11 @@
       "hfId": "tiiuae/Falcon3-10B-Base",
       "hfUrl": "https://huggingface.co/tiiuae/Falcon3-10B-Base",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1356,6 +2393,12 @@
       "hfId": "tiiuae/Falcon3-1B-Instruct",
       "hfUrl": "https://huggingface.co/tiiuae/Falcon3-1B-Instruct",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1366,6 +2409,12 @@
       "hfId": "tiiuae/Falcon3-3B-Instruct",
       "hfUrl": "https://huggingface.co/tiiuae/Falcon3-3B-Instruct",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1376,6 +2425,11 @@
       "hfId": "tiiuae/Falcon3-3B-Base",
       "hfUrl": "https://huggingface.co/tiiuae/Falcon3-3B-Base",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1386,6 +2440,12 @@
       "hfId": "tiiuae/Falcon3-7B-Instruct",
       "hfUrl": "https://huggingface.co/tiiuae/Falcon3-7B-Instruct",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1396,6 +2456,11 @@
       "hfId": "tiiuae/Falcon3-7B-Base",
       "hfUrl": "https://huggingface.co/tiiuae/Falcon3-7B-Base",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1406,6 +2471,11 @@
       "hfId": "tiiuae/falcon-40b",
       "hfUrl": "https://huggingface.co/tiiuae/falcon-40b",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1416,6 +2486,12 @@
       "hfId": "tiiuae/Falcon-H1-0.5B-Instruct",
       "hfUrl": "https://huggingface.co/tiiuae/Falcon-H1-0.5B-Instruct",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1426,6 +2502,11 @@
       "hfId": "tiiuae/Falcon-H1-1.5B-Deep-Instruct",
       "hfUrl": "https://huggingface.co/tiiuae/Falcon-H1-1.5B-Deep-Instruct",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1436,6 +2517,11 @@
       "hfId": "tiiuae/Falcon-H1-1.5B-Instruct",
       "hfUrl": "https://huggingface.co/tiiuae/Falcon-H1-1.5B-Instruct",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1446,6 +2532,11 @@
       "hfId": "tiiuae/Falcon-H1-34B-Instruct",
       "hfUrl": "https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1456,6 +2547,11 @@
       "hfId": "tiiuae/Falcon-H1-3B-Instruct",
       "hfUrl": "https://huggingface.co/tiiuae/Falcon-H1-3B-Instruct",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1466,6 +2562,11 @@
       "hfId": "tiiuae/Falcon-H1-7B-Instruct",
       "hfUrl": "https://huggingface.co/tiiuae/Falcon-H1-7B-Instruct",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1476,6 +2577,11 @@
       "hfId": "google/gemma-2-27b",
       "hfUrl": "https://huggingface.co/google/gemma-2-27b",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1486,6 +2592,11 @@
       "hfId": "google/gemma-2-27b",
       "hfUrl": "https://huggingface.co/google/gemma-2-27b",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1496,6 +2607,11 @@
       "hfId": "google/gemma-2-2b",
       "hfUrl": "https://huggingface.co/google/gemma-2-2b",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1506,6 +2622,11 @@
       "hfId": "google/gemma-2-2b",
       "hfUrl": "https://huggingface.co/google/gemma-2-2b",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1516,6 +2637,11 @@
       "hfId": "google/gemma-2-9b",
       "hfUrl": "https://huggingface.co/google/gemma-2-9b",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1526,6 +2652,11 @@
       "hfId": "google/gemma-2-9b",
       "hfUrl": "https://huggingface.co/google/gemma-2-9b",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1536,6 +2667,12 @@
       "hfId": "google/gemma-2b",
       "hfUrl": "https://huggingface.co/google/gemma-2b",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1546,6 +2683,12 @@
       "hfId": "google/gemma-2b-it",
       "hfUrl": "https://huggingface.co/google/gemma-2b-it",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1556,6 +2699,11 @@
       "hfId": "google/gemma-3-1b-it",
       "hfUrl": "https://huggingface.co/google/gemma-3-1b-it",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1566,6 +2714,12 @@
       "hfId": "google/gemma-7b",
       "hfUrl": "https://huggingface.co/google/gemma-7b",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1576,6 +2730,12 @@
       "hfId": "google/gemma-7b-it",
       "hfUrl": "https://huggingface.co/google/gemma-7b-it",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1586,6 +2746,11 @@
       "hfId": "HuggingFaceH4/zephyr-7b-beta",
       "hfUrl": "https://huggingface.co/HuggingFaceH4/zephyr-7b-beta",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1596,6 +2761,11 @@
       "hfId": "aisingapore/llama3-8b-cpt-sea-lionv2.1-instruct",
       "hfUrl": "https://huggingface.co/aisingapore/llama3-8b-cpt-sea-lionv2.1-instruct",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1606,6 +2776,11 @@
       "hfId": "TheBloke/Mistral-7B-OpenOrca-GPTQ",
       "hfUrl": "https://huggingface.co/TheBloke/Mistral-7B-OpenOrca-GPTQ",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1616,6 +2791,11 @@
       "hfId": "mistralai/Mistral-Nemo-Base-2407",
       "hfUrl": "https://huggingface.co/mistralai/Mistral-Nemo-Base-2407",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1626,6 +2806,11 @@
       "hfId": "mistralai/Mistral-Nemo-Instruct-2407",
       "hfUrl": "https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1636,6 +2821,12 @@
       "hfId": "mistralai/Mistral-Small-24B-Instruct-2501",
       "hfUrl": "https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1646,6 +2837,11 @@
       "hfId": "microsoft/phi-2",
       "hfUrl": "https://huggingface.co/microsoft/phi-2",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1656,6 +2852,11 @@
       "hfId": "microsoft/Phi-3.5-mini-instruct",
       "hfUrl": "https://huggingface.co/microsoft/Phi-3.5-mini-instruct",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1666,6 +2867,11 @@
       "hfId": "microsoft/Phi-3-mini-128k-instruct",
       "hfUrl": "https://huggingface.co/microsoft/Phi-3-mini-128k-instruct",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1676,6 +2882,12 @@
       "hfId": "microsoft/Phi-3-mini-4k-instruct",
       "hfUrl": "https://huggingface.co/microsoft/Phi-3-mini-4k-instruct",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1686,6 +2898,12 @@
       "hfId": "Qwen/Qwen2.5-14B-Instruct",
       "hfUrl": "https://huggingface.co/Qwen/Qwen2.5-14B-Instruct",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1696,6 +2914,12 @@
       "hfId": "Qwen/Qwen2.5-32B-Instruct",
       "hfUrl": "https://huggingface.co/Qwen/Qwen2.5-32B-Instruct",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1706,6 +2930,12 @@
       "hfId": "Qwen/Qwen2.5-72B-Instruct",
       "hfUrl": "https://huggingface.co/Qwen/Qwen2.5-72B-Instruct",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1716,6 +2946,12 @@
       "hfId": "Qwen/Qwen2.5-7B-Instruct",
       "hfUrl": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1726,6 +2962,11 @@
       "hfId": "Qwen/Qwen2.5-Coder-32B-Instruct",
       "hfUrl": "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1736,6 +2977,11 @@
       "hfId": "Qwen/Qwen2.5-Coder-7B-Instruct",
       "hfUrl": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1746,6 +2992,11 @@
       "hfId": "Snowflake/snowflake-arctic-instruct-vllm",
       "hfUrl": "https://huggingface.co/Snowflake/snowflake-arctic-instruct-vllm",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1756,6 +3007,11 @@
       "hfId": "TheBloke/Mistral-7B-OpenOrca-AWQ",
       "hfUrl": "https://huggingface.co/TheBloke/Mistral-7B-OpenOrca-AWQ",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1766,6 +3022,11 @@
       "hfId": "tiiuae/falcon-rw-1b",
       "hfUrl": "https://huggingface.co/tiiuae/falcon-rw-1b",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1776,6 +3037,11 @@
       "hfId": "Writer/palmyra-small",
       "hfUrl": "https://huggingface.co/Writer/palmyra-small",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1786,6 +3052,11 @@
       "hfId": "01-ai/Yi-1.5-34B",
       "hfUrl": "https://huggingface.co/01-ai/Yi-1.5-34B",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1796,6 +3067,11 @@
       "hfId": "01-ai/Yi-1.5-9B",
       "hfUrl": "https://huggingface.co/01-ai/Yi-1.5-9B",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1806,6 +3082,12 @@
       "hfId": "Qwen/Qwen3-0.6B",
       "hfUrl": "https://huggingface.co/Qwen/Qwen3-0.6B",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1816,6 +3098,12 @@
       "hfId": "Qwen/Qwen3-32B",
       "hfUrl": "https://huggingface.co/Qwen/Qwen3-32B",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1826,6 +3114,12 @@
       "hfId": "Qwen/Qwen3-4B",
       "hfUrl": "https://huggingface.co/Qwen/Qwen3-4B",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1836,6 +3130,12 @@
       "hfId": "Qwen/Qwen3-8B",
       "hfUrl": "https://huggingface.co/Qwen/Qwen3-8B",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1846,6 +3146,12 @@
       "hfId": "philschmid/bart-large-cnn-samsum",
       "hfUrl": "https://huggingface.co/philschmid/bart-large-cnn-samsum",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1856,6 +3162,12 @@
       "hfId": "sshleifer/distilbart-cnn-12-6",
       "hfUrl": "https://huggingface.co/sshleifer/distilbart-cnn-12-6",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1866,6 +3178,12 @@
       "hfId": "sshleifer/distilbart-cnn-6-6",
       "hfUrl": "https://huggingface.co/sshleifer/distilbart-cnn-6-6",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1876,6 +3194,12 @@
       "hfId": "sshleifer/distilbart-xsum-1-1",
       "hfUrl": "https://huggingface.co/sshleifer/distilbart-xsum-1-1",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1886,6 +3210,11 @@
       "hfId": "google/flan-t5-base",
       "hfUrl": "https://huggingface.co/google/flan-t5-base",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1896,6 +3225,11 @@
       "hfId": "philschmid/flan-t5-base-samsum",
       "hfUrl": "https://huggingface.co/philschmid/flan-t5-base-samsum",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1906,6 +3240,11 @@
       "hfId": "google/flan-t5-large",
       "hfUrl": "https://huggingface.co/google/flan-t5-large",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1916,6 +3255,11 @@
       "hfId": "google/flan-t5-small",
       "hfUrl": "https://huggingface.co/google/flan-t5-small",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1926,6 +3270,11 @@
       "hfId": "bigscience/bloom-1b1",
       "hfUrl": "https://huggingface.co/bigscience/bloom-1b1",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1936,6 +3285,11 @@
       "hfId": "bigscience/bloomz-1b7",
       "hfUrl": "https://huggingface.co/bigscience/bloomz-1b7",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1946,6 +3300,11 @@
       "hfId": "distilbert/distilgpt2",
       "hfUrl": "https://huggingface.co/distilbert/distilgpt2",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1956,6 +3315,11 @@
       "hfId": "databricks/dolly-v2-12b",
       "hfUrl": "https://huggingface.co/databricks/dolly-v2-12b",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1966,6 +3330,11 @@
       "hfId": "databricks/dolly-v2-3b",
       "hfUrl": "https://huggingface.co/databricks/dolly-v2-3b",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1976,6 +3345,11 @@
       "hfId": "openai-community/gpt2",
       "hfUrl": "https://huggingface.co/openai-community/gpt2",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1986,6 +3360,11 @@
       "hfId": "bigscience/bloom-3b",
       "hfUrl": "https://huggingface.co/bigscience/bloom-3b",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -1996,6 +3375,11 @@
       "hfId": "bigscience/bloom-7b1",
       "hfUrl": "https://huggingface.co/bigscience/bloom-7b1",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -2006,6 +3390,11 @@
       "hfId": "bigscience/bloomz-7b1",
       "hfUrl": "https://huggingface.co/bigscience/bloomz-7b1",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -2016,6 +3405,11 @@
       "hfId": "openai-community/gpt2-xl",
       "hfUrl": "https://huggingface.co/openai-community/gpt2-xl",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -2026,6 +3420,11 @@
       "hfId": "EleutherAI/gpt-j-6B",
       "hfUrl": "https://huggingface.co/EleutherAI/gpt-j-6B",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -2036,6 +3435,11 @@
       "hfId": "EleutherAI/gpt-neo-125M",
       "hfUrl": "https://huggingface.co/EleutherAI/gpt-neo-125M",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -2046,6 +3450,11 @@
       "hfId": "mosaicml/mpt-7b",
       "hfUrl": "https://huggingface.co/mosaicml/mpt-7b",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -2056,6 +3465,11 @@
       "hfId": "mosaicml/mpt-7b-instruct",
       "hfUrl": "https://huggingface.co/mosaicml/mpt-7b-instruct",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -2066,6 +3480,12 @@
       "hfId": "EleutherAI/gpt-neox-20b",
       "hfUrl": "https://huggingface.co/EleutherAI/gpt-neox-20b",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -2076,6 +3496,11 @@
       "hfId": "google/gemma-3-27b-it",
       "hfUrl": "https://huggingface.co/google/gemma-3-27b-it",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -2086,6 +3511,11 @@
       "hfId": "google/gemma-3-4b-it",
       "hfUrl": "https://huggingface.co/google/gemma-3-4b-it",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -2096,6 +3526,11 @@
       "hfId": "mistralai/Pixtral-12B-2409",
       "hfUrl": "https://huggingface.co/mistralai/Pixtral-12B-2409",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -2106,6 +3541,11 @@
       "hfId": "mistralai/Mistral-Small-3.1-24B-Base-2503",
       "hfUrl": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Base-2503",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -2116,6 +3556,11 @@
       "hfId": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
       "hfUrl": "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506",
       "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "HubContentDocument.Url"
     },
     {
@@ -2124,6 +3569,11 @@
       "provider": "ibm data and ai",
       "modelName": "IBM Granite 20B Code Instruct - 8K",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -2132,6 +3582,11 @@
       "provider": "ibm data and ai",
       "modelName": "IBM Granite 3.2 Instruct 2B",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -2140,6 +3595,11 @@
       "provider": "ibm data and ai",
       "modelName": "IBM Granite 3.2 Instruct 8B",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -2148,6 +3608,11 @@
       "provider": "ibm data and ai",
       "modelName": "IBM Granite 34B Code Instruct - 8K",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -2156,6 +3621,11 @@
       "provider": "ibm data and ai",
       "modelName": "IBM Granite 3B Code Instruct - 128K",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -2164,6 +3634,11 @@
       "provider": "ibm data and ai",
       "modelName": "IBM Granite 8B Code Instruct - 128K",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -2172,6 +3647,11 @@
       "provider": "inception",
       "modelName": "Mercury",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -2180,6 +3660,11 @@
       "provider": "inception",
       "modelName": "Mercury Coder",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -2188,6 +3673,11 @@
       "provider": "jetbrains s.r.o.",
       "modelName": "JetBrains AI Mellum All",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -2196,6 +3686,11 @@
       "provider": "jetbrains s.r.o.",
       "modelName": "JetBrains AI Mellum Kotlin",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -2204,6 +3699,11 @@
       "provider": "jetbrains s.r.o.",
       "modelName": "JetBrains AI Mellum Python",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -2212,6 +3712,12 @@
       "provider": "john snow labs",
       "modelName": "Medical LLM - Medium",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -2220,6 +3726,12 @@
       "provider": "john snow labs",
       "modelName": "Medical Text Translation (EN-ES)",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -2228,6 +3740,12 @@
       "provider": "john snow labs",
       "modelName": "Medical LLM - Small",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -2236,6 +3754,11 @@
       "provider": "karakuri, inc.",
       "modelName": "KARAKURI LM 8x7b instruct",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -2244,6 +3767,11 @@
       "provider": "lg u+",
       "modelName": "ixi-GEN-Fin-7.8B",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -2252,6 +3780,11 @@
       "provider": "liquid ai",
       "modelName": "Liquid LFM 40B (A100)",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -2260,6 +3793,11 @@
       "provider": "liquid ai",
       "modelName": "Liquid LFM 40B (H100)",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -2268,6 +3806,11 @@
       "provider": "liquid ai",
       "modelName": "Liquid LFM 40B (L40S)",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -2276,6 +3819,11 @@
       "provider": "liquid ai",
       "modelName": "Liquid LFM 7B (L40S)",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -2284,6 +3832,12 @@
       "provider": "ncsoft",
       "modelName": "VARCO LLM KO/EN-13B-IST",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -2292,6 +3846,11 @@
       "provider": "ncsoft",
       "modelName": "Llama-3-Varco-Offsetbias-8B",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -2300,6 +3859,11 @@
       "provider": "nvidia",
       "modelName": "NVIDIA Nemotron-4 15B NIM Microservice",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -2308,6 +3872,12 @@
       "provider": "nvidia",
       "modelName": "Llama 3.1 Nemotron Nano 8B V1",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -2316,6 +3886,12 @@
       "provider": "nvidia",
       "modelName": "Llama 3.3 Nemotron Super 49B V1",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -2324,6 +3900,11 @@
       "provider": "preferred networks, inc.",
       "modelName": "PLaMo Private Deployment",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -2332,6 +3913,12 @@
       "provider": "protopia ai, inc.",
       "modelName": "Llama-3.1-8B-Instruct with Stained Glass Transform Support",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -2340,6 +3927,11 @@
       "provider": "stability ai",
       "modelName": "Stable Diffusion 3.5 Large",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -2348,6 +3940,11 @@
       "provider": "stockmark inc.",
       "modelName": "Stockmark-LLM-13b",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -2356,6 +3953,11 @@
       "provider": "upstage",
       "modelName": "Solar Mini - Quant",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -2364,6 +3966,11 @@
       "provider": "upstage",
       "modelName": "Solar Pro 2",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -2372,6 +3979,11 @@
       "provider": "upstage",
       "modelName": "Solar Pro - Quant",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -2380,6 +3992,11 @@
       "provider": "voyage ai",
       "modelName": "voyage-3 Embedding Model",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -2388,6 +4005,11 @@
       "provider": "widn.ai",
       "modelName": "Widn Tower Vesuvius",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -2396,6 +4018,11 @@
       "provider": "widn.ai",
       "modelName": "Widn Tower Anthill",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -2404,6 +4031,11 @@
       "provider": "widn.ai",
       "modelName": "Widn Tower Sugarloaf",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -2412,6 +4044,11 @@
       "provider": "writer",
       "modelName": "Writer Palmyra-Fin-70B-32K",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     },
     {
@@ -2420,6 +4057,11 @@
       "provider": "writer",
       "modelName": "Writer Palmyra-Med-70B-32K",
       "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
       "evidence": "keyword @model-type:proprietary"
     }
   ]

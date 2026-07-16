@@ -1,0 +1,30 @@
+{
+  "hfId": "meta-llama/Llama-3.1-70B-Instruct",
+  "onBedrock": true,
+  "regions": [
+    "us-east-1",
+    "us-east-2",
+    "us-west-2"
+  ],
+  "bedrock": [
+    {
+      "modelId": "meta.llama3-1-70b-instruct-v1:0",
+      "catalog": "foundation-model",
+      "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ]
+    },
+    {
+      "modelId": "meta.llama3-1-70b-instruct-v1:0:128k",
+      "catalog": "foundation-model",
+      "confidence": "confirmed",
+      "regions": [
+        "us-east-2",
+        "us-west-2"
+      ]
+    }
+  ]
+}
