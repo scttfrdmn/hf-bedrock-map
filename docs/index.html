@@ -80,18 +80,20 @@
 }
 </script>
 <style>
+  /* Palette tuned to the project graphics: brand teal (#00a090) accent on a
+     teal-tinted dark ground; the HF yellow (#f0c010) lives in the logo art. */
   :root {
-    --bg: #0d1117; --panel: #161b22; --border: #30363d; --fg: #e6edf3;
-    --muted: #8b949e; --accent: #58a6ff; --link: #58a6ff;
-    --confirmed: #2ea043; --validated: #3fb950; --ambiguous: #d29922;
-    --proprietary: #8957e5; --unresolved: #6e7681;
+    --bg: #041e26; --panel: #0b2b33; --border: #1d4a52; --fg: #e8f1f0;
+    --muted: #8fb0ad; --accent: #2dd4bf; --link: #2dd4bf; --brand: #14b8a6;
+    --confirmed: #0f9d8f; --validated: #37b7a4; --ambiguous: #e0a500;
+    --proprietary: #a78bfa; --unresolved: #5b7a78;
   }
   @media (prefers-color-scheme: light) {
     :root {
-      --bg: #ffffff; --panel: #f6f8fa; --border: #d0d7de; --fg: #1f2328;
-      --muted: #656d76; --accent: #0969da; --link: #0969da;
-      --confirmed: #1a7f37; --validated: #1f883d; --ambiguous: #9a6700;
-      --proprietary: #8250df; --unresolved: #6e7781;
+      --bg: #ffffff; --panel: #f1f7f6; --border: #cfe3e0; --fg: #0b2b33;
+      --muted: #4c6663; --accent: #0d9488; --link: #0d9488; --brand: #0d9488;
+      --confirmed: #0f766e; --validated: #0d9488; --ambiguous: #9a6700;
+      --proprietary: #7c3aed; --unresolved: #5b7a78;
     }
   }
   * { box-sizing: border-box; }
@@ -100,9 +102,16 @@
     font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   }
   header { padding: 24px 20px 8px; max-width: 1100px; margin: 0 auto; }
-  h1 { font-size: 22px; margin: 0 0 4px; }
-  h1 .arrow { color: var(--muted); font-weight: 400; }
-  .tagline { color: var(--fg); margin: 0 0 6px; }
+  .brandmark { display: inline-block; line-height: 0; margin: 0 0 12px -6px; }
+  .brandmark img {
+    width: 100%; max-width: 560px; height: auto;
+    border-radius: 12px; border: 1px solid var(--border);
+  }
+  .visually-hidden {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+  }
+  .tagline { color: var(--fg); margin: 0 0 6px; font-size: 16px; }
   .tagline code { background: var(--panel); padding: 1px 5px; border-radius: 4px; }
   .subline { color: var(--muted); font-size: 13px; margin: 0 0 16px; }
   .subline a { color: var(--link); }
@@ -166,7 +175,10 @@
 </head>
 <body>
 <header>
-  <h1>hf-bedrock-map <span class="arrow">· Hugging Face ↔ Amazon Bedrock</span></h1>
+  <a class="brandmark" href="https://github.com/scttfrdmn/hf-bedrock-map">
+    <img src="assets/hero.png" alt="hf-bedrock-map — Map Hugging Face to Bedrock" width="560">
+  </a>
+  <h1 class="visually-hidden">hf-bedrock-map — Hugging Face ↔ Amazon Bedrock</h1>
   <p class="tagline">
     Is a model you're self-hosting already served by Bedrock? Search by
     Hugging Face repo (e.g. <code>Qwen/Qwen3-32B</code>) or Bedrock modelId.
