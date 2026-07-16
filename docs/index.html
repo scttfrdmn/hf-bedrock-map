@@ -27,8 +27,10 @@
   header { padding: 24px 20px 8px; max-width: 1100px; margin: 0 auto; }
   h1 { font-size: 22px; margin: 0 0 4px; }
   h1 .arrow { color: var(--muted); font-weight: 400; }
-  .tagline { color: var(--muted); margin: 0 0 16px; }
+  .tagline { color: var(--fg); margin: 0 0 6px; }
   .tagline code { background: var(--panel); padding: 1px 5px; border-radius: 4px; }
+  .subline { color: var(--muted); font-size: 13px; margin: 0 0 16px; }
+  .subline a { color: var(--link); }
   main { max-width: 1100px; margin: 0 auto; padding: 0 20px 60px; }
   .controls { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 14px; }
   #q {
@@ -37,6 +39,12 @@
   }
   #q:focus { outline: none; border-color: var(--accent); }
   .filter-label { color: var(--muted); font-size: 13px; }
+  .help {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 15px; height: 15px; border-radius: 50%; border: 1px solid var(--border);
+    font-size: 10px; font-weight: 700; cursor: help; color: var(--muted); vertical-align: middle;
+  }
+  .help:hover, .help:focus { color: var(--fg); border-color: currentColor; outline: none; }
   .filters { display: flex; flex-wrap: wrap; gap: 6px; }
   .chip {
     cursor: pointer; user-select: none; padding: 5px 10px; border-radius: 999px;
@@ -49,8 +57,13 @@
   .chip[data-c="proprietary"].on { color: var(--proprietary); }
   .chip[data-c="unresolved"].on { color: var(--unresolved); }
   .meta { color: var(--muted); font-size: 13px; margin: 4px 0 14px; }
-  table { width: 100%; border-collapse: collapse; }
-  th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  /* Fixed layout so column widths don't reflow when filtering changes which
+     rows are visible. Widths are set once via the colgroup below. */
+  table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+  th, td {
+    text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--border);
+    vertical-align: top; overflow-wrap: anywhere;
+  }
   th {
     position: sticky; top: 0; background: var(--bg); cursor: pointer; font-size: 13px;
     color: var(--muted); white-space: nowrap;
@@ -61,7 +74,7 @@
   td.hf a:hover { text-decoration: underline; }
   .badge {
     display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 12px;
-    font-weight: 600; color: #fff; white-space: nowrap;
+    font-weight: 600; color: #fff;
   }
   .badge.confirmed { background: var(--confirmed); }
   .badge.validated { background: var(--validated); }
@@ -69,8 +82,8 @@
   .badge.proprietary { background: var(--proprietary); }
   .badge.unresolved { background: var(--unresolved); }
   .cat { font-size: 12px; color: var(--muted); }
-  td.regions { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; color: var(--muted); white-space: nowrap; }
-  .evidence { color: var(--muted); font-size: 12px; max-width: 340px; }
+  td.regions { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; color: var(--muted); }
+  .evidence { color: var(--muted); font-size: 12px; }
   .empty { text-align: center; color: var(--muted); padding: 40px; }
   footer { max-width: 1100px; margin: 0 auto; padding: 20px; color: var(--muted); font-size: 12px; }
   footer a { color: var(--link); }
@@ -82,20 +95,30 @@
   <p class="tagline">
     Is a model you're self-hosting already served by Bedrock? Search by
     Hugging Face repo (e.g. <code>Qwen/Qwen3-32B</code>) or Bedrock modelId.
-    Covers the <strong>US regions only</strong> (us-east-1/2, us-west-1/2),
-    unioned — the catalog varies by region.
-    Building an integration? There's a <a href="API.md">reverse-lookup API</a>
-    (<code>GET api/v1/hf/{org}/{repo}.json</code>).
+  </p>
+  <p class="subline">
+    US regions only (us-east-1/2, us-west-1/2), unioned ·
+    <a href="https://github.com/scttfrdmn/hf-bedrock-map#reverse-lookup-api-for-integrations">API for integrations</a> ·
+    <a href="https://github.com/scttfrdmn/hf-bedrock-map">GitHub</a>
   </p>
 </header>
 <main>
   <div class="controls">
     <input id="q" type="search" placeholder="Search hf id, bedrock modelId, provider…" autofocus>
-    <span class="filter-label">Match status:</span>
+    <span class="filter-label">Match status
+      <span class="help" tabindex="0" title="How the HF match (if any) was established:&#10;&#10;• AWS-linked — AWS itself links the HF repo (model-card EULA / JumpStart metadata / verified override). Authoritative.&#10;• inferred + verified — AWS gives no HF link; we inferred the repo from the modelId and confirmed it exists under the provider's HF org.&#10;• ambiguous — on HF, but several variants exist and the modelId can't say which is served.&#10;• proprietary — closed-weight; no public HF equivalent by design.&#10;• unresolved — on Bedrock, but no HF repo determinable.">?</span>:</span>
     <div class="filters" id="filters"></div>
   </div>
   <div class="meta" id="meta">Loading…</div>
   <table>
+    <colgroup>
+      <col style="width: 22%">
+      <col style="width: 22%">
+      <col style="width: 12%">
+      <col style="width: 12%">
+      <col style="width: 12%">
+      <col style="width: 20%">
+    </colgroup>
     <thead>
       <tr>
         <th data-sort="hfId">Hugging Face repo</th>
@@ -113,11 +136,21 @@
 <footer id="footer"></footer>
 
 <script>
+// Internal status values (also the mapping.json / API field values) mapped to
+// human-legible display labels + tooltips. confirmed vs validated differ by
+// SOURCE of the HF id: AWS stated it, vs we inferred it and verified it exists.
 const CONFIDENCES = ["confirmed", "validated", "ambiguous", "proprietary", "unresolved"];
+const CONFIDENCE_LABEL = {
+  confirmed:   "AWS-linked",
+  validated:   "inferred + verified",
+  ambiguous:   "ambiguous",
+  proprietary: "proprietary",
+  unresolved:  "unresolved",
+};
 const CONFIDENCE_HELP = {
-  confirmed:   "HF repo taken directly from an authoritative AWS source (JumpStart doc Url, model-card EULA link, or verified override).",
-  validated:   "No direct AWS link, but the HF repo was confirmed to exist under the provider's own HF org.",
-  ambiguous:   "Open-weight and on HF, but several variants exist and the Bedrock modelId can't say which is served — see evidence.",
+  confirmed:   "AWS itself links this HF repo — from a model-card EULA link, JumpStart doc URL, or a hand-verified override. Authoritative.",
+  validated:   "AWS does NOT link an HF repo, so we inferred it from the modelId and confirmed that exact repo exists under the provider's own HF org. Very likely, but inferred — not AWS-stated.",
+  ambiguous:   "Open-weight and on HF, but several variants exist (e.g. -Instruct vs -Thinking) and the Bedrock modelId can't say which is served — see evidence.",
   proprietary: "Closed-weight provider; no public HF equivalent exists by design.",
   unresolved:  "On Bedrock, but no HF repo determinable from available metadata.",
 };
@@ -135,7 +168,7 @@ function buildFilters() {
     el.className = "chip on";
     el.dataset.c = c;
     el.title = CONFIDENCE_HELP[c];
-    el.textContent = c;
+    el.textContent = CONFIDENCE_LABEL[c];
     el.onclick = () => {
       active.has(c) ? active.delete(c) : active.add(c);
       el.classList.toggle("on");
@@ -172,7 +205,7 @@ function render() {
       `<td class="hf">${hf}</td>` +
       `<td class="model">${e.bedrockModelId}<div class="cat">${e.catalog}</div></td>` +
       `<td>${e.provider || "—"}</td>` +
-      `<td><span class="badge ${e.confidence}" title="${CONFIDENCE_HELP[e.confidence]}">${e.confidence}</span></td>` +
+      `<td><span class="badge ${e.confidence}" title="${CONFIDENCE_HELP[e.confidence]}">${CONFIDENCE_LABEL[e.confidence] || e.confidence}</span></td>` +
       `<td class="regions">${(e.regions || []).map((r) => r.replace(/^us-/, "")).join(", ")}</td>` +
       `<td class="evidence">${e.evidence || ""}</td>`;
     tb.appendChild(tr);
