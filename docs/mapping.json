@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-24T07:01:37Z",
+  "generatedAt": "2026-07-25T06:56:23Z",
   "regions": [
     "us-east-1",
     "us-east-2",
@@ -9,8 +9,8 @@
   "counts": {
     "ambiguous": 8,
     "confirmed": 130,
-    "proprietary": 133,
-    "total": 291,
+    "proprietary": 134,
+    "total": 292,
     "unresolved": 3,
     "validated": 17
   },
@@ -558,6 +558,20 @@
       "catalog": "foundation-model",
       "provider": "Anthropic",
       "modelName": "Claude Opus 4.8",
+      "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "anthropic.claude-opus-5",
+      "catalog": "foundation-model",
+      "provider": "Anthropic",
+      "modelName": "Claude Opus 5",
       "confidence": "proprietary",
       "regions": [
         "us-east-1",
