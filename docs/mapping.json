@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T07:03:44Z",
+  "generatedAt": "2026-07-31T07:10:10Z",
   "regions": [
     "us-east-1",
     "us-east-2",
@@ -9,8 +9,8 @@
   "counts": {
     "ambiguous": 8,
     "confirmed": 130,
-    "proprietary": 134,
-    "total": 292,
+    "proprietary": 131,
+    "total": 289,
     "unresolved": 3,
     "validated": 17
   },
@@ -433,42 +433,6 @@
         "us-west-2"
       ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
-    },
-    {
-      "bedrockModelId": "anthropic.claude-3-sonnet-20240229-v1:0",
-      "catalog": "foundation-model",
-      "provider": "Anthropic",
-      "modelName": "Claude 3 Sonnet",
-      "confidence": "proprietary",
-      "regions": [
-        "us-east-1",
-        "us-west-2"
-      ],
-      "evidence": "closed-weight provider"
-    },
-    {
-      "bedrockModelId": "anthropic.claude-3-sonnet-20240229-v1:0:200k",
-      "catalog": "foundation-model",
-      "provider": "Anthropic",
-      "modelName": "Claude 3 Sonnet",
-      "confidence": "proprietary",
-      "regions": [
-        "us-east-1",
-        "us-west-2"
-      ],
-      "evidence": "closed-weight provider"
-    },
-    {
-      "bedrockModelId": "anthropic.claude-3-sonnet-20240229-v1:0:28k",
-      "catalog": "foundation-model",
-      "provider": "Anthropic",
-      "modelName": "Claude 3 Sonnet",
-      "confidence": "proprietary",
-      "regions": [
-        "us-east-1",
-        "us-west-2"
-      ],
-      "evidence": "closed-weight provider"
     },
     {
       "bedrockModelId": "anthropic.claude-fable-5",
