@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-03T07:21:39Z",
+  "generatedAt": "2026-08-04T07:02:34Z",
   "regions": [
     "us-east-1",
     "us-east-2",
@@ -2291,13 +2291,14 @@
       "bedrockModelId": "huggingface-llm-dolphin-2-2-1-mistral-7b",
       "catalog": "marketplace",
       "provider": "cognitivecomputations",
-      "modelName": "Dolphin 2.2.1 Mistral 7B",
+      "modelName": "dolphin-2.2.1-mistral-7b",
       "hfId": "cognitivecomputations/dolphin-2.2.1-mistral-7b",
       "hfUrl": "https://huggingface.co/cognitivecomputations/dolphin-2.2.1-mistral-7b",
       "confidence": "confirmed",
       "regions": [
         "us-east-1",
         "us-east-2",
+        "us-west-1",
         "us-west-2"
       ],
       "evidence": "HubContentDocument.Url"
@@ -2981,13 +2982,14 @@
       "bedrockModelId": "huggingface-llm-thebloke-mistral-7b-openorca-awq",
       "catalog": "marketplace",
       "provider": "TheBloke",
-      "modelName": "Mistral 7B OpenOrca AWQ",
+      "modelName": "Mistral-7B-OpenOrca-AWQ",
       "hfId": "TheBloke/Mistral-7B-OpenOrca-AWQ",
       "hfUrl": "https://huggingface.co/TheBloke/Mistral-7B-OpenOrca-AWQ",
       "confidence": "confirmed",
       "regions": [
         "us-east-1",
         "us-east-2",
+        "us-west-1",
         "us-west-2"
       ],
       "evidence": "HubContentDocument.Url"
