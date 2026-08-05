@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-04T07:02:34Z",
+  "generatedAt": "2026-08-05T07:04:21Z",
   "regions": [
     "us-east-1",
     "us-east-2",
@@ -3809,7 +3809,7 @@
     {
       "bedrockModelId": "ncsoft-ko-13b-ist",
       "catalog": "marketplace",
-      "provider": "ncsoft",
+      "provider": "nc",
       "modelName": "VARCO LLM KO/EN-13B-IST",
       "confidence": "proprietary",
       "regions": [
@@ -3823,7 +3823,7 @@
     {
       "bedrockModelId": "ncsoft-llama-3-varco-offsetbias-8b",
       "catalog": "marketplace",
-      "provider": "ncsoft",
+      "provider": "nc",
       "modelName": "Llama-3-Varco-Offsetbias-8B",
       "confidence": "proprietary",
       "regions": [
