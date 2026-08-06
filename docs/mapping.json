@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-05T07:04:21Z",
+  "generatedAt": "2026-08-06T07:04:39Z",
   "regions": [
     "us-east-1",
     "us-east-2",
@@ -1823,7 +1823,7 @@
     {
       "bedrockModelId": "arcee-lite",
       "catalog": "marketplace",
-      "provider": "arcee ai",
+      "provider": "arcee",
       "modelName": "Arcee Lite",
       "confidence": "proprietary",
       "regions": [
@@ -1836,7 +1836,7 @@
     {
       "bedrockModelId": "arcee-llama-3-1-supernova-lite",
       "catalog": "marketplace",
-      "provider": "arcee ai",
+      "provider": "arcee",
       "modelName": "Llama 3.1 SuperNova Lite",
       "confidence": "proprietary",
       "regions": [
@@ -1849,7 +1849,7 @@
     {
       "bedrockModelId": "arcee-llama-spark",
       "catalog": "marketplace",
-      "provider": "arcee ai",
+      "provider": "arcee",
       "modelName": "Llama Spark",
       "confidence": "proprietary",
       "regions": [
@@ -1862,7 +1862,7 @@
     {
       "bedrockModelId": "arcee-supernova",
       "catalog": "marketplace",
-      "provider": "arcee ai",
+      "provider": "arcee",
       "modelName": "Arcee SuperNova",
       "confidence": "proprietary",
       "regions": [
@@ -1875,7 +1875,7 @@
     {
       "bedrockModelId": "arcee-virtuoso-small",
       "catalog": "marketplace",
-      "provider": "arcee ai",
+      "provider": "arcee",
       "modelName": "Arcee Virtuoso Small",
       "confidence": "proprietary",
       "regions": [
