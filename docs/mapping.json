@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T06:38:14Z",
+  "generatedAt": "2026-08-15T06:12:42Z",
   "regions": [
     "us-east-1",
     "us-east-2",
@@ -10,8 +10,8 @@
     "ambiguous": 8,
     "confirmed": 130,
     "proprietary": 131,
-    "total": 289,
-    "unresolved": 3,
+    "total": 292,
+    "unresolved": 6,
     "validated": 17
   },
   "entries": [
@@ -1336,6 +1336,48 @@
         "us-west-2"
       ],
       "evidence": "multiple HF variants, modelId can't disambiguate: nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-Base-BF16, nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8, nvidia/Nemotron-3-Super-120B-A12B-BF16-MTPv2"
+    },
+    {
+      "bedrockModelId": "openai.gpt-5.6-luna",
+      "catalog": "foundation-model",
+      "provider": "OpenAI",
+      "modelName": "GPT-5.6 Luna",
+      "confidence": "unresolved",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "evidence": "no HF repo found under openai matching modelId"
+    },
+    {
+      "bedrockModelId": "openai.gpt-5.6-sol",
+      "catalog": "foundation-model",
+      "provider": "OpenAI",
+      "modelName": "GPT-5.6 Sol",
+      "confidence": "unresolved",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "evidence": "no HF repo found under openai matching modelId"
+    },
+    {
+      "bedrockModelId": "openai.gpt-5.6-terra",
+      "catalog": "foundation-model",
+      "provider": "OpenAI",
+      "modelName": "GPT-5.6 Terra",
+      "confidence": "unresolved",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "evidence": "no HF repo found under openai matching modelId"
     },
     {
       "bedrockModelId": "openai.gpt-oss-120b-1:0",
