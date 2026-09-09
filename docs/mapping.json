@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T11:04:02Z",
+  "generatedAt": "2026-09-09T11:08:40Z",
   "regions": [
     "us-east-1",
     "us-east-2",
@@ -10,8 +10,8 @@
     "ambiguous": 8,
     "confirmed": 130,
     "proprietary": 131,
-    "total": 292,
-    "unresolved": 6,
+    "total": 293,
+    "unresolved": 7,
     "validated": 17
   },
   "entries": [
@@ -1360,6 +1360,20 @@
       "catalog": "foundation-model",
       "provider": "OpenAI",
       "modelName": "GPT-5.6 Terra",
+      "confidence": "unresolved",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "evidence": "no HF repo found under openai matching modelId"
+    },
+    {
+      "bedrockModelId": "openai.gpt-6-astra",
+      "catalog": "foundation-model",
+      "provider": "OpenAI",
+      "modelName": "GPT-6 Astra",
       "confidence": "unresolved",
       "regions": [
         "us-east-1",
