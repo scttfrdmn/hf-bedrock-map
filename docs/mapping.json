@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T11:08:40Z",
+  "generatedAt": "2026-09-10T11:05:24Z",
   "regions": [
     "us-east-1",
     "us-east-2",
@@ -9,8 +9,8 @@
   "counts": {
     "ambiguous": 8,
     "confirmed": 130,
-    "proprietary": 131,
-    "total": 293,
+    "proprietary": 128,
+    "total": 290,
     "unresolved": 7,
     "validated": 17
   },
@@ -393,44 +393,6 @@
       "confidence": "proprietary",
       "regions": [
         "us-east-1"
-      ],
-      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
-    },
-    {
-      "bedrockModelId": "anthropic.claude-3-haiku-20240307-v1:0",
-      "catalog": "foundation-model",
-      "provider": "Anthropic",
-      "modelName": "Claude 3 Haiku",
-      "confidence": "proprietary",
-      "regions": [
-        "us-east-1",
-        "us-east-2",
-        "us-west-2"
-      ],
-      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
-    },
-    {
-      "bedrockModelId": "anthropic.claude-3-haiku-20240307-v1:0:200k",
-      "catalog": "foundation-model",
-      "provider": "Anthropic",
-      "modelName": "Claude 3 Haiku",
-      "confidence": "proprietary",
-      "regions": [
-        "us-east-1",
-        "us-east-2",
-        "us-west-2"
-      ],
-      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
-    },
-    {
-      "bedrockModelId": "anthropic.claude-3-haiku-20240307-v1:0:48k",
-      "catalog": "foundation-model",
-      "provider": "Anthropic",
-      "modelName": "Claude 3 Haiku",
-      "confidence": "proprietary",
-      "regions": [
-        "us-east-1",
-        "us-west-2"
       ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
