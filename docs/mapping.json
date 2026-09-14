@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T11:35:24Z",
+  "generatedAt": "2026-09-14T12:29:29Z",
   "regions": [
     "us-east-1",
     "us-east-2",
@@ -9,8 +9,8 @@
   "counts": {
     "ambiguous": 8,
     "confirmed": 130,
-    "proprietary": 128,
-    "total": 290,
+    "proprietary": 122,
+    "total": 284,
     "unresolved": 7,
     "validated": 17
   },
@@ -168,71 +168,6 @@
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
-      "bedrockModelId": "amazon.nova-premier-v1:0",
-      "catalog": "foundation-model",
-      "provider": "Amazon",
-      "modelName": "Nova Premier",
-      "confidence": "proprietary",
-      "regions": [
-        "us-east-1",
-        "us-east-2",
-        "us-west-2"
-      ],
-      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
-    },
-    {
-      "bedrockModelId": "amazon.nova-premier-v1:0:1000k",
-      "catalog": "foundation-model",
-      "provider": "Amazon",
-      "modelName": "Nova Premier",
-      "confidence": "proprietary",
-      "regions": [
-        "us-east-1",
-        "us-east-2",
-        "us-west-2"
-      ],
-      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
-    },
-    {
-      "bedrockModelId": "amazon.nova-premier-v1:0:20k",
-      "catalog": "foundation-model",
-      "provider": "Amazon",
-      "modelName": "Nova Premier",
-      "confidence": "proprietary",
-      "regions": [
-        "us-east-1",
-        "us-east-2",
-        "us-west-2"
-      ],
-      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
-    },
-    {
-      "bedrockModelId": "amazon.nova-premier-v1:0:8k",
-      "catalog": "foundation-model",
-      "provider": "Amazon",
-      "modelName": "Nova Premier",
-      "confidence": "proprietary",
-      "regions": [
-        "us-east-1",
-        "us-east-2",
-        "us-west-2"
-      ],
-      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
-    },
-    {
-      "bedrockModelId": "amazon.nova-premier-v1:0:mm",
-      "catalog": "foundation-model",
-      "provider": "Amazon",
-      "modelName": "Nova Premier",
-      "confidence": "proprietary",
-      "regions": [
-        "us-east-1",
-        "us-east-2",
-        "us-west-2"
-      ],
-      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
-    },
-    {
       "bedrockModelId": "amazon.nova-pro-v1:0",
       "catalog": "foundation-model",
       "provider": "Amazon",
@@ -289,17 +224,6 @@
         "us-east-1"
       ],
       "evidence": "closed-weight provider"
-    },
-    {
-      "bedrockModelId": "amazon.nova-sonic-v1:0",
-      "catalog": "foundation-model",
-      "provider": "Amazon",
-      "modelName": "Nova Sonic",
-      "confidence": "proprietary",
-      "regions": [
-        "us-east-1"
-      ],
-      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
       "bedrockModelId": "amazon.rerank-v1:0",
