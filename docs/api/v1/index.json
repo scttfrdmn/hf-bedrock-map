@@ -1,6 +1,6 @@
 {
   "version": "v1",
-  "generatedAt": "2026-09-17T11:27:32Z",
+  "generatedAt": "2026-09-18T11:00:59Z",
   "regions": [
     "us-east-1",
     "us-east-2",
@@ -8,7 +8,7 @@
     "us-west-2"
   ],
   "note": "Reverse Bedrock\u003c-\u003eHugging Face lookup, US regions only. Keys are lowercased HF ids. Absence of a key means not served by Bedrock in these regions.",
-  "count": 132,
+  "count": 133,
   "models": {
     "01-ai/yi-1.5-34b": {
       "hfId": "01-ai/Yi-1.5-34B",
@@ -1808,6 +1808,29 @@
           "regions": [
             "us-east-1",
             "us-east-2",
+            "us-west-2"
+          ]
+        }
+      ]
+    },
+    "moonshotai/kimi-k3": {
+      "hfId": "moonshotai/Kimi-K3",
+      "onBedrock": true,
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "bedrock": [
+        {
+          "modelId": "moonshotai.kimi-k3",
+          "catalog": "foundation-model",
+          "confidence": "confirmed",
+          "regions": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
             "us-west-2"
           ]
         }
