@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T11:23:13Z",
+  "generatedAt": "2026-09-23T11:19:17Z",
   "regions": [
     "us-east-1",
     "us-east-2",
@@ -9,9 +9,9 @@
   "counts": {
     "ambiguous": 8,
     "confirmed": 131,
-    "proprietary": 122,
-    "total": 285,
-    "unresolved": 7,
+    "proprietary": 123,
+    "total": 288,
+    "unresolved": 9,
     "validated": 17
   },
   "entries": [
@@ -436,6 +436,20 @@
       "catalog": "foundation-model",
       "provider": "Anthropic",
       "modelName": "Claude Opus 5",
+      "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "anthropic.claude-opus-5-5",
+      "catalog": "foundation-model",
+      "provider": "Anthropic",
+      "modelName": "Claude Opus 5.5",
       "confidence": "proprietary",
       "regions": [
         "us-east-1",
@@ -1276,6 +1290,34 @@
       "catalog": "foundation-model",
       "provider": "OpenAI",
       "modelName": "GPT-6 Astra",
+      "confidence": "unresolved",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "evidence": "no HF repo found under openai matching modelId"
+    },
+    {
+      "bedrockModelId": "openai.gpt-6-luna",
+      "catalog": "foundation-model",
+      "provider": "OpenAI",
+      "modelName": "GPT-6 Luna",
+      "confidence": "unresolved",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "evidence": "no HF repo found under openai matching modelId"
+    },
+    {
+      "bedrockModelId": "openai.gpt-6-sol",
+      "catalog": "foundation-model",
+      "provider": "OpenAI",
+      "modelName": "GPT-6 Sol",
       "confidence": "unresolved",
       "regions": [
         "us-east-1",
