@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T13:35:52Z",
+  "generatedAt": "2026-09-29T12:36:53Z",
   "regions": [
     "us-east-1",
     "us-east-2",
@@ -9,8 +9,8 @@
   "counts": {
     "ambiguous": 8,
     "confirmed": 131,
-    "proprietary": 123,
-    "total": 290,
+    "proprietary": 125,
+    "total": 292,
     "unresolved": 11,
     "validated": 17
   },
@@ -528,6 +528,20 @@
       "catalog": "foundation-model",
       "provider": "Anthropic",
       "modelName": "Claude Sonnet 5",
+      "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "anthropic.claude-sonnet-5-5",
+      "catalog": "foundation-model",
+      "provider": "Anthropic",
+      "modelName": "Claude Sonnet 5.5",
       "confidence": "proprietary",
       "regions": [
         "us-east-1",
@@ -1798,6 +1812,20 @@
       "catalog": "foundation-model",
       "provider": "xAI",
       "modelName": "Grok 4.6",
+      "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "evidence": "closed-weight provider"
+    },
+    {
+      "bedrockModelId": "xai.grok-4.7",
+      "catalog": "foundation-model",
+      "provider": "xAI",
+      "modelName": "Grok 4.7",
       "confidence": "proprietary",
       "regions": [
         "us-east-1",
