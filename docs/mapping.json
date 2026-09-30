@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T12:36:53Z",
+  "generatedAt": "2026-09-30T12:22:00Z",
   "regions": [
     "us-east-1",
     "us-east-2",
@@ -9,9 +9,9 @@
   "counts": {
     "ambiguous": 8,
     "confirmed": 131,
-    "proprietary": 125,
-    "total": 292,
-    "unresolved": 11,
+    "proprietary": 122,
+    "total": 290,
+    "unresolved": 12,
     "validated": 17
   },
   "entries": [
@@ -82,17 +82,6 @@
       "regions": [
         "us-east-1",
         "us-west-2"
-      ],
-      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
-    },
-    {
-      "bedrockModelId": "amazon.nova-canvas-v1:0",
-      "catalog": "foundation-model",
-      "provider": "Amazon",
-      "modelName": "Nova Canvas",
-      "confidence": "proprietary",
-      "regions": [
-        "us-east-1"
       ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
@@ -202,28 +191,6 @@
         "us-east-1"
       ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
-    },
-    {
-      "bedrockModelId": "amazon.nova-reel-v1:0",
-      "catalog": "foundation-model",
-      "provider": "Amazon",
-      "modelName": "Nova Reel",
-      "confidence": "proprietary",
-      "regions": [
-        "us-east-1"
-      ],
-      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
-    },
-    {
-      "bedrockModelId": "amazon.nova-reel-v1:1",
-      "catalog": "foundation-model",
-      "provider": "Amazon",
-      "modelName": "Nova Reel",
-      "confidence": "proprietary",
-      "regions": [
-        "us-east-1"
-      ],
-      "evidence": "closed-weight provider"
     },
     {
       "bedrockModelId": "amazon.rerank-v1:0",
@@ -1360,6 +1327,20 @@
       "catalog": "foundation-model",
       "provider": "OpenAI",
       "modelName": "GPT-6 Sol",
+      "confidence": "unresolved",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "evidence": "no HF repo found under openai matching modelId"
+    },
+    {
+      "bedrockModelId": "openai.gpt-6.1-sol",
+      "catalog": "foundation-model",
+      "provider": "OpenAI",
+      "modelName": "GPT-6.1 Sol",
       "confidence": "unresolved",
       "regions": [
         "us-east-1",
