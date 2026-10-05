@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T12:10:39Z",
+  "generatedAt": "2026-10-05T14:19:52Z",
   "regions": [
     "us-east-1",
     "us-east-2",
@@ -690,7 +690,7 @@
       "regions": [
         "us-west-2"
       ],
-      "evidence": "closed-weight provider"
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
       "bedrockModelId": "meta.llama3-1-70b-instruct-v1:0",
