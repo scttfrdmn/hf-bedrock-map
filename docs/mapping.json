@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T13:11:04Z",
+  "generatedAt": "2026-10-07T13:07:33Z",
   "regions": [
     "us-east-1",
     "us-east-2",
@@ -10,9 +10,9 @@
     "ambiguous": 8,
     "confirmed": 131,
     "proprietary": 123,
-    "total": 291,
+    "total": 292,
     "unresolved": 12,
-    "validated": 17
+    "validated": 18
   },
   "entries": [
     {
@@ -1872,6 +1872,22 @@
         "us-west-2"
       ],
       "evidence": "hf-validated: base repo zai-org/GLM-5 exists under zai-org"
+    },
+    {
+      "bedrockModelId": "zai.glm-5.3",
+      "catalog": "foundation-model",
+      "provider": "Z.AI",
+      "modelName": "GLM 5.3",
+      "hfId": "zai-org/GLM-5.3",
+      "hfUrl": "https://huggingface.co/zai-org/GLM-5.3",
+      "confidence": "validated",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "evidence": "hf-validated: base repo zai-org/GLM-5.3 exists under zai-org"
     },
     {
       "bedrockModelId": "arcee-lite",
