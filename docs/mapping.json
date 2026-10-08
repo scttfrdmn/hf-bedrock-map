@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T13:07:33Z",
+  "generatedAt": "2026-10-08T13:14:50Z",
   "regions": [
     "us-east-1",
     "us-east-2",
@@ -9,8 +9,8 @@
   "counts": {
     "ambiguous": 8,
     "confirmed": 131,
-    "proprietary": 123,
-    "total": 292,
+    "proprietary": 124,
+    "total": 293,
     "unresolved": 12,
     "validated": 18
   },
@@ -332,6 +332,20 @@
       "catalog": "foundation-model",
       "provider": "Anthropic",
       "modelName": "Claude Haiku 4.5",
+      "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "anthropic.claude-haiku-5-5",
+      "catalog": "foundation-model",
+      "provider": "Anthropic",
+      "modelName": "Claude Haiku 5.5",
       "confidence": "proprietary",
       "regions": [
         "us-east-1",
@@ -1530,7 +1544,7 @@
       "regions": [
         "us-west-2"
       ],
-      "evidence": "closed-weight provider"
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
       "bedrockModelId": "stability.stable-conservative-upscale-v1:0",
@@ -1606,7 +1620,7 @@
       "regions": [
         "us-west-2"
       ],
-      "evidence": "closed-weight provider"
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
       "bedrockModelId": "stability.stable-image-erase-object-v1:0",
@@ -1695,7 +1709,7 @@
       "regions": [
         "us-west-2"
       ],
-      "evidence": "closed-weight provider"
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
     {
       "bedrockModelId": "stability.stable-outpaint-v1:0",
