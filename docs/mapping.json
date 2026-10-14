@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T14:00:27Z",
+  "generatedAt": "2026-10-14T11:37:12Z",
   "regions": [
     "us-east-1",
     "us-east-2",
@@ -9,8 +9,8 @@
   "counts": {
     "ambiguous": 8,
     "confirmed": 131,
-    "proprietary": 125,
-    "total": 294,
+    "proprietary": 122,
+    "total": 291,
     "unresolved": 12,
     "validated": 18
   },
@@ -449,42 +449,6 @@
         "us-east-2",
         "us-west-1",
         "us-west-2"
-      ],
-      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
-    },
-    {
-      "bedrockModelId": "anthropic.claude-sonnet-4-20250514-v1:0",
-      "catalog": "foundation-model",
-      "provider": "Anthropic",
-      "modelName": "Claude Sonnet 4",
-      "confidence": "proprietary",
-      "regions": [
-        "us-east-1",
-        "us-east-2",
-        "us-west-1",
-        "us-west-2"
-      ],
-      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
-    },
-    {
-      "bedrockModelId": "anthropic.claude-sonnet-4-20250514-v1:0:200k",
-      "catalog": "foundation-model",
-      "provider": "Anthropic",
-      "modelName": "Claude Sonnet 4",
-      "confidence": "proprietary",
-      "regions": [
-        "us-west-1"
-      ],
-      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
-    },
-    {
-      "bedrockModelId": "anthropic.claude-sonnet-4-20250514-v1:0:32k",
-      "catalog": "foundation-model",
-      "provider": "Anthropic",
-      "modelName": "Claude Sonnet 4",
-      "confidence": "proprietary",
-      "regions": [
-        "us-west-1"
       ],
       "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
     },
