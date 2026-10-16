@@ -1,6 +1,6 @@
 {
   "version": "v1",
-  "generatedAt": "2026-10-15T11:16:01Z",
+  "generatedAt": "2026-10-16T11:10:47Z",
   "regions": [
     "us-east-1",
     "us-east-2",
@@ -3018,7 +3018,7 @@
         {
           "modelId": "zai.glm-5.3",
           "catalog": "foundation-model",
-          "confidence": "validated",
+          "confidence": "confirmed",
           "regions": [
             "us-east-1",
             "us-east-2",
