@@ -1,6 +1,6 @@
 {
   "version": "v1",
-  "generatedAt": "2026-10-20T11:20:23Z",
+  "generatedAt": "2026-10-21T11:36:04Z",
   "regions": [
     "us-east-1",
     "us-east-2",
@@ -2927,6 +2927,7 @@
       "regions": [
         "us-east-1",
         "us-east-2",
+        "us-west-1",
         "us-west-2"
       ],
       "bedrock": [
@@ -2937,6 +2938,7 @@
           "regions": [
             "us-east-1",
             "us-east-2",
+            "us-west-1",
             "us-west-2"
           ]
         }
