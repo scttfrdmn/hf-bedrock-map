@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T14:04:40Z",
+  "generatedAt": "2026-11-07T12:49:15Z",
   "regions": [
     "us-east-1",
     "us-east-2",
@@ -8,9 +8,9 @@
   ],
   "counts": {
     "ambiguous": 8,
-    "confirmed": 132,
+    "confirmed": 133,
     "proprietary": 122,
-    "total": 292,
+    "total": 293,
     "unresolved": 13,
     "validated": 17
   },
@@ -1161,6 +1161,22 @@
         "us-west-2"
       ],
       "evidence": "model card EULA link: https://huggingface.co/moonshotai/Kimi-K3/blob/main/LICENSE"
+    },
+    {
+      "bedrockModelId": "moonshotai.kimi-k3.1",
+      "catalog": "foundation-model",
+      "provider": "Moonshot AI",
+      "modelName": "Kimi K3.1",
+      "hfId": "moonshotai/Kimi-K3.1-Pro",
+      "hfUrl": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+      "confidence": "confirmed",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "evidence": "model card EULA link: https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/main/LICENSE"
     },
     {
       "bedrockModelId": "nvidia.nemotron-nano-12b-v2",
