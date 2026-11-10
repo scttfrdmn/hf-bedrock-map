@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T15:55:06Z",
+  "generatedAt": "2026-11-10T14:42:55Z",
   "regions": [
     "us-east-1",
     "us-east-2",
@@ -9,8 +9,8 @@
   "counts": {
     "ambiguous": 8,
     "confirmed": 133,
-    "proprietary": 122,
-    "total": 293,
+    "proprietary": 123,
+    "total": 294,
     "unresolved": 13,
     "validated": 17
   },
@@ -318,6 +318,20 @@
       "catalog": "foundation-model",
       "provider": "Anthropic",
       "modelName": "Claude Fable 5.1",
+      "confidence": "proprietary",
+      "regions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+      ],
+      "evidence": "closed-weight provider (EULA https://aws.amazon.com/legal/bedrock/third-party-models/)"
+    },
+    {
+      "bedrockModelId": "anthropic.claude-fable-5-2",
+      "catalog": "foundation-model",
+      "provider": "Anthropic",
+      "modelName": "Claude Fable 5.2",
       "confidence": "proprietary",
       "regions": [
         "us-east-1",
