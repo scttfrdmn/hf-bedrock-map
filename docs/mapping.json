@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T17:02:22Z",
+  "generatedAt": "2026-11-26T16:43:32Z",
   "regions": [
     "us-east-1",
     "us-east-2",
@@ -9,34 +9,12 @@
   "counts": {
     "ambiguous": 8,
     "confirmed": 133,
-    "proprietary": 123,
-    "total": 296,
+    "proprietary": 121,
+    "total": 294,
     "unresolved": 15,
     "validated": 17
   },
   "entries": [
-    {
-      "bedrockModelId": "ai21.jamba-1-5-large-v1:0",
-      "catalog": "foundation-model",
-      "provider": "AI21 Labs",
-      "modelName": "Jamba 1.5 Large",
-      "confidence": "proprietary",
-      "regions": [
-        "us-east-1"
-      ],
-      "evidence": "closed-weight provider (EULA https://www.ai21.com/jamba-open-model-license/)"
-    },
-    {
-      "bedrockModelId": "ai21.jamba-1-5-mini-v1:0",
-      "catalog": "foundation-model",
-      "provider": "AI21 Labs",
-      "modelName": "Jamba 1.5 Mini",
-      "confidence": "proprietary",
-      "regions": [
-        "us-east-1"
-      ],
-      "evidence": "closed-weight provider (EULA https://www.ai21.com/jamba-open-model-license/)"
-    },
     {
       "bedrockModelId": "amazon.nova-2-5-sonic",
       "catalog": "foundation-model",
